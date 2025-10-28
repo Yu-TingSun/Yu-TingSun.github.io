@@ -1,0 +1,281 @@
+---
+title: 'Curriculum Vitae'
+date: 2025-10-27
+type: landing
+
+design:
+  spacing: "4rem"
+
+sections:
+  # ===== 个人信息 =====
+  - block: resume-biography-3
+    content:
+      username: admin
+      text: ""
+    design:
+      css_class: dark
+      background:
+        color: black
+        image:
+          filename: dna-background.jpg
+          filters:
+            brightness: 0.4
+          size: cover
+          position: center
+          parallax: false
+
+  # ===== 教育背景 =====
+  - block: markdown
+    id: education
+    content:
+      title: '🎓 Education'
+      text: |
+        ### **Ph.D. in Physics** (2008-2010)
+        **University of Strasbourg, France**
+        - Dissertation: Kinetic study of cell adhesion in biomimetic systems
+        - Focus: DNA behavior under spatial confinement using soft matter physics
+        - Techniques: Single-molecule TIRF microscopy, microfluidic platform development
+        - Supervisor: Prof. Carlos Marques, Dr. André Schröder (Institute Charles Sadron)
+        
+        ### **M.Sc. in Chemistry** (2005-2007)
+        **University of Siegen, Germany**
+        - Master Thesis: Investigating the layering of liquid crystals on surfaces by AFM
+        - Master Internship: Developing new nanolithography techniques on polystyrene by AFM
+        - Supervisor: Prof. Dr. Hans-Jürgen Butt, Dr. Elmar Bonaccurso (Max-Planck Institute for Polymer Research, Mainz)
+        
+        ### **B.Eng. in Chemical Engineering** (2001-2005)
+        **China University of Petroleum (Beijing), P.R. China**
+    design:
+      columns: '1'
+
+  # ===== 研究经验 =====
+  - block: markdown
+    id: research-experience
+    content:
+      title: '🔬 Research Experience'
+      text: |
+        ### **Postdoctoral Associate** (Dec 2021 - Jul 2025)
+        **National Taiwan University, Chemistry Department**
+        
+        **Projects:**
+        - RNA-involved Homologous Recombination mediated by E.coli RecA
+        - Fidelity study of Recombinase Dmc1 and its Accessory Protein Hop2-Mnd1
+        
+        **Responsibilities:**
+        - Interdisciplinary collaboration (biochemistry & biophysics)
+        - Laboratory maintenance and instrument operation
+        - Supervision of 2 undergraduate students' projects
+        
+        **Supervisor:** Prof. Hung-Wen Li (NTU, Taipei)
+        
+        ---
+        
+        ### **Postdoctoral Associate** (May 2011 - Dec 2012)
+        **Singapore-MIT Alliance for Research and Technology (SMART)**
+        
+        **Project:** Dynamic study of biopolymers in microfluidic devices
+        
+        **Responsibilities:**
+        - Scientific project management and execution
+        - Participation in discussions among BioSyM research groups
+        - Organization of internal lab meetings and collaborator meetings
+        
+        **Supervisors:** Prof. Patrick Doyle (MIT, U.S.), Prof. Jie Yan (NUS, Singapore)
+        
+        ---
+        
+        ### **PhD Researcher** (Jan 2008 - Dec 2010)
+        **Institute Charles Sadron (ICS), France**
+        
+        **Dissertation:** Kinetic study of cell adhesion in biomimetic systems
+        
+        **Responsibilities:**
+        - Independent research project execution
+        - Laboratory safety and regulation compliance
+        - Active participation in IRTG workshops and conferences
+        
+        **Supervisors:** Prof. Carlos Marques, Dr. André Schröder (ICS, Strasbourg)
+        
+        ---
+        
+        ### **Master Researcher** (Nov 2006 - Dec 2007)
+        **Max-Planck Institute for Polymer Research (MPIP), Germany**
+        
+        **Projects:**
+        - Investigating the layering of liquid crystals on surfaces by AFM
+        - Developing new nanolithography techniques on polystyrene by AFM
+        
+        **Supervisor:** Prof. Dr. Hans-Jürgen Butt, Dr. Elmar Bonaccurso (MPIP, Mainz)
+    design:
+      columns: '1'
+
+  # ===== 教学经验 =====
+  - block: markdown
+    id: teaching-experience
+    content:
+      title: '📚 Teaching Experience'
+      text: |
+        ### **Chemistry & Mathematics Teacher** (Dec 2013 - Aug 2015)
+        **Beijing Huijia Private School, Beijing, China**
+        
+        **Responsibilities:**
+        - Taught IB Diploma Programme Chemistry & Mathematics (Grade 10-11)
+        - Supervised student scientific research projects
+        - Student mentoring and academic guidance
+        - Developed curriculum materials and assessment strategies
+    design:
+      columns: '1'
+
+  # ===== 研究专长 =====
+  - block: markdown
+    id: expertise
+    content:
+      title: '🎯 Research Expertise'
+      text: |
+        ### **Biological Systems**
+        - DNA-protein interactions (Recombinases: RecA, RAD51, Dmc1)
+        - Accessory proteins (Hop2-Mnd1, SSB)
+        - Physical behaviors of biopolymers and biomaterials (DNA, membranes)
+        
+        ### **Experimental Techniques**
+        #### Single-Molecule Methods
+        - TIRF Microscopy (Total Internal Reflection Fluorescence)
+        - FRET (Fluorescence Resonance Energy Transfer)
+        - CoSMoS (Colocalization Single-Molecule Spectroscopy)
+        - AFM (Atomic Force Microscopy)
+        - RICM (Reflection Interference Contrast Microscopy)
+        
+        #### Microfluidic Platforms
+        - Flow cell design and fabrication
+        - Nanofluidic channels (50-500 nm)
+        - Microfluidic channels (0.5-2 μm)
+        - Multi-reservoir systems
+        
+        ### **Technical Skills**
+        - **Programming:** Python (data analysis, automation)
+        - **Languages:** Chinese (native), English (fluent), French (conversational)
+    design:
+      columns: '1'
+
+  # ===== 发表论文 =====
+  - block: markdown
+    id: publications
+    content:
+      title: '📄 Publications'
+      subtitle: 'Published under: **Yuting L. Sun** (research papers) | **Yu-Ting Sun** (current name)'
+      text: |
+        ### **Manuscripts in Preparation**
+        
+        **Y. L. Sun**, X.Y. Li*, C.H. Tsai, H.Y. Yeh, C.R. Neoh, N.L. Chan, P. Chi, H.W. Li  
+        *"Mechanism of RNA Involved Homologous Recombination Mediated by E. coli RecA"*  
+        Ready to submit (2025) | *Equal Contribution
+        
+        ---
+        
+        ### **Published Papers**
+        
+        J.C. Peng, H.Y. Chang, **Y.L. Sun**, M. Prentiss, H.W. Li, P. Chi  
+        *"Hop2-Mnd1 functions as a DNA sequence fidelity switch in Dmc1-mediated DNA recombination"*  
+        **Nature Communications** 15(1):9266 (2024)  
+        DOI: [10.1038/s41467-024-53641-3](https://doi.org/10.1038/s41467-024-53641-3)
+        
+        **Y. L. Sun**, C.M. Marques, A.P. Schröder  
+        *"Adhesion of giant unilamellar vesicles on double-end grafted DNA carpets"*  
+        **European Physical Journal Special Topics** 223:1755-1769 (2014)  
+        DOI: [10.1140/epjst/e2014-02224-9](https://doi.org/10.1140/epjst/e2014-02224-9)
+        
+        **Y. L. Sun**, N. K. Mani, D. Baigl, T. Gisler, A.P. Schröder, C.M. Marques  
+        *"Photocontrol of End-Grafted λ-phage DNA"*  
+        **Soft Matter** 7:5578-5584 (2011) | **Inside Front Cover**  
+        DOI: [10.1039/C1SM05291E](https://doi.org/10.1039/C1SM05291E)
+        
+        G. Nam, M.L. Hisette, **Y.L. Sun**, T. Gisler, A. Johner, F. Thalmann, A.P. Schröder, C.M. Marques, N-K Lee  
+        *"Scraping and stapling of end-grafted DNA chains by a bio-adhesive spreading vesicle reveal chain internal friction and topological complexity"*  
+        **Physical Review Letters** 105:088101 (2010) | **Cover Story**  
+        DOI: [10.1103/PhysRevLett.105.088101](https://doi.org/10.1103/PhysRevLett.105.088101)
+    design:
+      columns: '1'
+
+  # ===== 学术报告 =====
+  - block: markdown
+    id: presentations
+    content:
+      title: '🎤 Presentations'
+      text: |
+        ### **Conference Presentations**
+        
+        **2023-2025** | 27th-29th Biophysics Conference Taiwan | Poster (29th)
+        
+        **Feb 2010** | Department of Chemical Engineering and Materials Science, UC Davis | Seminar
+        
+        **Feb 2010** | Biophysical Society 54th Meeting, San Francisco, USA | Poster
+        
+        **Nov 2009** | Jülich Soft Matter Days 2009, Bonn, Germany | **Invited Talk**
+        
+        **Sep 2009** | Soft Condensed Matter Physics of Model Systems, Grenoble, France | Contributed Talk
+        
+        **Jun 2009** | Journées Scientifiques ICS-LIPHT, Albé, France | Contributed Talk
+        
+        **Feb 2009** | Frontiers of Soft Condensed Matter 2009, Les Houches, France | Poster
+    design:
+      columns: '1'
+
+  # ===== 奖项与荣誉 =====
+  - block: markdown
+    id: awards
+    content:
+      title: '🏆 Awards & Honors'
+      text: |
+        ### **Research Recognition**
+        
+        **2010** | **Physical Review Letters Cover Story**  
+        American Physical Society  
+        Featured research on DNA-vesicle interactions
+        
+        **2011** | **Soft Matter Inside Front Cover**  
+        Royal Society of Chemistry  
+        Photocontrol of end-grafted DNA
+        
+        ### **Academic Scholarships**
+        
+        **2008-2010** | IRTG Soft Matter Science Scholarship  
+        International Research Training Group
+        
+        ### **University Awards**
+        
+        **2003** | Contemporary Undergraduate Mathematical Contest in Modeling  
+        Successful Participant
+        
+        **2002-2004** | Outstanding Students' Leader Award (Twice)  
+        China University of Petroleum (Beijing)
+        
+        **2002-2004** | Outstanding Students' Scholarship (Twice)  
+        China University of Petroleum (Beijing)
+    design:
+      columns: '1'
+
+  # ===== 下载CV =====
+  - block: markdown
+    id: download
+    content:
+      title: '📥 Download CV'
+      text: |
+        ### **Full Curriculum Vitae (PDF)**
+        
+        [Download my complete CV (PDF)](../Sun_PhD_C_V_2025_en.pdf)
+        
+        ### **Research Documents**
+        
+        - [Research Accomplishments (PDF)](../Research_Accomplishment_SunYuting_Westlake_2025.pdf)
+        - [Research Proposal (PDF)](../Research_Proposal_SunYuting_Westlake_2025.pdf)
+        
+        ---
+        
+        **Contact Information**  
+        📧 Email: sun_yuting@icloud.com  
+        📱 Phone: +886-906-670-445  
+        📍 Location: Taipei, Taiwan
+    design:
+      columns: '1'
+      css_class: highlight-section
+---

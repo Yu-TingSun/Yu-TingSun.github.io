@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://Yu-TingSun.github.io/sitemap.xml

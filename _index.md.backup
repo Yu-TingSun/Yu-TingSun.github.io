@@ -1,0 +1,273 @@
+---
+# Leave the homepage title empty to use the site title
+title: ''
+date: 2025-10-24
+type: landing
+
+design:
+  # Default section spacing
+  spacing: "6rem"
+
+sections:
+  # ===== Hero Section with Biography =====
+  - block: resume-biography
+    id: about
+    content:
+      # Choose a user profile to display (a folder name within `content/authors/`)
+      username: admin
+      text: ''
+    design:
+      css_class: dark
+      background:
+        color: black
+        image:
+          filename: dna-background.jpg
+          filters:
+            brightness: 0.4
+          size: cover
+          position: center
+          parallax: false
+  
+  # ===== Research Experience Section =====
+  - block: experience
+    id: research-experience
+    content:
+      title: Research Experience
+      subtitle: ''
+      # Date format: Jan 2006
+      date_format: Jan 2006
+      # Experiences grouped by type
+      items:
+        - title: Postdoctoral Researcher
+          company: National Taiwan University
+          company_url: ''
+          company_logo: ''
+          location: Taipei, Taiwan
+          date_start: '2021-12-01'
+          date_end: '2025-07-31'
+          description: |
+            **Research Focus:** DNA-Protein Interactions
+            
+            **Key Projects:**
+            * RNA-involved Homologous Recombination mediated by E.coli RecA
+            * Fidelity study of Recombinase Dmc1 and its Accessory Protein Hop2-Mnd1
+            
+            **Techniques & Responsibilities:**
+            * Single-molecule FRET and CoSMoS
+            * Interdisciplinary collaboration (biochemistry & biophysics)
+            * Laboratory maintenance and instrument operation
+            * Supervision of 2 undergraduate students' projects
+            
+            **Publications:**
+            * First co-author manuscript in preparation (2025)
+            * Contributing author in *Nature Communications* 15(1):9266 (2024)
+            
+        - title: Postdoctoral Research Associate
+          company: Singapore-MIT Alliance for Research and Technology (SMART)
+          company_url: ''
+          company_logo: ''
+          location: Singapore
+          date_start: '2011-05-01'
+          date_end: '2012-12-31'
+          description: |
+            **Research Focus:** Dynamic study of biopolymer in microfluidic devices
+            
+            **Responsibilities:**
+            * Scientific project management and execution
+            * Participation in discussions among BioSyM research groups
+            * Organization of internal lab meetings and collaborator meetings
+            
+            **Collaboration:** MIT (Prof. Patrick Doyle) & NUS (Prof. Jie Yan)
+            
+        - title: PhD Researcher
+          company: Institute Charles Sadron
+          company_url: ''
+          company_logo: ''
+          location: Strasbourg, France
+          date_start: '2008-01-01'
+          date_end: '2010-12-31'
+          description: |
+            **Dissertation:** Kinetic study of cell adhesion in biomimetic systems
+            
+            **Achievements:**
+            * Independent research project execution
+            * Laboratory safety and regulation compliance
+            * Active participation in IRTG workshops and conferences
+            
+            **Publications:**
+            * *Physical Review Letters* 105:088101 (2010) - **Cover Story**
+            * *Soft Matter* 7:5578-5584 (2011) - **Inside Front Cover**
+            * *European Physical Journal Special Topics* 223:1755-1769 (2014)
+    design:
+      columns: '2'
+      
+  # ===== Research Interests =====
+  - block: markdown
+    id: research-interests
+    content:
+      title: '🔬 Research Interests'
+      subtitle: 'Core Focus & Primary Tools'
+      text: |
+        ## Core Focus: DNA-Protein Interactions
+        
+        My research investigates how proteins recognize, bind, and manipulate DNA under physiologically relevant conditions.
+        
+        ### Primary Experimental Approaches
+        
+        #### 🔬 Single-Molecule Techniques
+        - **TIRF Microscopy** - Total Internal Reflection Fluorescence for surface-based observation
+        - **FRET** - Fluorescence Resonance Energy Transfer for distance measurements  
+        - **CoSMoS** - Colocalization Single-Molecule Spectroscopy
+        - **AFM & RICM** - Atomic Force Microscopy & Reflection Interference Contrast Microscopy
+        
+        #### ⚗️ Micro/Nanofluidic Platforms
+        - **Nanofluidic Channels** - DNA confinement studies (50-500 nm)
+        - **Microfluidic Channels** - Protein-DNA interaction analysis (0.5-2 μm)
+        - **Flow Cells** - Controlled biomolecular reactions
+        - **Multi-reservoir Systems** - Molecular crowding simulation
+        
+        #### 🧬 DNA-Protein Systems
+        - **Recombinases** - RecA, RAD51, Dmc1 and accessory proteins
+        - **Transcription Factors** - p53 chromatin interactions
+        - **Chromatin Proteins** - Histone-DNA competition dynamics
+        - **DNA/RNA Substrates** - Strand exchange mechanisms
+    design:
+      columns: '1'
+      
+  # ===== Research Accomplishments =====
+  - block: markdown
+    id: accomplishments
+    content:
+      title: '🎯 Research Accomplishments'
+      subtitle: 'From Physical Constraints to Biological Insights'
+      text: |
+        ## 🧬 DNA Under Spatial Constraints (2008-2014)
+        
+        **Research Focus:** Understanding DNA behavior under physical confinement using soft matter physics principles.
+        
+        **Techniques:** TIRF Microscopy, AFM, RICM, Microfluidics
+        
+        ### Key Achievements:
+        - **Single-end grafted DNA:** Revealed DNA internal friction and topological complexity under mechanical confinement by bio-adhesive vesicles
+        - **Double-end grafted DNA carpets:** Established controlled bio-interface confinement systems for DNA accessibility studies  
+        - **Strong confinement regime:** Investigated DNA in ~10 nm channels where persistence length exceeds confinement dimensions
+        
+        **Featured Publications:**
+        - *Physical Review Letters* 105:088101 (2010) - **Cover Story**
+        - *Soft Matter* 7:5578-5584 (2011) - **Inside Front Cover**
+        
+        ---
+        
+        ## 🔬 RecA-Mediated DNA Recombination (2021-2025)
+        
+        **Research Focus:** Investigating RecA-mediated homologous recombination with emphasis on RNA involvement and strand exchange mechanisms.
+        
+        **Techniques:** FRET, CoSMoS, EMSA, Microchannels
+        
+        ### Key Achievements:
+        - **RNA discrimination mechanism:** Discovered RecA distinguishes DNA vs RNA at multiple stages through distinct mechanisms
+        - **Affinity differences:** Quantified RecA's binding affinity to ssRNA (Kd=1.119±0.194 μM) vs ssDNA (Kd=0.162±0.03 μM)
+        - **Two-step kinetics:** Revealed presynaptic and postsynaptic states with different dwell times
+        - **Product efficiency:** RNA-containing products show significantly reduced strand exchange efficiency
+        
+        **Key Publications:**
+        - Manuscript in preparation (2025) - **First co-author**
+        - *Nature Communications* 15(1):9266 (2024)
+        
+        ---
+        
+        ## ⚡ Integrated Expertise (2008-Present)
+        
+        **Cross-disciplinary Integration:** Bridging physical confinement studies with biological mechanism analysis.
+        
+        ### Unique Capabilities:
+        - **Physical understanding:** Confinement regime theory (Odijk to de Gennes transitions)
+        - **Biological insights:** Protein-DNA interaction mechanisms
+        - **Technical expertise:** Single-molecule microscopy + microfluidic control
+        - **Quantitative framework:** From molecular parameters to biological function
+        
+        ### Research Evolution:
+        **DNA Confinement Physics** (2008-2014)  
+        → Understanding spatial constraints  
+        **+ Microfluidic Technology** (2011-2012)  
+        → Tool development  
+        **+ DNA-Protein Interactions** (2021-2025)  
+        → Biological mechanisms  
+        **= Integrated Platform for Complex Systems**  
+        → Ready for p53-histone competition studies
+    design:
+      columns: '1'
+      
+  # ===== Teaching Experience =====
+  - block: experience
+    id: teaching-experience
+    content:
+      title: Teaching Experience
+      subtitle: ''
+      date_format: Jan 2006
+      items:
+        - title: Chemistry & Mathematics Teacher
+          company: Beijing Huijia Private School
+          company_url: ''
+          company_logo: ''
+          location: Beijing, China
+          date_start: '2013-12-01'
+          date_end: '2015-08-31'
+          description: |
+            **IB Diploma Programme** (Grade 10-11)
+            
+            **Teaching Responsibilities:**
+            * Chemistry instruction following IB curriculum
+            * Mathematics instruction (Grade 10-11 level)
+            * Curriculum development and lesson planning
+            * Assessment design and grading
+            
+            **Student Mentorship:**
+            * Supervised student scientific research projects
+            * Provided academic guidance and career counseling
+            * Developed educational materials and resources
+            
+            **Skills Developed:**
+            * Science communication and pedagogy
+            * Curriculum design for international education
+            * Student project supervision and mentoring
+    design:
+      columns: '2'
+      
+    
+  # ===== Contact Section =====
+  - block: contact
+    id: contact
+    content:
+      title: Contact
+      subtitle: ''
+      text: ''
+      email: sun_yuting@icloud.com
+      phone: +886 906 670 445
+      address:
+        city: Taipei
+        region: Taiwan
+        country: Taiwan
+        country_code: TW
+      contact_links:
+        - icon: envelope
+          icon_pack: fas
+          name: Email Me
+          link: 'mailto:sun_yuting@icloud.com'
+        - icon: github
+          icon_pack: fab
+          name: GitHub
+          link: 'https://github.com/Yu-TingSun'
+      # Automatically link email and phone
+      autolink: true
+      # Email form provider
+      form:
+        provider: netlify
+        formspree:
+          id: ''
+        netlify:
+          # Enable CAPTCHA challenge to reduce spam
+          captcha: true
+    design:
+      columns: '2'
+---

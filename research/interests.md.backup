@@ -1,0 +1,268 @@
+---
+title: "🔬 Research Interests"
+subtitle: "Core Experimental Approaches and Biological Systems"
+summary: "Primary techniques and target systems in my research"
+date: 2024-10-26
+---
+
+## Core Focus: DNA-Protein Interactions Under Physiological Conditions
+
+My research investigates how proteins recognize, bind, and manipulate DNA in environments that mimic cellular conditions—including molecular crowding and spatial confinement.
+
+---
+
+## Primary Experimental Approaches
+
+### 🔬 Single-Molecule Techniques
+
+#### TIRF Microscopy (Total Internal Reflection Fluorescence)
+- **Surface-based single-molecule observation**
+- Real-time monitoring of biomolecular interactions
+- Sub-second temporal resolution
+- Nanometer spatial precision
+
+**Applications in my research:**
+- DNA-protein binding kinetics
+- Protein search mechanisms on DNA
+- Conformational dynamics
+
+#### FRET (Fluorescence Resonance Energy Transfer)
+- **Distance measurements at molecular scale**
+- 2-10 nm distance range sensitivity
+- Dynamic structural changes detection
+
+**Applications in my research:**
+- DNA conformational changes
+- Protein-induced DNA bending
+- Strand exchange monitoring
+
+#### CoSMoS (Colocalization Single-Molecule Spectroscopy)
+- **Multi-color single-molecule tracking**
+- Simultaneous observation of multiple components
+- Quantitative binding kinetics
+
+**Applications in my research:**
+- Protein-DNA colocalization
+- Multi-protein complex assembly
+- Substrate discrimination studies
+
+#### AFM & RICM
+- **AFM (Atomic Force Microscopy):** Nanoscale topography
+- **RICM (Reflection Interference Contrast Microscopy):** Membrane-surface interactions
+
+**Applications in my research:**
+- DNA carpet characterization
+- Surface-bound biomolecule imaging
+- Confinement geometry validation
+
+---
+
+### ⚗️ Micro/Nanofluidic Platforms
+
+#### Nanofluidic Channels (50-500 nm)
+**DNA Confinement Studies**
+
+**Physics of Confinement:**
+- **Strong confinement:** Channel size < persistence length (~50 nm)
+- **Moderate confinement:** Channel size ≈ persistence length
+- **Weak confinement:** Channel size > persistence length
+
+**Research applications:**
+- DNA extension and compaction
+- Topological constraints
+- Chromatin-mimicking environments
+
+#### Microfluidic Channels (0.5-2 μm)
+**Protein-DNA Interaction Analysis**
+
+**Advantages:**
+- Precise control of reaction conditions
+- Rapid buffer exchange (< 1 sec)
+- Minimal sample consumption (nL volumes)
+- Elimination of surface artifacts
+
+**Research applications:**
+- Competition assays (p53 vs histones)
+- Protein exchange kinetics
+- Multi-component reactions
+
+#### Flow Cells
+**Controlled Biomolecular Reactions**
+
+**Design features:**
+- Multi-inlet configuration
+- Laminar flow control
+- Temperature regulation
+- Compatible with microscopy
+
+**Research applications:**
+- RecA filament assembly
+- Strand exchange reactions
+- Protein titration experiments
+
+#### Multi-Reservoir Systems
+**Molecular Crowding Simulation**
+
+**Physiological relevance:**
+- Cellular crowding: 300-400 mg/mL macromolecules
+- Excluded volume effects
+- Altered reaction kinetics and equilibria
+
+**Crowding agents used:**
+- PEG (polyethylene glycol)
+- Ficoll
+- Dextran
+- BSA (bovine serum albumin)
+
+**Research applications:**
+- Crowding effects on binding affinities
+- Protein-DNA competition under crowding
+- Chromatin dynamics in physiological environments
+
+---
+
+## 🧬 DNA-Protein Systems of Interest
+
+### Recombinases
+**RecA, RAD51, Dmc1, and Accessory Proteins**
+
+#### RecA (Bacterial Recombinase)
+- **Function:** Homologous recombination and DNA repair
+- **My focus:** RNA vs DNA substrate discrimination
+- **Key findings:** 7-fold binding affinity difference
+
+#### RAD51 (Eukaryotic Homolog)
+- **Function:** Meiotic and mitotic recombination
+- **Research interest:** Mechanistic similarities/differences with RecA
+- **Potential applications:** Cancer therapy targeting
+
+#### Accessory Proteins
+- **RecFOR:** Mediator proteins
+- **RecBCD:** DNA processing
+- **SSB:** Single-strand binding protein
+
+**Research questions:**
+- How do accessory proteins modulate RecA activity?
+- What determines substrate specificity?
+- How does the cellular environment affect function?
+
+---
+
+### Transcription Factors
+**p53-Chromatin Interactions**
+
+#### p53 (Tumor Suppressor)
+- **Function:** DNA damage response and apoptosis regulation
+- **Challenge:** Accessing chromatin-embedded target sequences
+- **My approach:** Competition dynamics with histones
+
+#### Why p53-Histone Competition?
+1. **Clinical relevance:** p53 mutations in ~50% of cancers
+2. **Mechanistic gap:** How does p53 compete with histones?
+3. **Therapeutic potential:** Enhancing p53 access for cancer treatment
+
+**Research questions:**
+- How does crowding affect p53-DNA binding?
+- Can p53 displace histones from nucleosomes?
+- What physical parameters govern accessibility?
+
+---
+
+### Chromatin Proteins
+**Histone-DNA Competition Dynamics**
+
+#### Core Histones (H2A, H2B, H3, H4)
+- **Function:** DNA packaging into nucleosomes
+- **Structure:** Octamer with 147 bp DNA wrapped
+- **Dynamics:** Breathing, sliding, eviction
+
+#### Research Focus: Competition Mechanisms
+**Central questions:**
+- How do transcription factors access nucleosomal DNA?
+- What role does molecular crowding play?
+- How does spatial confinement affect competition?
+
+**Experimental approach:**
+- Single-molecule observation of competition
+- Quantitative analysis of binding kinetics
+- Physiologically relevant conditions
+
+---
+
+### DNA/RNA Substrates
+**Strand Exchange Mechanisms**
+
+#### Substrate Varieties
+- **ssDNA** (single-stranded DNA)
+- **dsDNA** (double-stranded DNA)
+- **ssRNA** (single-stranded RNA)
+- **dsRNA** (double-stranded RNA)
+- **Hybrid substrates** (DNA-RNA hybrids)
+
+#### RecA Substrate Specificity
+**My key findings:**
+- RecA preferentially binds ssDNA over ssRNA
+- Discrimination occurs at multiple reaction stages
+- RNA-containing products have reduced efficiency
+
+**Mechanistic insights:**
+- Structural recognition features
+- Binding thermodynamics
+- Kinetic barriers
+
+#### Future Directions: p53 Substrate Recognition
+- How does p53 recognize specific DNA sequences?
+- Does chromatin modify p53 sequence specificity?
+- Can substrate engineering enhance p53 binding?
+
+---
+
+## 🔧 Technical Expertise Summary
+
+### Microscopy
+- ✅ TIRF microscopy setup and operation
+- ✅ Single-molecule fluorescence imaging
+- ✅ AFM for biomolecule characterization
+- ✅ RICM for interface analysis
+
+### Microfluidics
+- ✅ Channel design and fabrication
+- ✅ Flow control and automation
+- ✅ Multi-reservoir system integration
+- ✅ Microscopy-compatible device development
+
+### Biochemistry
+- ✅ Protein expression and purification
+- ✅ DNA preparation and modification
+- ✅ Fluorescent labeling strategies
+- ✅ In vitro reconstitution assays
+
+### Data Analysis
+- ✅ Single-molecule tracking algorithms
+- ✅ Kinetic modeling and fitting
+- ✅ Statistical analysis of heterogeneous populations
+- ✅ Quantitative image analysis
+
+---
+
+## 🌟 Unique Integration
+
+**What sets my research apart:**
+
+1. **Physics + Biology**
+   - Physical principles of confinement
+   - Biological function in physiological contexts
+
+2. **Technology + Discovery**
+   - Platform development for new capabilities
+   - Mechanistic insights from technical innovation
+
+3. **Fundamental + Applied**
+   - Basic molecular mechanisms
+   - Translational potential for therapeutics
+
+This integration creates unique opportunities to address questions that are inaccessible with conventional approaches, bridging the gap between simplified in vitro systems and complex cellular environments.
+
+---
+
+*For more details about specific techniques or potential collaborations, please [contact me](/contact).*

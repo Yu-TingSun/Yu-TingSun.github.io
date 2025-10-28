@@ -1,0 +1,226 @@
+---
+title: "⚡ Current Projects"
+subtitle: "Active Research Programs"
+summary: "Ongoing investigations in DNA-protein interactions"
+date: 2024-10-26
+---
+
+## Project 1: RecA-RNA Interactions in Homologous Recombination
+**Status:** Manuscript in Preparation (2025)
+
+### Research Question
+How does RecA distinguish between DNA and RNA substrates during homologous recombination?
+
+### Objectives
+1. Quantify RecA binding affinities to different nucleic acid substrates
+2. Elucidate the molecular mechanisms of substrate discrimination
+3. Understand the functional implications for cellular recombination processes
+
+### Key Findings (To Date)
+
+#### Binding Affinity Differences
+- **ssDNA:** Kd = 0.162 ± 0.03 μM (strong binding)
+- **ssRNA:** Kd = 1.119 ± 0.194 μM (weaker binding)
+- **~7-fold difference** in binding affinity
+
+#### Mechanistic Insights
+- RecA discriminates RNA at **multiple stages** of the reaction
+- Different mechanisms operate at different steps
+- RNA-containing products show reduced strand exchange efficiency
+
+#### Kinetic Analysis
+- Identified two-step kinetic model
+- Characterized presynaptic and postsynaptic states
+- Measured distinct dwell times for each state
+
+### Techniques Employed
+- **FRET (Fluorescence Resonance Energy Transfer)**
+  - Real-time monitoring of substrate binding
+  - Distance measurements during strand exchange
+  
+- **CoSMoS (Colocalization Single-Molecule Spectroscopy)**
+  - Individual molecule tracking
+  - Quantitative binding kinetics
+  
+- **EMSA (Electrophoretic Mobility Shift Assay)**
+  - Validation of binding interactions
+  - Product analysis
+
+- **Microfluidic Channels**
+  - Controlled reaction conditions
+  - Elimination of surface effects
+
+### Significance
+- **Fundamental Biology:** Understanding substrate specificity in recombination
+- **Evolution:** Insights into RNA world to DNA world transition
+- **Applications:** Potential therapeutic targeting of recombination pathways
+
+### Publications
+- First co-author manuscript in preparation (2025)
+- Contributing author: *Nature Communications* 15(1):9266 (2024)
+
+---
+
+## Project 2: p53-Histone Competition Under Physiological Conditions
+**Status:** Proposed Research Direction
+
+### Research Question
+How does p53 access chromatin-embedded DNA targets under physiological crowding and confinement?
+
+### Background & Motivation
+
+#### The Challenge
+- **p53** needs to bind specific DNA sequences to activate tumor suppressor genes
+- **Histones** package DNA into chromatin, restricting accessibility
+- **Cellular environment** features molecular crowding (300-400 mg/mL) and spatial constraints
+
+#### Current Knowledge Gaps
+- Most studies use **simplified in vitro conditions** (dilute solutions, naked DNA)
+- **Competition dynamics** between p53 and histones poorly understood
+- **Physiological factors** (crowding, confinement) effects unknown
+
+### Proposed Approach
+
+#### Experimental Platform
+**Integrated Micro/Nanofluidic System**
+- **Nanofluidic channels** (50 nm - 2 μm) for spatial confinement
+- **Multi-reservoir design** for controlled crowding agent delivery
+- **TIRF microscopy** for single-molecule observation
+
+#### Research Stages
+
+**Stage 1: Individual Characterization**
+- p53 binding to naked DNA under crowding
+- Histone-DNA interactions in confinement
+- Establish baseline parameters
+
+**Stage 2: Competition Dynamics**
+- Direct observation of p53-histone competition
+- Quantify binding affinities under physiological conditions
+- Map accessibility landscapes
+
+**Stage 3: Therapeutic Applications**
+- Screen compounds that enhance p53 access
+- Develop quantitative assays for drug discovery
+- Validate findings with cell-based assays
+
+### Why This Approach is Unique
+
+#### Integration of Multiple Factors
+Most studies examine **one variable at a time**:
+- Crowding studies typically use bulk measurements
+- Confinement studies rarely include protein competition
+- Competition assays usually employ simplified conditions
+
+**This project combines:**
+- ✅ Single-molecule resolution
+- ✅ Physiological crowding
+- ✅ Spatial confinement
+- ✅ Multi-protein competition
+
+#### Technical Advantages
+- **Established platforms** from DNA confinement work (2008-2014)
+- **Proven methods** from RecA studies (2011-2025)
+- **Immediate implementation** - no new technique development required
+
+### Expected Outcomes
+
+#### Fundamental Science
+- Quantitative model of competitive binding under physiological conditions
+- Understanding of how physical environment affects transcription factor access
+- Insights into chromatin regulation mechanisms
+
+#### Methodological Innovation
+- New paradigm for studying multi-protein systems
+- Validated platform for complex biomolecular interactions
+- Scalable approach for different protein-DNA systems
+
+#### Translational Impact
+- Drug screening platform for p53-targeted cancer therapy
+- Rational design of chromatin-modulating compounds
+- Potential for personalized medicine applications
+
+### Timeline
+- **Year 1:** Platform optimization and individual protein studies
+- **Year 2:** Competition dynamics and mechanism analysis
+- **Year 3:** Therapeutic compound screening and validation
+
+### Funding Opportunities
+- Cancer research foundations
+- Single-molecule biophysics programs
+- Drug discovery initiatives
+- Cross-disciplinary science grants
+
+---
+
+## Project 3: Technology Development
+**Status:** Ongoing Platform Enhancement
+
+### Microfluidic Platform Optimization
+
+#### Current Capabilities
+- Multi-channel flow control
+- Rapid buffer exchange (< 1 second)
+- Integrated temperature control
+- Compatible with TIRF microscopy
+
+#### Development Goals
+- **Automated flow control** for high-throughput experiments
+- **Multiplexed observation** for parallel data collection
+- **In situ reaction monitoring** with real-time feedback
+
+### Single-Molecule Analysis Tools
+
+#### Software Development
+- Custom image analysis algorithms
+- Automated particle tracking
+- Statistical modeling frameworks
+- Data visualization tools
+
+#### Applications
+- Faster data processing
+- Improved accuracy
+- Standardized analysis pipelines
+- Reproducible results
+
+---
+
+## Collaborative Opportunities
+
+I am actively seeking collaborations in:
+
+### Complementary Expertise
+- **Structural biology** - Protein structure determination
+- **Computational modeling** - Molecular dynamics simulations
+- **Cell biology** - In vivo validation of findings
+- **Chemical biology** - Compound library screening
+
+### Shared Resources
+- **Core facilities** - Microscopy and microfluidics
+- **Reagent development** - Protein expression and purification
+- **Student training** - Cross-disciplinary education
+
+### Joint Funding
+- Multi-PI grants for comprehensive projects
+- Cross-institutional collaborations
+- Industry partnerships for translation
+
+---
+
+## Research Support
+
+### Current Equipment Access
+- TIRF microscopy systems
+- Microfluidic fabrication facilities
+- Molecular biology core facilities
+- High-performance computing resources
+
+### Seeking Support For
+- Advanced imaging systems (e.g., multi-color TIRF)
+- Microfluidic automation equipment
+- Personnel (postdocs, graduate students, technicians)
+- Operating funds for reagents and supplies
+
+---
+
+*For more information about these projects or to discuss potential collaborations, please [contact me](/contact).*

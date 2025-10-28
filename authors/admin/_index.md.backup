@@ -1,0 +1,186 @@
+---
+# Display name
+title: Yu-Ting Sun 
+
+# Name pronunciation (optional)
+# name_pronunciation: Yu-Ting Sun
+
+# Full name (for SEO)
+first_name: Yu-Ting
+last_name: Sun
+
+# Alternative name for publications
+aliases:
+  - Yuting L. Sun
+
+# Status emoji
+status:
+  icon: 🔬
+
+# Is this the primary user of the site?
+superuser: true
+
+# Highlight the author in author lists? (true/false)
+highlight_name: true
+
+# Role/position/tagline
+role: Physical Chemistry & Biophysics Researcher
+
+# Organizations/Affiliations to display in Biography blox
+organizations:
+  - name: Currently based in Taipei, Taiwan
+    url: 'https://github.com/Yu-TingSun'
+
+# Short bio (displayed in user profile at end of posts)
+bio: Specialized in DNA-Protein Interactions using Single-Molecule Techniques and Micro/Nanofluidic Platforms
+
+# Interests
+interests:
+  - DNA-Protein Interactions
+  - Single-Molecule Techniques (TIRF, FRET, CoSMoS)
+  - Micro/Nanofluidic Platforms
+  - Recombinase Mechanisms (RecA, RAD51, Dmc1)
+  - Chromatin Dynamics
+
+# Education
+education:
+  - area: PhD.Sc in Biophysics
+    institution: University of Strasbourg, France
+    date_start: 2008-01-01
+    date_end: 2012-12-31
+    summary: |
+      Thesis: DNA behavior under spatial confinement using soft matter physics
+      - Studied DNA confinement in nanofluidic channels
+      - Single-molecule TIRF microscopy
+      - Microfluidic platform development
+      
+  - area: M.Sc in Physical Chemistry
+    institution: University of Siegen, Germany
+    date_start: 2005-10-01
+    date_end: 2007-12-31
+    
+  - area: B.Eng in Chemical Engineering
+    institution: China University of Petroleum (Beijing), P.R.China 
+    date_start: 2001-09-01
+    date_end: 2005-06-30
+
+# Work Experience
+work:
+  - position: Postdoctoral Researcher
+    company_name: National Taiwan University
+    company_url: ''
+    date_start: 2021-12-01
+    date_end: 2025-07-31
+    summary: |
+      DNA-Protein Interactions Research
+      - RecA-mediated homologous recombination
+      - RNA discrimination mechanisms
+      - Single-molecule FRET and CoSMoS
+      - Manuscript preparation (first co-author)
+      
+  - position: Chemistry & Mathematics Teacher
+    company_name: Private High School, Beijing, China
+    date_start: 2013-12-01
+    date_end: 2015-08-31
+    summary: |
+      IB Diploma Program
+      - Taught Chemistry & Mathematics (Grade 10-11)
+      - Supervised student research projects
+      - Curriculum development
+
+# Skills
+skills:
+  - name: Single-Molecule Techniques
+    items:
+      - name: TIRF Microscopy
+        description: 'Total Internal Reflection Fluorescence'
+        percent: 95
+        icon: microscope
+      - name: FRET
+        description: 'Fluorescence Resonance Energy Transfer'
+        percent: 90
+        icon: chart-line
+      - name: CoSMoS
+        description: 'Colocalization Single-Molecule Spectroscopy'
+        percent: 85
+        icon: atom
+        
+  - name: Micro/Nanofluidics
+    items:
+      - name: Nanofluidic Channels
+        description: '50-500 nm confinement'
+        percent: 90
+      - name: Microfluidic Design
+        description: 'Multi-reservoir systems'
+        percent: 85
+      - name: Flow Cell Fabrication
+        percent: 80
+
+  - name: Biochemistry
+    items:
+      - name: Protein Purification
+        percent: 85
+      - name: DNA/RNA Preparation
+        percent: 90
+      - name: EMSA
+        percent: 80
+
+languages:
+  - name: Chinese (Mandarin)
+    percent: 100
+  - name: English
+    percent: 90
+  - name: French
+    percent: 60
+
+# Awards
+awards:
+  - title: Physical Review Letters Cover Story
+    date: '2010-08-01'
+    awarder: American Physical Society
+    summary: |
+      Featured research on DNA-vesicle interactions
+      
+  - title: Soft Matter Inside Front Cover
+    date: '2011-01-01'
+    awarder: Royal Society of Chemistry
+    summary: |
+      Photocontrol of end-grafted DNA
+
+# Social/Academic Networking
+profiles:
+  - icon: at-symbol
+    url: 'mailto:sun_yuting@icloud.com'
+    label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/Yu-TingSun
+  # Add more if you have them
+  # - icon: brands/linkedin
+  #   url: https://www.linkedin.com/
+  # - icon: academicons/google-scholar
+  #   url: https://scholar.google.com/
+  # - icon: academicons/orcid
+  #   url: https://orcid.org/
+---
+
+## About Me
+
+I am a biophysics researcher specializing in **DNA-protein interactions** using **single-molecule techniques** and **micro/nanofluidic platforms**. My research bridges physical chemistry and molecular biology, from understanding DNA behavior under spatial constraints to elucidating recombinase mechanisms.
+
+### Research Focus
+
+My work centers on understanding how proteins interact with DNA under physiologically relevant conditions, combining:
+- Single-molecule microscopy (TIRF, FRET, CoSMoS)
+- Microfluidic confinement systems
+- Quantitative biophysical analysis
+
+### Current Research
+
+I am currently investigating RecA-mediated homologous recombination, with particular focus on:
+- RNA discrimination mechanisms in recombination
+- Strand exchange kinetics and fidelity
+- Accessory protein regulation (Hop2-Mnd1, SSB)
+
+### Future Directions
+
+I am developing integrated platforms to study **p53-histone competition dynamics** under molecular crowding and spatial confinement, with applications in cancer therapeutics.
