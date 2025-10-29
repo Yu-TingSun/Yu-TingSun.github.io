@@ -36,8 +36,8 @@ jobs:
           node-version: '20'
           
       - name: Install dependencies
-        run: npm ci 
-        # --legacy-peer-deps || npm install --legacy-peer-deps
+        run: npm ci --include=optional
+          
         
       - name: Build
         run: hugo --minify
