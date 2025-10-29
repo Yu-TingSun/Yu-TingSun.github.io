@@ -1,0 +1,7 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $height := .Get "height" | default "28px" -}}
+<div style="white-space: nowrap; margin-bottom: 6px; line-height: 1.4;">
+  <img src="{{ $src }}" alt="{{ $alt }}" style="height: {{ $height }}; vertical-align: middle; margin-right: 8px; display: inline-block;">
+  <span style="vertical-align: middle;">{{- if .Inner -}}{{ .Inner | safeHTML }}{{- end -}}</span>
+</div>

@@ -1,20 +1,17 @@
 ---
 # Display name
-title: Alex Johnson
+title: Yu-Ting Sun (孫玉婷)
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
-
-# Pronouns (optional)
-pronouns: he/him
+first_name: Yu-Ting
+last_name: Sun
 
 # Status emoji
 status:
-  icon: 🚀
+  icon: 🔬
 
 # Is this the primary user of the site?
 superuser: true
@@ -23,150 +20,175 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: Physical Chemistry & Biophysics Researcher
 
-# Organizations/Affiliations to display in Biography blox
-organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
+    url: 'mailto:sun_yuting@icloud.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
   - icon: brands/github
-    url: https://github.com/alexjohnsonai
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://github.com/yu-tingsun
+  # - icon: brands/linkedin
+  #   url: https://www.linkedin.com/in/yourprofile
+  # - icon: academicons/google-scholar
+  #   url: https://scholar.google.com/citations?user=AdZgJ40AAAAJ&hl=en
+  # - icon: academicons/orcid
+  #   url: https://orcid.org/
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - DNA-Protein Interactions
+  - Single-Molecule
+  - Microfluidics
+  - Chromatin Accessibility
+  - Spatial Confinement & Molecular Crowding
 
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
-    icon: ""
-    date_start: 2015-09-01
-    date_end: 2019-06-30
+  - area: Ph.D. in Physics
+    institution: University of Strasbourg, France
+    date_start: 2008-01-01
+    date_end: 2010-12-31
     summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
-    icon: ""
-    date_start: 2013-09-01
-    date_end: 2015-05-31
+      Thesis: Kinetic study of cell adhesion in biomimetic systems
+      
+      Supervisor: Prof. Carlos Marques, Dr. André Schröder
+  - area: M.Sc. in Chemistry
+    institution: University of Siegen, Germany
+    date_start: 2005-10-01
+    date_end: 2007-12-31
     summary: |
-      GPA: 4.0/4.0
+      Master Thesis: Investigating the layering of liquid crystals on surface by AFM
+      
+      Supervisor: Prof. Dr. Hans-Jürgen Butt, Dr. Elmar Bonaccurso
+  - area: B.Eng. in Chemical Engineering
+    institution: China University of Petroleum (Beijing), P.R. China
+    date_start: 2001-09-01
+    date_end: 2005-07-31
+    summary: |
+      GPA: 3.8/4.0
+      
+      Awards: Outstanding Students' Leader Award, Outstanding Students' Scholarship
 
-      Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
-    icon: ""
-    date_start: 2009-09-01
-    date_end: 2013-05-31
+Research:
+  - position: Postdoctoral Research Associate
+    company_name: National Taiwan University
+    company_url: ''
+    company_logo: ''
+    date_start: 2021-12-01
+    date_end: 2025-07-31
     summary: |
-      GPA: 3.9/4.0
-
-      Minored in Mathematics. President of AI Club.
-
-work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
-    icon: ''
-    date_start: 2020-01-01
-    date_end: ''
-    summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
-    icon: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
+      Research Focus:
+      - RNA-involved homologous recombination mediated by E.coli RecA
+      - Fidelity study of recombinase Dmc1 and accessory protein Hop2-Mnd1
+      - Interdisciplinary collaboration between biochemistry & biophysics
+      - Laboratory maintenance and supervision of undergraduate research projects
+      
+      Supervisors: Prof. Hung-Wen Li (NTU), Prof. Peter Chi (IBS, Taipei)
+      
+  - position: Postdoctoral Research Associate
+    company_name: Singapore-MIT Alliance for Research and Technology (SMART)
+    company_url: ''
+    company_logo: ''
+    date_start: 2011-05-01
+    date_end: 2012-12-31
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      Research Focus:
+      - Dynamic study of biopolymer in microfluidic devices
+      - Scientific project management and execution
+      - Participation in BioSyM research group discussions
+      
+      Supervisors: Prof. Patrick Doyle (MIT), Prof. Jie Yan (NUS)
+
+Teaching:
+  - position: Chemistry & Mathematics Teacher
+    company_name: Beijing Huijia Private School
+    company_url: ''
+    company_logo: ''
+    date_start: 2013-12-01
+    date_end: 2015-08-31
+    summary: |
+      Responsibilities:
+      - Taught IB Diploma Program Chemistry & Mathematics (Grade 10-11)
+      - Supervised student scientific research projects
+      - Student mentoring and academic guidance
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - name: Experimental Techniques
     items:
-      - name: Python & PyTorch
+      - name: Single-Molecule Microscopy (TIRF, FRET, CoSMoS)
         description: ''
         percent: 95
-        icon: code-bracket
-      - name: Machine Learning
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: Cloud Computing (AWS/GCP)
+        icon: microscope
+      - name: Microfluidic Devices
+        description: 'Flow cells, nano/micro channels'
+        percent: 90
+        icon: chip
+      - name: AFM & RICM
         description: ''
         percent: 85
-        icon: cloud
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
+        icon: atoms
+  - name: Computational Skills
     items:
-      - name: Hiking in the Rockies
-        description: ''
+      - name: Python
+        description: 'Data analysis and visualization'
         percent: 80
-        icon: person-simple-walk
-      - name: Building Custom PCs
-        description: ''
-        percent: 90
-        icon: cpu-chip
-      - name: Sci-Fi Reading
-        description: ''
-        percent: 70
-        icon: book-open
+        icon: code-bracket
+      - name: Image Analysis
+        description: 'Single-molecule data processing'
+        percent: 85
+        icon: chart-bar
 
 languages:
+  - name: Chinese
+    percent: native
   - name: English
-    percent: 100
-  - name: Spanish
-    percent: 50
+    percent: fluent
+  - name: German
+    percent: simple
+  - name: French
+    percent: simple
 
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+# Awards
 awards:
-  - title: Best Paper Award
-    url: https://neurips.cc/
-    date: '2022-12-01'
-    awarder: NeurIPS
-    icon: hero/trophy
+  - title: IRTG Soft Matter Science Scholarship
+    date: '2008-01-01'
+    awarder: University of Strasbourg
     summary: |
-      Awarded for groundbreaking work on efficient training of large models.
-  - title: AI Innovation Grant
-    url: https://www.nsf.gov/
-    date: '2021-06-15'
-    awarder: National Science Foundation
-    icon: hero/currency-dollar
+      Full Ph.D. scholarship from International Research Training Group in Soft Matter Science (2008-2010)
+  - title: Outstanding Students' Leader Award
+    date: '2003-01-01'
+    awarder: China University of Petroleum
     summary: |
-      $500,000 grant for research in ethical AI development.
-  - title: Outstanding PhD Thesis
-    url: https://www.stanford.edu/
-    date: '2019-06-30'
-    awarder: Stanford University
-    icon: hero/academic-cap
+      Received twice (2002, 2004) for academic excellence and leadership
+  - title: Contemporary Undergraduate Mathematical Contest in Modeling
+    date: '2003-01-01'
+    awarder: COMAP
     summary: |
-      Recognized for contributions to scaling laws in deep learning.
+      Successful Participant
 ---
 
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
+<!-- ## About Me -->
+
+I am a biophysicist specializing in **DNA-protein interactions** using **single-molecule microscopy** and **microfluidic devices**. My research systematically progresses from fundamental polymer physics to complex biological processes, establishing quantitative frameworks that connect physical principles with biological mechanisms across diverse cellular contexts.
+
+<!-- 
+My work encompasses two complementary directions:
+
+**Fundamental Physics**: I investigate DNA behavior under spatial confinement, revealing how physical constraints modulate DNA accessibility and conformational dynamics. My studies on DNA-vesicle adhesion systems have established controlled bio-interface platforms for understanding polymer physics in biologically relevant contexts.
+
+**Biological Applications**: I study crucial recombinase systems (RecA, RAD51, Dmc1) and their roles in DNA repair and homologous recombination. Using advanced single-molecule techniques (FRET, CoSMoS), my research reveals mechanistic insights into how these proteins discriminate between DNA and RNA substrates and maintain genomic stability.
+
+This integrated approach—combining physical principles with biological insights—enables systematic investigation of complex biomolecular processes under physiologically relevant conditions. My expertise spans **microfluidic engineering**, **fluorescence microscopy**, and **quantitative biophysical analysis**, positioning me to address fundamental questions in chromatin biology and gene regulation with therapeutic implications. -->
+
+<!-- ## Research Interests
+
+- **DNA-Protein Competition**: Investigating transcription factor access to chromatin-embedded DNA under molecular crowding
+- **Homologous Recombination**: Mechanistic studies of RecA, RAD51, and Dmc1 recombinases
+- **Single-Molecule Biophysics**: FRET and CoSMoS techniques for real-time dynamics
+- **Nanofluidic Confinement**: DNA behavior under physiologically relevant spatial constraints
+- **Therapeutic Applications**: Drug screening platforms for chromatin remodeling agents -->

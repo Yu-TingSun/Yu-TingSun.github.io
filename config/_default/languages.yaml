@@ -1,22 +1,21 @@
-# Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
+# Language Configuration
+# Support for English and Traditional Chinese
 
-# Default language
+# Default language - English
 en:
   languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  languageName: English
+  weight: 1
+  title: "Dr. Yu-Ting Sun - Biophysicist & Researcher"
+  params:
+    description: "Physical Chemistry & Biophysics Researcher specializing in DNA-Protein Interactions and Single-Molecule Techniques"
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+# # Traditional Chinese
+# zh-Hant:
+#   languageCode: zh-Hant
+#   languageName: 繁體中文
+#   contentDir: content/zh
+#   weight: 2
+#   title: "孫玉婷博士 - 生物物理學"
+#   params:
+#     description: "物理化學與生物物理研究員，專精於DNA-蛋白質交互作用與單分子技術"

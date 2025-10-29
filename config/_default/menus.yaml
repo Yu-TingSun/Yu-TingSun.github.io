@@ -1,27 +1,40 @@
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-  #     desired widget in your `content/home/` folder.
-  #   The weight parameter defines the order that the links will appear in.
+# Navigation Links - 優化後的分層結構
+# Main Menu Configuration
 
 main:
-  - name: Bio
-    url: /
+  # ===== 首頁 =====
+  - name: 'Home'
+    url: '/'
     weight: 10
-  - name: Papers
-    url: /#papers
+
+  # ===== Resume (簡歷) =====
+  - name: 'Resume'
+    url: '/resume/'
     weight: 11
-  - name: Talks
-    url: /#talks
-    weight: 12
-  - name: News
-    url: /#news
-    weight: 13
-  - name: Experience
-    url: experience/
+  
+  
+  # ===== Research (研究) =====
+  - name: 'Research'
+    url: '#'
     weight: 20
-  - name: Projects
-    url: projects/
-    weight: 30
-  - name: Courses
-    url: courses/
+    hasChildren: true
+  
+  - name: 'Research Vision'
+    parent: 'Research'
+    url: '/research/vision/'
+    weight: 21
+  
+  - name: 'Research Trajectory'
+    parent: 'Research'
+    url: '/research/trajectory/'
+    weight: 22
+
+  # ===== Publications (發表作品) =====
+  - name: 'Publications'
+    url: '/publications/'
     weight: 40
+  
+  # ===== Contact (聯絡) =====
+  - name: 'Contact'
+    url: 'mailto:sun_yuting@icloud.com'
+    weight: 50
