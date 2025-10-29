@@ -36,16 +36,21 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential python3
           
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           
-      - name: Install dependencies
+      - name: Install Node dependencies
         run: |
-          npm cache clean --force
           npm install --include=optional
+          npm rebuild @parcel/watcher
         
       - name: Setup Pages
         id: pages
@@ -65,15 +70,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-          
-      - name: Install build tools
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential
 
   deploy:
     environment:
