@@ -60,6 +60,7 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
+          TAILWIND_MODE: build  # 禁用 watch
         run: |
           hugo \
             --gc \
