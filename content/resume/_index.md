@@ -66,7 +66,7 @@ sections:
         <strong> Singapore-MIT Alliance (SMART) </strong>, Singapore (2011-2012)
         {{< /inline-logo >}}
         
-        **PI:Prof. Patrick Doyle (MIT) • Prof. Jie Yan (NUS)  
+        **PI**:Prof. Patrick Doyle (MIT) • Prof. Jie Yan (NUS)  
         **Focus:** Biopolymer dynamics in microchannel\
         **Methods:** Microfluidic devices
         
@@ -137,7 +137,7 @@ sections:
   - block: markdown
     id: awards-download
     content:
-      title: '🏆 Recognition & Download'
+      title: '🏆 Recognition'
       text: |
         **Awards:** PRL Cover Story (2010) • Soft Matter Front Cover (2011) • IRTG Scholarship (2008-2010)
         

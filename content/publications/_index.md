@@ -11,7 +11,7 @@ banner:
 
 ## Peer-Reviewed Publications
 
-### Under Review / In Preparation
+### In Preparation
 
 **Y.L. Sun**, X.Y. Li\*, C.H. Tsai, H.Y. Yeh, C.R. Neoh, N.L. Chan, P. Chi, H.W. Li  
 *Mechanism of RNA Involved Homologous Recombination Mediated by E. coli RecA*  

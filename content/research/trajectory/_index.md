@@ -5,6 +5,42 @@ date: 2025-10-25
 type: page
 ---
 
+
+
+<div class="integration-summary">
+<div class="integration-column">
+<h4>🔬 Physics Foundation</h4>
+<p>Spatial confinement, crowding effect</p>
+<span class="from-phase">From PhD</span>
+</div>
+
+<div class="integration-arrow">+</div>
+
+<div class="integration-column">
+<h4>🛠️ Technical Platform</h4>
+<p>Microfluidics, single-molecule imaging</p>
+<span class="from-phase">From Postdoc 1-2</span>
+</div>
+
+<div class="integration-arrow">+</div>
+
+<div class="integration-column">
+<h4>🧬 Biological Insight</h4>
+<p>DNA-protein interaction, protein-portein interactions</p>
+<span class="from-phase">From Postdoc 2</span>
+</div>
+
+<div class="integration-arrow">=</div>
+
+<div class="integration-column integration-result">
+<h4>🎯 Integrated Platform</h4>
+<p>Physiologically-relevant system for chromatin biology</p>
+<span class="from-phase">Future Applications</span>
+</div>
+</div>
+
+---
+
 <div class="trajectory-container">
 
 <!-- Future Phase -->
@@ -84,7 +120,7 @@ type: page
 <strong>🛠️ Tools:</strong> FRET, CoSMoS
 </div>
 <div class="layer-item">
-<strong>📚 Knowledge:</strong> Homologue Recombination, DNA/RNA
+<strong>📚 Knowledge:</strong> Homologue Recombination, DNA/RNA-recombinase
 </div>
 </div>
 </div>
@@ -180,36 +216,3 @@ type: page
 </div>
 
 ---
-
-
-<div class="integration-summary">
-<div class="integration-column">
-<h4>🔬 Physics Foundation</h4>
-<p>DNA confinement principles, spatial constraint mechanisms</p>
-<span class="from-phase">From PhD</span>
-</div>
-
-<div class="integration-arrow">+</div>
-
-<div class="integration-column">
-<h4>🛠️ Technical Platform</h4>
-<p>Microfluidics, single-molecule imaging</p>
-<span class="from-phase">From Postdoc 1-2</span>
-</div>
-
-<div class="integration-arrow">+</div>
-
-<div class="integration-column">
-<h4>🧬 Biological Insight</h4>
-<p>Protein-DNA recognition, competition mechanisms</p>
-<span class="from-phase">From Postdoc 2</span>
-</div>
-
-<div class="integration-arrow">=</div>
-
-<div class="integration-column integration-result">
-<h4>🎯 Integrated Platform</h4>
-<p>Physiologically-relevant system for chromatin biology</p>
-<span class="from-phase">Future Applications</span>
-</div>
-</div>
