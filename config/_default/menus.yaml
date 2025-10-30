@@ -33,8 +33,20 @@ main:
   - name: 'Publications'
     url: '/publications/'
     weight: 40
+
+      # ===== Publications (發表作品) =====
+  - name: 'Resources'
+    url: '#'
+    weight: 50
+    hasChildren: true
+  
+  - name: 'Hugo-guide'
+    parent: 'Resources'
+    url: '/Resources/hugo-guide/'
+    weight: 51
+
   
   # ===== Contact (聯絡) =====
   - name: 'Contact'
     url: 'mailto:sun_yuting@icloud.com'
-    weight: 50
+    weight: 60
