@@ -36,7 +36,7 @@ Manuscript in preparation (2025)
 *Photocontrol of End-Grafted λ-phage DNA*  
 **Soft Matter** 7:5578-5584 (2011)  
 **Inside Front Cover**  
-[DOI: 10.1039/C1SM05174E](https://doi.org/10.1039/C1SM05174E)
+[DOI: 10.1039/c1sm05046j](http://dx.doi.org/10.1039/c1sm05046j)
 
 **G. Nam**, M.L. Hisette, **Y.L. Sun**, T. Gisler, A. Johner, F. Thalmann, A.P. Schröder, C.M. Marques, N-K. Lee  
 *Scraping and stapling of end-grafted DNA chains by a bio-adhesive spreading vesicle reveal chain internal friction and topological complexity*  

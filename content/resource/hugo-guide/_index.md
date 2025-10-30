@@ -250,6 +250,105 @@ git push origin main
 
 **This is preventable!** See the next section on backup strategy.
 
+#### Issue 4: Content Folder Ignored by Git
+
+**Symptoms:**
+- Local `hugo server` displays pages correctly ✅
+- Netlify deployment shows "Page Not Found" ❌
+- `git status` shows "nothing to commit, working tree clean"
+- You know the files exist locally
+
+**Root Cause:**
+
+Your content folder name matches a pattern in `.gitignore`, causing Git to ignore it entirely.
+
+**Example:**
+```bash
+# .gitignore contains
+resources/
+
+# Your content structure
+content/
+  └── resources/        # ❌ Accidentally ignored!
+      └── hugo-guide/
+          └── _index.md
+```
+
+**Diagnosis:**
+
+```bash
+# Check if files are being ignored
+git status --ignored
+
+# Check specific file
+git check-ignore -v content/resources/_index.md
+# Output: .gitignore:10:resources/    content/resources/_index.md
+```
+
+**Solution Options:**
+
+**Option 1: Rename the folder (Simplest)** ✅ Recommended
+```bash
+# Rename to avoid the pattern
+git mv content/resources content/resource
+# or
+git mv content/resources content/guides
+
+# Update your menus.yaml accordingly
+url: '/resource/hugo-guide/'  # Updated path
+
+# Commit and push
+git add .
+git commit -m "Rename folder to avoid .gitignore conflict"
+git push origin main
+```
+
+**Option 2: Make .gitignore more specific**
+```bash
+# Edit .gitignore
+# Change: resources/
+# To:     /resources/        # Only ignores root-level resources/
+
+# Force add the previously ignored files
+git add -f content/resources/
+
+# Commit and push
+git commit -m "Fix: Update .gitignore and add content/resources"
+git push origin main
+```
+
+**Option 3: Add exception to .gitignore**
+```bash
+# Add to .gitignore
+resources/              # Ignore Hugo's resources
+!content/resources/     # But allow content/resources
+
+# Force add
+git add -f content/resources/
+git commit -m "Add content/resources with .gitignore exception"
+git push origin main
+```
+
+**Prevention Tips:**
+
+1. **Check common .gitignore patterns before naming folders:**
+   - Avoid: `resources/`, `public/`, `static/`, `node_modules/`
+   - Safe: `guides/`, `tutorials/`, `docs/`, `posts/`
+
+2. **Verify files are tracked:**
+   ```bash
+   # After creating new content folders
+   git status
+   # Should show new files, not empty
+   ```
+
+3. **Use descriptive, unique names:**
+   ```
+   ✅ content/research-guides/
+   ✅ content/tutorials/
+   ✅ content/documentation/
+   ❌ content/resources/  (conflicts with Hugo's resources/)
+   ```
 ---
 
 ### 5. ⚠️ CRITICAL: Backup Strategy {#en-backup}
@@ -721,6 +820,106 @@ git push origin main
 #### 問題 3：本地文件丟失
 
 **這是可以預防的！** 請參考下一節的備份策略。
+
+#### 問題 4：內容資料夾被 Git 忽略
+
+**症狀：**
+- 本地 `hugo server` 正常顯示頁面 ✅
+- Netlify 部署後顯示 "Page Not Found" ❌
+- `git status` 顯示 "nothing to commit, working tree clean"
+- 你確定檔案存在於本地
+
+**根本原因：**
+
+你的內容資料夾名稱符合 `.gitignore` 中的規則，導致 Git 完全忽略它。
+
+**範例：**
+```bash
+# .gitignore 包含
+resources/
+
+# 你的內容結構
+content/
+  └── resources/        # ❌ 被意外忽略了！
+      └── hugo-guide/
+          └── _index.md
+```
+
+**診斷方法：**
+
+```bash
+# 檢查檔案是否被忽略
+git status --ignored
+
+# 檢查特定檔案
+git check-ignore -v content/resources/_index.md
+# 輸出：.gitignore:10:resources/    content/resources/_index.md
+```
+
+**解決方案：**
+
+**方案 1：重新命名資料夾（最簡單）** ✅ 推薦
+```bash
+# 重新命名以避開規則
+git mv content/resources content/resource
+# 或
+git mv content/resources content/guides
+
+# 相應更新 menus.yaml
+url: '/resource/hugo-guide/'  # 更新後的路徑
+
+# 提交並推送
+git add .
+git commit -m "重新命名資料夾以避免 .gitignore 衝突"
+git push origin main
+```
+
+**方案 2：讓 .gitignore 更精確**
+```bash
+# 編輯 .gitignore
+# 將：resources/
+# 改為：/resources/        # 只忽略根目錄的 resources/
+
+# 強制添加之前被忽略的檔案
+git add -f content/resources/
+
+# 提交並推送
+git commit -m "修正：更新 .gitignore 並添加 content/resources"
+git push origin main
+```
+
+**方案 3：在 .gitignore 中添加例外**
+```bash
+# 在 .gitignore 中添加
+resources/              # 忽略 Hugo 的 resources
+!content/resources/     # 但允許 content/resources
+
+# 強制添加
+git add -f content/resources/
+git commit -m "添加 content/resources 與 .gitignore 例外規則"
+git push origin main
+```
+
+**預防技巧：**
+
+1. **命名資料夾前檢查常見的 .gitignore 規則：**
+   - 避免：`resources/`、`public/`、`static/`、`node_modules/`
+   - 安全：`guides/`、`tutorials/`、`docs/`、`posts/`
+
+2. **驗證檔案被追蹤：**
+   ```bash
+   # 創建新內容資料夾後
+   git status
+   # 應該顯示新檔案，而不是空的
+   ```
+
+3. **使用描述性、獨特的名稱：**
+   ```
+   ✅ content/research-guides/
+   ✅ content/tutorials/
+   ✅ content/documentation/
+   ❌ content/resources/  (與 Hugo 的 resources/ 衝突)
+   ```
 
 ---
 

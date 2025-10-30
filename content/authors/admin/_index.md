@@ -30,14 +30,12 @@ profiles:
   - icon: at-symbol
     url: 'mailto:sun_yuting@icloud.com'
     label: E-mail Me
-  - icon: brands/github
-    url: https://github.com/yu-tingsun
-  # - icon: brands/linkedin
-  #   url: https://www.linkedin.com/in/yourprofile
-  # - icon: academicons/google-scholar
-  #   url: https://scholar.google.com/citations?user=AdZgJ40AAAAJ&hl=en
-  # - icon: academicons/orcid
-  #   url: https://orcid.org/
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=AdZgJ40AAAAJ&hl=en
+    label: Google Scholar
+  - icon: academicons/orcid
+    url: https://orcid.org/0009-0000-8974-4935
+    label: ORCID
 
 interests:
   - DNA-Protein Interactions
