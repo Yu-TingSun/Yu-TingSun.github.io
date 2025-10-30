@@ -4,9 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 
-verification:
-     google: 'rrqj8I-QTg63_XtYmQUnWiujEUO3PfG1ynjACqOw5Js'
-     baidu: ''
+
 # Appearance
 appearance:
   mode: system
@@ -27,7 +25,7 @@ marketing:
     fathom: ''
     pirsch: ''
   verification:
-    google: ''
+    google: 'rrqj8I-QTg63_XtYmQUnWiujEUO3PfG1ynjACqOw5Js'
     baidu: ''
 
 # Site header
@@ -62,3 +60,93 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
+design:
+  css_style: |
+    /* === 基礎樣式 === */
+    .resume-compact h3 { 
+      margin-top: 0.5rem;
+      margin-bottom: 0.3rem;
+    }
+    
+    .resume-compact h4 {
+      margin-top: 0.8rem;
+      margin-bottom: 0.4rem;
+      font-size: 1.1rem;
+    }
+    
+    .resume-compact p { 
+      margin-bottom: 0.3rem;
+      line-height: 1.5;
+    }
+    
+    /* === 教育項目 === */
+    .edu-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin: 0.5rem 0;
+      padding: 0.3rem 0;
+    }
+    
+    .edu-logo {
+      height: 28px;
+      width: auto;
+      flex-shrink: 0;
+    }
+    
+    .edu-content {
+      flex: 1;
+      line-height: 1.4;
+    }
+    
+    /* === 響應式斷點 === */
+    /* 平板 */
+    @media (max-width: 992px) {
+      .edu-item {
+        gap: 0.5rem;
+      }
+      
+      .edu-logo {
+        height: 24px;
+      }
+    }
+    
+    /* 手機 */
+    @media (max-width: 768px) {
+      .resume-compact h4 {
+        font-size: 1rem;
+      }
+      
+      .edu-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      
+      .edu-logo {
+        height: 22px;
+      }
+      
+      .edu-content {
+        width: 100%;
+        font-size: 0.95rem;
+      }
+    }
+    
+    /* 小手機 */
+    @media (max-width: 480px) {
+      .resume-compact {
+        padding: 0 0.5rem;
+      }
+      
+      .edu-item {
+        gap: 0.3rem;
+      }
+      
+      .edu-content {
+        font-size: 0.9rem;
+      }
+    }

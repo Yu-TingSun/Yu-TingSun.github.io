@@ -33,21 +33,28 @@ sections:
     content:
       title: '🎓 Education & Expertise'
       text: |
-        ### {{< inline-logo src="/images/logos/UdS-small.png" alt="UdS" >}}
-        Ph.D. Physics • University of Strasbourg, France (2008-2010)
+        #### Ph.D. Physics • 2010 
+        {{< inline-logo src="/images/logos/UdS-small.png" alt="UdS" >}}
+        University of Strasbourg, France 
         {{< /inline-logo >}}
         
-        ### {{< inline-logo src="/images/logos/UNIS-small.png" alt="UNIS" >}}
-        M.Sc. Chemistry • University of Siegen, Germany (2005-2007)
+        #### M.Sc. Chemistry • 2007
+        {{< inline-logo src="/images/logos/UNIS-small.png" alt="UNIS" >}}
+         University of Siegen, Germany 
         {{< /inline-logo >}}
         
-        ### {{< inline-logo src="/images/logos/CUPC-small.png" alt="CUPC" >}}
-        B.Eng. Chemical Engineering • China University of Petroleum, China (2001-2005)
+        #### B.Eng. Chemical Engineering • 2005
+        {{< inline-logo src="/images/logos/CUPC-small.png" alt="CUPC" >}}
+         China University of Petroleum (Beijing), China
         {{< /inline-logo >}}
         
         ---
         
-        **Core Expertise:** DNA-protein interactions • Single-molecule techniques (TIRF, FRET, CoSMoS) • Micro/nanofluidic platforms• Recombinase (RecA, RAD51, Dmc1)
+        **Core Expertise:** 
+        - DNA-protein interactions (RecA, RAD51, Dmc1, Hop2-Mnd1)  
+        - Single-molecule techniques (TIRF, FRET, CoSMoS)  
+        - Micro/nanofluidic platform development  
+        - Biophysical characterization of DNA recombination
     design:
       columns: '1'
       css_class: resume-compact
@@ -110,8 +117,12 @@ sections:
     content:
       title: '📚 Teaching Experience'
       text: |
-        **Teaching:** IB Chemistry & Mathematics Teacher, Grade 10,11, Beijing (2013-2015)
-        
+        **IB Chemistry & Mathematics Teacher** (2013-2015)  
+        Beijing Huijia Private School, Beijing, China
+        - Taught IB Diploma Program Chemistry & Mathematics (Grade 10-11)  
+        - Supervised student scientific research projects  
+        - Student mentoring and academic guidance
+                
 
     design:
       columns: '1'
@@ -124,7 +135,7 @@ sections:
       title: '📄 Publications'
       subtitle: '*Published as Yuting L. Sun*'
       text: |
-        **In Prep:** Y.L. Sun*, X.Y. Li*, et al. RNA-involved homologous recombination (2025)
+        **In Prep:** Y.L. Sun*, X.-Y. Li*, C.-H. Tsai, et al. "Mechanism of RNA-involved homologous recombination mediated by *E. coli* RecA" (2025)
         
          **Published**
         
@@ -132,7 +143,7 @@ sections:
         
         **Y.L. Sun**, C.M. Marques, A.P. Schröder. *"Adhesion of giant unilamellar vesicles on double-end grafted DNA carpets"* **Eur. Phys. J. Spec. Top.** 223:1755-1769 (2014) [Link](https://doi.org/10.1140/epjst/e2014-02224-9)
         
-        **Y.L. Sun**, N.K. Mani, et al. *"Photocontrol of End-Grafted λ-phage DNA"* **Soft Matter** 7:5578-5584 (2011) | **Inside Front Cover** [Link](https://doi.org/10.1039/C1SM05291E)
+        **Y.L. Sun**, N.K. Mani, et al. *"Photocontrol of End-Grafted λ-phage DNA"* **Soft Matter** 7:5578-5584 (2011) | **Inside Front Cover** [Link](https://doi.org/10.1039/C1SM05046J)
         
         G. Nam, M.L. Hisette, **Y.L. Sun**, et al. *"Scraping and stapling of end-grafted DNA chains..."* **Phys. Rev. Lett.** 105:088101 (2010) | **Cover Story** [Link](https://doi.org/10.1103/PhysRevLett.105.088101)
 
@@ -147,7 +158,13 @@ sections:
     content:
       title: '🏆 Recognition'
       text: |
-        **Awards:** PRL Cover Story (2010) • Soft Matter Front Cover (2011) • IRTG Scholarship (2008-2010)
+        **Publications:**
+        - *Phys. Rev. Lett.* Cover Story (2010)  
+        - *Soft Matter* Inside Front Cover (2011)**Scholarships & Awards:**
+        - IRTG Soft Matter Science Scholarship (2008-2010)  
+        - Outstanding Students' Leader Award, TWICE (2002-2004)  
+        - Contemporary Undergraduate Mathematical Contest - Successful Participant (2003)
+
         
         ---
         
