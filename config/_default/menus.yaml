@@ -35,14 +35,14 @@ main:
     weight: 40
 
       # ===== Publications (發表作品) =====
-  - name: 'Resources'
+  - name: 'Resource'
     url: '#'
     weight: 50
     hasChildren: true
   
   - name: 'Hugo-guide'
-    parent: 'Resources'
-    url: '/resources/hugo-guide/'
+    parent: 'Resource'
+    url: '/resource/hugo-guide/'
     weight: 51
 
   
