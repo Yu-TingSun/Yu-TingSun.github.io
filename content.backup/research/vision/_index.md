@@ -1,11 +1,6 @@
 ---
 title: Research Vision
 subtitle: Bridging Physics and Biology Through Integrated Platforms
-keywords:
-  - p53-histone competition
-  - Chromatin accessibility
-  - Nanofluidic confinement
-  - Molecular crowding
 ---
 
 ## 🎯 Integrative Research

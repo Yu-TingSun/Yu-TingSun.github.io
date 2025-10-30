@@ -1,13 +1,5 @@
 ---
-title: "Resume - Yu-Ting Sun"
-description: "Academic CV of Yu-Ting Sun - Postdoctoral researcher in biophysics with expertise in DNA-protein interactions, single-molecule techniques, and microfluidic devices. Education: PhD Physics (University of Strasbourg), MSc Chemistry (University of Siegen)."
-keywords:
-  - Yuting Sun CV
-  - Academic resume
-  - Biophysics researcher
-  - Single-molecule techniques
-  - DNA recombination
-
+title: 'Curriculum Vitae'
 date: 2025-10-27
 type: landing
 

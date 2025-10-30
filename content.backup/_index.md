@@ -1,15 +1,5 @@
 ---
-title: "Yu-Ting Sun - Biophysicist & Researcher"
-description: "Physical Chemistry & Biophysics researcher specializing in DNA-protein interactions, single-molecule microscopy, and microfluidic devices. Expertise in RecA, RAD51, Dmc1 recombinases and homologous recombination."
-keywords:
-  - Yu-Ting Sun
-  - Biophysics
-  - DNA-protein interactions
-  - Single-molecule microscopy
-  - Homologous recombination
-  - Microfluidics
-
-author: Yu-Ting Sun
+title: ''
 date: 2025-10-24
 type: landing
 

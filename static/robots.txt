@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yutingsun.netlify.app/sitemap.xml

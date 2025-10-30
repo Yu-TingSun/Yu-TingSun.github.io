@@ -1,14 +1,6 @@
 ---
-title:  "Research Trajectory - Yu-Ting Sun"
-subtitle: "Research journey from fundamental polymer physics to complex biological processes. From DNA-vesicle adhesion systems to homologous recombination mechanisms mediated by RecA, RAD51, and Dmc1."
-keywords:
-  - Yu-Ting Sun research
-  - DNA-protein interactions timeline
-  - Homologous recombination
-  - Single-molecule biophysics
-  - RecA RAD51 Dmc1 Hop2-Mnd1
-  - Microfluidic DNA studies
-
+title: 'Research Trajectory'
+subtitle: 'From Physics to Integrated Biophysics'
 date: 2025-10-25
 type: page
 ---

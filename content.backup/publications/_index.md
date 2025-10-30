@@ -1,13 +1,5 @@
 ---
-title: "Publications - Yuting L. Sun"
-keywords:
-  - Yuting L. Sun publications
-  - Homologous recombination papers
-  - RecA mechanism
-  - DNA-vesicle adhesion
-  - Single-molecule studies
-  - Biophysics publications
-
+title: Publications
 summary: Selected peer-reviewed publications in biophysics and DNA-protein interactions
 date: 2025-10-29
 

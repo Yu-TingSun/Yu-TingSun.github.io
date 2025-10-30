@@ -9,13 +9,6 @@ name_pronunciation: ''
 first_name: Yu-Ting
 last_name: Sun
 
-aliases:
-  - Yuting Sun
-  - Yuting L. Sun
-  - Y.L. Sun
-
-
-
 # Status emoji
 status:
   icon: 🔬

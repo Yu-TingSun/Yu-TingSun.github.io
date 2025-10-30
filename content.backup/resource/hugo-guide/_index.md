@@ -1,14 +1,7 @@
 ---
 title: 'Building Your Academic Website | Hugo Academic 建站指南'
-description: "Technical resources and guides for building academic websites with Hugo and GitHub Pages. Step-by-step tutorials for researchers."
-keywords:
-  - Hugo academic website
-  - GitHub Pages tutorial
-  - Academic website setup
-  - Hugo Blox theme
-  - Researcher website guide
+subtitle: 'A Complete Guide | 完整教程'
 summary: 'Hugo Academic + Netlify deployment guide based on real experience | 基於真實經驗的建站完整指南'
-
 authors: [admin]
 tags: [Hugo, Tutorial, Web Development, Academic]
 categories: [Resources]
