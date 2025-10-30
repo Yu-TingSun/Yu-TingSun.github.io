@@ -42,7 +42,7 @@ main:
   
   - name: 'Hugo-guide'
     parent: 'Resources'
-    url: '/Resources/hugo-guide/'
+    url: '/resources/hugo-guide/'
     weight: 51
 
   
