@@ -18,8 +18,8 @@ type: page
 <div class="integration-summary">
 <div class="integration-column">
 <h4>🔬 Physics Foundation</h4>
-<p>Spatial confinement, crowding effect</p>
-<span class="from-phase">From PhD</span>
+<p>Spatial confinement</p>
+<span class="from-phase">From PhD, Postdoc 1 </span>
 </div>
 
 <div class="integration-arrow">+</div>
