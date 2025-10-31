@@ -31,19 +31,19 @@ sections:
   - block: markdown
     id: education-expertise
     content:
-      title: '🎓 Education & Expertise'
+      title: '🎓 Education'
       text: |
-        #### Ph.D. Physics • 2010 
+        ### Ph.D. Physics • 2010 
         {{< inline-logo src="/images/logos/UdS-small.png" alt="UdS" >}}
         University of Strasbourg, France 
         {{< /inline-logo >}}
         
-        #### M.Sc. Chemistry • 2007
+        ### M.Sc. Chemistry • 2007
         {{< inline-logo src="/images/logos/UNIS-small.png" alt="UNIS" >}}
          University of Siegen, Germany 
         {{< /inline-logo >}}
         
-        #### B.Eng. Chemical Engineering • 2005
+        ### B.Eng. Chemical Engineering • 2005
         {{< inline-logo src="/images/logos/CUPC-small.png" alt="CUPC" >}}
          China University of Petroleum (Beijing), China
         {{< /inline-logo >}}
@@ -65,10 +65,10 @@ sections:
     content:
       title: '🔬 Research Experience'
       text: |
-        ### Postdoctoral Research
+        ### Postdoctoral Research,Taiwan (2021-2025)
         
         {{< inline-logo src="/images/logos/NTU-small.png" alt="NTU" >}}
-        <strong> National Taiwan University </strong>, Taiwan (2021-2025)
+        <strong> National Taiwan University </strong>
         {{< /inline-logo >}}
         
         **PI:** Prof. Hung-Wen Li (NTU) • Prof. Peter Chi (IBS)  
@@ -76,9 +76,9 @@ sections:
         **Methods:** Single-molecule FRET, CoSMoS 
 
         ---
-        
+        ### Postdoctoral Research, Singapore (2011-2012)
         {{< inline-logo src="/images/logos/SMART-small.png" alt="SMART" >}}
-        <strong> Singapore-MIT Alliance (SMART) </strong>, Singapore (2011-2012)
+        <strong> Singapore-MIT Alliance (SMART) </strong>
         {{< /inline-logo >}}
         
         **PI**:Prof. Patrick Doyle (MIT) • Prof. Jie Yan (NUS)  
@@ -87,10 +87,10 @@ sections:
         
         ---
         
-        ### PhD Research
+        ### PhD Research, France (2008-2010)
         
         {{< inline-logo src="/images/logos/ICS-small.png" alt="ICS" >}}
-        <strong> Institute Charles Sadron </strong>, France (2008-2010)
+        <strong> Institute Charles Sadron </strong>
         {{< /inline-logo >}}
         
         **PI:** Prof. Carlos Marques (ICS) • Dr. André Schröder (ICS) \
@@ -98,10 +98,10 @@ sections:
                 
         ---
         
-        ### Master Research
+        ### Master Research, Germany (2006-2007)
         
         {{< inline-logo src="/images/logos/MPIP-small.png" alt="MPIP" >}}
-        <strong> Max-Planck Institute for Polymer Research </strong>, Germany (2006-2007)
+        <strong> Max-Planck Institute for Polymer Research </strong>
         {{< /inline-logo >}}
         
         **PI:** Prof. Hans-Jürgen Butt (MPIP) • Dr. Elmar Bonaccurso (MPIP) 
@@ -117,7 +117,7 @@ sections:
     content:
       title: '📚 Teaching Experience'
       text: |
-        **IB Chemistry & Mathematics Teacher** (2013-2015)  
+        ### IB Chemistry & Mathematics Teacher (2013-2015)
         Beijing Huijia Private School, Beijing, China
         - Taught IB Diploma Program Chemistry & Mathematics (Grade 10-11)  
         - Supervised student scientific research projects  
