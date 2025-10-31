@@ -331,3 +331,38 @@
     background: #d1d5db;
   }
 }
+
+ /* 圖片容器 */
+.theme-aware-image {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* 預設顯示 light 版本 */
+.theme-aware-image .light-only {
+  display: block;
+}
+
+.theme-aware-image .dark-only {
+  display: none;
+}
+
+/* Dark mode 時切換 */
+[data-theme="dark"] .theme-aware-image .light-only {
+  display: none;
+}
+
+[data-theme="dark"] .theme-aware-image .dark-only {
+  display: block;
+}
+
+/* 如果主題使用 class 而不是 data-theme */
+.dark .theme-aware-image .light-only {
+  display: none;
+}
+
+.dark .theme-aware-image .dark-only {
+  display: block;
+}
