@@ -17,7 +17,7 @@ featured: true
 draft: false
 ---
 
-<div style="background: #f0f7ff; padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">
+<div class="language-selector">
 
 📖 **Language / 語言**
 

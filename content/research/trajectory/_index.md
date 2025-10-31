@@ -34,7 +34,7 @@ type: page
 
 <div class="integration-column">
 <h4>🧬 Biological Insight</h4>
-<p>DNA-protein interaction, protein-portein interactions</p>
+<p>DNA-protein interaction, protein-protein interactions</p>
 <span class="from-phase">From Postdoc 2</span>
 </div>
 

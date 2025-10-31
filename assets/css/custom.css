@@ -366,3 +366,31 @@
 .dark .theme-aware-image .dark-only {
   display: block;
 }
+
+/* ========================================
+   Theme-aware Language Selector
+   ======================================== */
+
+.language-selector {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  background: var(--color-background-secondary, #f0f7ff);
+  border: 1px solid var(--color-border, #e0e7ff);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .language-selector {
+    background: #1e293b;
+    border-color: #334155;
+    color: #e2e8f0;
+  }
+}
+
+/* For Hugo Blox dark mode class */
+.dark .language-selector {
+  background: #1e293b;
+  border-color: #334155;
+  color: #e2e8f0;
+}
