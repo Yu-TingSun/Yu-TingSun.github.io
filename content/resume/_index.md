@@ -168,7 +168,7 @@ sections:
         
         ---
         
-        [📥 Download Full CV (PDF)](../Sun_PhD_C_V_2025_en.pdf) | [Research Accomplishments(PDF)](../Research_Accomplishment_SunYuting_2025.pdf)
+        [📥 Download Full CV (PDF)](/uploads/Sun_PhD_C_V_2025_en.pdf) | [Research Accomplishments(PDF)](/uploads/Research_Accomplishment_SunYuting_2025.pdf)
         
         📧 sun_yuting@icloud.com | 📍 Taipei, Taiwan
     design:
