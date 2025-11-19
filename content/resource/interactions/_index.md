@@ -2,9 +2,10 @@
 title: "DNA-Protein Interaction"
 subtitle: "DNA-蛋白质相互作用分类体系"
 summary: "系统性总结DNA结合蛋白的结构、功能与研究方法"
-date: 2025-01-15
+date: 2025-11-15
 type: widget_page
 headless: false
+draft: true  
 ---
 
 {{< toc >}}
@@ -229,39 +230,6 @@ DNA-protein interactions are central to life processes, involving genome replica
 - **NMR**: Nuclear Magnetic Resonance
 
 ---
-
-## 使用说明 | Usage Guide
-
-1. **浏览分类**：点击上方三个分类卡片进入对应的蛋白质家族
-2. **查看详情**：每个蛋白质页面包含结构、功能、研究方法和相关文献
-3. **交叉引用**：通过标签和相关蛋白链接探索蛋白质网络
-4. **持续更新**：标记 ⏳ 的内容正在整理中
-
----
-
-## 进度统计 | Progress
-
-<div class="row text-center">
-  <div class="col-md-3">
-    <h2 class="text-primary">15</h2>
-    <p>计划收录<br><small>Total planned</small></p>
-  </div>
-  <div class="col-md-3">
-    <h2 class="text-success">4</h2>
-    <p>已完成<br><small>Completed</small></p>
-  </div>
-  <div class="col-md-3">
-    <h2 class="text-warning">11</h2>
-    <p>整理中<br><small>In progress</small></p>
-  </div>
-  <div class="col-md-3">
-    <h2 class="text-info">26.7%</h2>
-    <p>完成度<br><small>Completion rate</small></p>
-  </div>
-</div>
-
----
-
 <style>
 .hover-card {
   transition: all 0.3s ease;
