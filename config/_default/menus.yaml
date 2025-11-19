@@ -32,21 +32,93 @@ main:
   # ===== Publications (發表作品) =====
   - name: 'Publications'
     url: '/publications/'
-    weight: 40
+    weight: 30
 
       # ===== Publications (發表作品) =====
   - name: 'Resource'
     url: '#'
-    weight: 50
+    weight: 40
+    hasChildren: true
+
+  - name: 'Biological Processes'
+    parent: 'Resource'
+    url: '/resource/processes/'
+    weight: 41
     hasChildren: true
   
-  - name: 'Hugo-guide'
+  - name: 'Chromatin Architecturel'
+    parent: 'Biological Processes'
+    url: '/resource/processes/chromatin'
+    weight: 42
+
+  - name: 'Transcription Activation'
+    parent: 'Biological Processes'
+    url: '/resource/processes/transcription'
+    weight: 43
+
+  - name: 'Gene Silencing'
+    parent: 'Biological Processes'
+    url: '/resource/processes/silencing'
+    weight: 44
+
+  - name: 'Dna Repair'
+    parent: 'Biological Processes'
+    url: '/resource/processes/repair'
+    weight: 45
+
+  - name: 'Dna Replication'
+    parent: 'Biological Processes'
+    url: '/resource/processes/replication'
+    weight: 45
+
+
+  - name: 'DNA-Protein-Interactions'
     parent: 'Resource'
-    url: '/resource/hugo-guide/'
+    url: '/resource/interactions/'
     weight: 51
+    hasChildren: true
+  
+  - name: 'Structural'
+    parent: 'DNA-Protein-Interactions'
+    url: '/resource/interactions/structural'
+    weight: 52
+    hasChildren: true
+
+  - name: 'Histones'
+    parent: 'Structural'
+    url: '/structural/histones'
+    weight: 53
+
+
+  - name: 'Enzymatic'
+    parent: 'DNA-Protein-Interactions'
+    url: '/resource/interactions/enzymatic'
+    weight: 60
+    hasChildren: true
+
+  - name: 'RecA'
+    parent: 'Enzymatic'
+    url: '/enzymatic/histones'
+    weight: 61
+  
+
+  - name: 'Regulatory'
+    parent: 'DNA-Protein-Interactions'
+    url: '/resource/interactions/regulatory'
+    weight: 70
+    hasChildren: true
+
+  - name: 'p53'
+    parent: 'Regulatory'
+    url: '/regulatory/p53'
+    weight: 71
+  
+  - name: 'Hugo-guide'
+    url: '#'
+    weight: 90
 
   
   # ===== Contact (聯絡) =====
   - name: 'Contact'
     url: 'mailto:sun_yuting@icloud.com'
-    weight: 60
+    weight: 91
