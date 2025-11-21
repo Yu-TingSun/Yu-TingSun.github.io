@@ -2,7 +2,8 @@
 title: "Regulatory Proteins"
 subtitle: "调控蛋白 - 基因表达与染色质状态调节"
 summary: "调控转录、染色质结构和表观遗传状态的蛋白质"
-date: 2025-01-15
+date: 2025-11-15
+layout: coming-soon
 ---
 
 {{< toc >}}

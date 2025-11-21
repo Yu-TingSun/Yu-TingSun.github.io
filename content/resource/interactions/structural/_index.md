@@ -2,7 +2,8 @@
 title: "Structural Proteins"
 subtitle: "结构蛋白 - DNA包装与染色体架构"
 summary: "维持染色体结构、DNA包装和核内空间组织的蛋白质"
-date: 2025-01-15
+date: 2025-11-15
+layout: coming-soon
 ---
 
 {{< toc >}}

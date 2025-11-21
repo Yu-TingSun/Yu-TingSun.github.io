@@ -34,11 +34,16 @@ main:
     url: '/publications/'
     weight: 30
 
-      # ===== Publications (發表作品) =====
+  # ===== Resource(資料學習庫) =====
   - name: 'Resource'
     url: '#'
     weight: 40
-    hasChildren: true
+    # hasChildren: true
+
+  - name: '📚 Resource Overview'  
+    parent: 'Resource'
+    url: '/resource/'
+    weight: 40.1  # 排在最前面
 
   - name: 'Biological Processes'
     parent: 'Resource'
@@ -112,7 +117,14 @@ main:
     parent: 'Regulatory'
     url: '/regulatory/p53'
     weight: 71
-  
+
+  - name: 'LLPS'
+    parent: 'Resource'
+    url: '/resource/LLPS/'
+    weight: 80
+    hasChildren: False
+
+  # ===== Hugo Website  =====
   - name: 'Hugo-guide'
     url: '#'
     weight: 90

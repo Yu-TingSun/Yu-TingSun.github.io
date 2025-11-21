@@ -1,0 +1,156 @@
+{{ define "main" }}
+
+{{ if eq hugo.Environment "development" }}
+  <!-- ========================================
+       开发环境：显示真实内容 + 提示横幅
+       ======================================== -->
+  <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 1rem; text-align: center; border-bottom: 4px solid #f59e0b; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 50;">
+    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <span style="font-size: 1.5rem;">🛠️</span>
+      <div style="text-align: left;">
+        <strong style="color: #92400e; font-size: 1.1rem;">Development Mode</strong>
+        <p style="margin: 0; color: #78350f; font-size: 0.9rem;">
+          This page shows <strong>"Coming Soon"</strong> in production | 
+          生产环境将显示"建设中"页面
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 显示真实内容 -->
+  <article class="article-content">
+    {{ if .Content }}
+      {{ .Content }}
+    {{ else }}
+      <div style="padding: 3rem 2rem; text-align: center; color: #94a3b8;">
+        <p style="font-size: 1.2rem;">📝 No content yet. Start writing below the front matter!</p>
+        <p style="font-size: 1rem;">暂无内容，请在Front Matter下方开始编写。</p>
+      </div>
+    {{ end }}
+  </article>
+
+{{ else }}
+  <!-- ========================================
+       生产环境：显示Coming Soon页面
+       ======================================== -->
+  <div style="min-height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 4rem 2rem;">
+    
+    <!-- 动画图标 -->
+    <div class="coming-soon-icon" style="font-size: 5rem; margin-bottom: 2rem; animation: pulse 2s ease-in-out infinite;">
+      🚧
+    </div>
+    
+    <!-- 页面标题 -->
+    <h1 style="font-size: 2.5rem; color: #1e293b; margin-bottom: 1rem; text-align: center;">
+      {{ .Title }}
+    </h1>
+    
+    {{ if .Params.subtitle }}
+    <p style="font-size: 1.3rem; color: #64748b; margin-bottom: 2rem; text-align: center; font-weight: 300;">
+      {{ .Params.subtitle }}
+    </p>
+    {{ end }}
+    
+    <h2 style="font-size: 1.5rem; color: #64748b; font-weight: 400; margin-bottom: 2rem;">
+      Coming Soon | 即将推出
+    </h2>
+    
+    <!-- 说明文字 -->
+    <p style="font-size: 1.1rem; color: #475569; max-width: 600px; line-height: 1.8; margin-bottom: 2rem; text-align: center;">
+      This content is under development. We're working hard to bring you comprehensive information.
+      <br><br>
+      此内容正在开发中，我们正在努力为您提供全面的信息。
+    </p>
+    
+    <!-- 预计时间 -->
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 600; margin-bottom: 3rem; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);">
+      📅 {{ .Params.expected | default "Expected: 2025 Q1-Q2" }} | 预计：{{ .Params.expected_zh | default "2025年第一至第二季度" }}
+    </div>
+    
+    <!-- 导航推荐 -->
+    <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 900px; width: 100%;">
+      <p style="color: #64748b; margin-bottom: 1.5rem; font-size: 1.1rem; text-align: center;">
+        In the meantime, explore our available content: | 同时，您可以浏览以下内容：
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+        
+        <a href="/resource/interactions/" class="coming-soon-link" style="display: block; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: white; padding: 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3); text-align: center;">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧬</div>
+          <div>DNA-Protein<br>Interactions</div>
+        </a>
+        
+        <a href="/resource/interactions/regulatory/p53/" class="coming-soon-link" style="display: block; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3); text-align: center;">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+          <div>p53 Tumor<br>Suppressor</div>
+        </a>
+        
+        <a href="/resource/interactions/structural/histones/" class="coming-soon-link" style="display: block; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3); text-align: center;">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏗️</div>
+          <div>Histone<br>Proteins</div>
+        </a>
+        
+        <a href="/research/vision/" class="coming-soon-link" style="display: block; background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white; padding: 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3); text-align: center;">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔬</div>
+          <div>Research<br>Vision</div>
+        </a>
+        
+        <a href="/" class="coming-soon-link" style="display: block; background: linear-gradient(135deg, #ec4899 0%, #db2777 100%); color: white; padding: 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s; box-shadow: 0 2px 8px rgba(236, 72, 153, 0.3); text-align: center;">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏠</div>
+          <div>Home<br>Page</div>
+        </a>
+        
+      </div>
+    </div>
+    
+    <!-- 可选：订阅提醒 -->
+    {{ if .Params.show_subscribe }}
+    <div style="margin-top: 2rem; text-align: center;">
+      <p style="color: #64748b; margin-bottom: 0.5rem;">Want to be notified when this page is ready?</p>
+      <p style="color: #64748b; margin-bottom: 1rem; font-size: 0.9rem;">想在此页面完成时收到通知？</p>
+      <a href="mailto:{{ .Site.Params.email | default "sun_yuting@icloud.com" }}?subject=Notify me: {{ .Title }}" 
+         style="background: #475569; color: white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600;">
+        📧 Notify Me | 通知我
+      </a>
+    </div>
+    {{ end }}
+    
+  </div>
+
+  <style>
+  /* 动画效果 */
+  @keyframes pulse {
+    0%, 100% { 
+      transform: scale(1); 
+      opacity: 1; 
+    }
+    50% { 
+      transform: scale(1.1); 
+      opacity: 0.7; 
+    }
+  }
+
+  /* 链接悬停效果 */
+  .coming-soon-link:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2) !important;
+  }
+
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .coming-soon-icon {
+      font-size: 3rem !important;
+    }
+    
+    h1 {
+      font-size: 1.8rem !important;
+    }
+    
+    h2 {
+      font-size: 1.2rem !important;
+    }
+  }
+  </style>
+
+{{ end }}
+
+{{ end }}

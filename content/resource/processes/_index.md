@@ -4,7 +4,8 @@ subtitle: "生物过程 - DNA-蛋白质相互作用的功能整合"
 summary: "从生物学过程出发,整合结构蛋白、酶类蛋白和调控蛋白在关键细胞事件中的协同作用"
 date: 2025-01-15
 type: widget_page
-draft: true  
+# draft: true  
+layout: coming-soon
 ---
 
 <!-- Language Toggle Buttons -->
@@ -71,11 +72,9 @@ draft: true
             <p class="text-muted small">Establishment & Regulation of Higher-Order Chromatin Architecture</p>
           </div>
         </div>
-        
         <p class="card-text mb-3">
           从核小体到染色体:多级组装、TADs形成、区室化、有丝分裂凝聚
         </p>
-        
         <div class="mb-3">
           <h6 class="font-weight-bold mb-2">涉及蛋白 | Proteins Involved:</h6>
           <div class="d-flex flex-wrap gap-2">
@@ -87,7 +86,6 @@ draft: true
             <span class="badge badge-danger">HP1</span>
           </div>
         </div>
-        
         <div class="mb-3">
           <h6 class="font-weight-bold mb-2">关键概念 | Key Concepts:</h6>
           <ul class="small mb-0">
@@ -97,7 +95,6 @@ draft: true
             <li>有丝分裂凝聚 / Mitotic condensation</li>
           </ul>
         </div>
-        
         <div class="d-flex justify-content-between align-items-center mt-3">
           <span class="badge badge-success">✓ 已完成 | Completed</span>
           <a href="chromatin/" class="btn btn-sm btn-outline-primary">查看详情 View Details →</a>
@@ -119,11 +116,9 @@ draft: true
             <p class="text-muted small">Chromatin Opening During Transcriptional Activation</p>
           </div>
         </div>
-        
         <p class="card-text mb-3">
           先锋因子结合、染色质重塑、组蛋白修饰、转录因子募集、RNA Pol II启动
         </p>
-        
         <div class="mb-3">
           <h6 class="font-weight-bold mb-2">涉及蛋白 | Proteins Involved:</h6>
           <div class="d-flex flex-wrap gap-2">
@@ -134,7 +129,6 @@ draft: true
             <span class="badge badge-secondary">BRD4</span>
           </div>
         </div>
-        
         <div class="mb-3">
           <h6 class="font-weight-bold mb-2">关键概念 | Key Concepts:</h6>
           <ul class="small mb-0 text-muted">
@@ -144,7 +138,6 @@ draft: true
             <li>转录凝聚体形成 / Transcriptional condensate formation</li>
           </ul>
         </div>
-        
         <div class="d-flex justify-content-between align-items-center mt-3">
           <span class="badge badge-warning">⏳ 计划中 | Planned</span>
           <button class="btn btn-sm btn-outline-secondary" disabled>即将推出 Coming Soon</button>
@@ -166,11 +159,9 @@ draft: true
             <p class="text-muted small">Gene Silencing & Heterochromatin Maintenance</p>
           </div>
         </div>
-        
         <p class="card-text mb-3">
           H3K9me3/H3K27me3沉积、HP1募集、DNA甲基化、Polycomb复合体、异染色质扩散
         </p>
-        
         <div class="mb-3">
           <h6 class="font-weight-bold mb-2">涉及蛋白 | Proteins Involved:</h6>
           <div class="d-flex flex-wrap gap-2">
@@ -181,7 +172,6 @@ draft: true
             <span class="badge badge-secondary">HDAC</span>
           </div>
         </div>
-        
         <div class="mb-3">
           <h6 class="font-weight-bold mb-2">关键概念 | Key Concepts:</h6>
           <ul class="small mb-0 text-muted">
@@ -191,7 +181,6 @@ draft: true
             <li>Polycomb记忆 / Polycomb memory</li>
           </ul>
         </div>
-        
         <div class="d-flex justify-content-between align-items-center mt-3">
           <span class="badge badge-warning">⏳ 计划中 | Planned</span>
           <button class="btn btn-sm btn-outline-secondary" disabled>即将推出 Coming Soon</button>
@@ -213,11 +202,9 @@ draft: true
             <p class="text-muted small">Chromatin Dynamics in DNA Damage Repair</p>
           </div>
         </div>
-        
         <p class="card-text mb-3">
           损伤识别、染色质松弛、修复复合体募集、染色质恢复、p53-组蛋白竞争
         </p>
-        
         <div class="mb-3">
           <h6 class="font-weight-bold mb-2">涉及蛋白 | Proteins Involved:</h6>
           <div class="d-flex flex-wrap gap-2">
@@ -228,8 +215,7 @@ draft: true
             <span class="badge badge-secondary">INO80</span>
             <span class="badge badge-secondary">TIP60</span>
           </div>
-        </div>
-        
+        </div>  
         <div class="mb-3">
           <h6 class="font-weight-bold mb-2">关键概念 | Key Concepts:</h6>
           <ul class="small mb-0 text-muted">
@@ -239,7 +225,6 @@ draft: true
             <li>修复凝聚体形成 / Repair condensate formation</li>
           </ul>
         </div>
-        
         <div class="d-flex justify-content-between align-items-center mt-3">
           <span class="badge badge-warning">⏳ 高优先级 | High Priority</span>
           <button class="btn btn-sm btn-outline-secondary" disabled>即将推出 Coming Soon</button>
@@ -261,11 +246,9 @@ draft: true
             <p class="text-muted small">Chromatin Inheritance During DNA Replication</p>
           </div>
         </div>
-        
         <p class="card-text mb-3">
           核小体拆卸、DNA聚合酶、组蛋白伴侣、亲代组蛋白分配、表观遗传记忆传递
         </p>
-        
         <div class="mb-3">
           <h6 class="font-weight-bold mb-2">涉及蛋白 | Proteins Involved:</h6>
           <div class="d-flex flex-wrap gap-2">
@@ -276,7 +259,6 @@ draft: true
             <span class="badge badge-secondary">FACT</span>
           </div>
         </div>
-        
         <div class="mb-3">
           <h6 class="font-weight-bold mb-2">关键概念 | Key Concepts:</h6>
           <ul class="small mb-0 text-muted">
@@ -286,7 +268,6 @@ draft: true
             <li>表观遗传信息复制 / Epigenetic information replication</li>
           </ul>
         </div>
-        
         <div class="d-flex justify-content-between align-items-center mt-3">
           <span class="badge badge-warning">⏳ 计划中 | Planned</span>
           <button class="btn btn-sm btn-outline-secondary" disabled>即将推出 Coming Soon</button>
@@ -329,13 +310,11 @@ draft: true
 <div class="bilingual-pair">
   <div class="lang-zh-block">
     <h3>跨过程的关键问题</h3>
-    
     <h4>1. 组蛋白修饰的级联传递</h4>
     <pre><code>Process 1 (TADs形成) 
   → Process 2 (转录激活: H3K4me3, H3K27ac)
   → Process 3 (维持: H3K9me3, H3K27me3)
   → Process 5 (复制传递)</code></pre>
-    
     <h4>2. 相分离的多重角色</h4>
     <ul>
       <li><strong>Process 1:</strong> 异染色质区室形成(HP1)</li>
@@ -343,7 +322,6 @@ draft: true
       <li><strong>Process 3:</strong> Polycomb body(PRC1/2)</li>
       <li><strong>Process 4:</strong> 修复病灶(PARP1, 53BP1)</li>
     </ul>
-    
     <h4>3. p53-组蛋白竞争的生物学背景</h4>
     <ul>
       <li><strong>Process 1:</strong> 染色质基本状态,组蛋白占主导</li>
@@ -354,13 +332,11 @@ draft: true
   
   <div class="lang-en-block">
     <h3>Key Questions Across Processes</h3>
-    
-    <h4>1. Cascade Transmission of Histone Modifications</h4>
+        <h4>1. Cascade Transmission of Histone Modifications</h4>
     <pre><code>Process 1 (TAD formation) 
   → Process 2 (Transcription activation: H3K4me3, H3K27ac)
   → Process 3 (Maintenance: H3K9me3, H3K27me3)
   → Process 5 (Replication inheritance)</code></pre>
-    
     <h4>2. Multiple Roles of Phase Separation</h4>
     <ul>
       <li><strong>Process 1:</strong> Heterochromatin compartment formation (HP1)</li>
@@ -368,7 +344,6 @@ draft: true
       <li><strong>Process 3:</strong> Polycomb bodies (PRC1/2)</li>
       <li><strong>Process 4:</strong> Repair foci (PARP1, 53BP1)</li>
     </ul>
-    
     <h4>3. Biological Context of p53-Histone Competition</h4>
     <ul>
       <li><strong>Process 1:</strong> Basal chromatin state, histone dominance</li>
@@ -378,150 +353,13 @@ draft: true
   </div>
 </div>
 
-<!-- Section 5: Research Vision Connection -->
-<div class="bilingual-pair">
-  <div class="lang-zh-block">
-    <h2>与研究愿景的联系</h2>
-    <h3>p53-Histone Competition in Physiological Conditions</h3>
-    
-    <p><strong>生物学问题:</strong></p>
-    <blockquote>
-      p53如何在高浓度组蛋白存在、空间拥挤的核内环境中,快速找到靶位点并激活转录?
-    </blockquote>
-    
-    <p><strong>相关过程:</strong></p>
-    
-    <h4>1. Process 1 提供基础:</h4>
-    <ul>
-      <li>理解染色质的基本组织</li>
-      <li>核小体呼吸给p53提供结合窗口</li>
-      <li>空间限域影响蛋白动态</li>
-    </ul>
-    
-    <h4>2. Process 2 提供机制:</h4>
-    <ul>
-      <li>p53作为先锋因子的特性</li>
-      <li>染色质重塑酶的招募</li>
-      <li>转录凝聚体的形成</li>
-    </ul>
-    
-    <h4>3. Process 4 提供生理情境:</h4>
-    <ul>
-      <li>DNA损伤后p53大量累积</li>
-      <li>组蛋白修饰改变(γH2AX)</li>
-      <li>染色质局部松弛</li>
-    </ul>
-    
-    <p><strong>实验策略整合:</strong></p>
-    <ul>
-      <li><strong>体外单分子:</strong> 纳米流体 + 拥挤剂模拟核内条件(Process 1知识)</li>
-      <li><strong>机制解析:</strong> p53先锋因子特性(Process 2知识)</li>
-      <li><strong>生理验证:</strong> DNA损伤模型(Process 4知识)</li>
-    </ul>
-  </div>
-  
-  <div class="lang-en-block">
-    <h2>Connection to Research Vision</h2>
-    <h3>p53-Histone Competition in Physiological Conditions</h3>
-    
-    <p><strong>Biological Question:</strong></p>
-    <blockquote>
-      How does p53 rapidly find its target sites and activate transcription in the crowded nuclear environment with high histone concentrations?
-    </blockquote>
-    
-    <p><strong>Related Processes:</strong></p>
-    
-    <h4>1. Process 1 Provides Foundation:</h4>
-    <ul>
-      <li>Understanding basic chromatin organization</li>
-      <li>Nucleosome breathing provides binding windows for p53</li>
-      <li>Spatial confinement affects protein dynamics</li>
-    </ul>
-    
-    <h4>2. Process 2 Provides Mechanism:</h4>
-    <ul>
-      <li>p53 as a pioneer factor</li>
-      <li>Recruitment of chromatin remodeling enzymes</li>
-      <li>Formation of transcriptional condensates</li>
-    </ul>
-    
-    <h4>3. Process 4 Provides Physiological Context:</h4>
-    <ul>
-      <li>Massive p53 accumulation after DNA damage</li>
-      <li>Changes in histone modifications (γH2AX)</li>
-      <li>Local chromatin relaxation</li>
-    </ul>
-    
-    <p><strong>Integrated Experimental Strategy:</strong></p>
-    <ul>
-      <li><strong>In vitro single-molecule:</strong> Nanofluidics + crowding agents to mimic nuclear conditions (Process 1 knowledge)</li>
-      <li><strong>Mechanism dissection:</strong> p53 pioneer factor properties (Process 2 knowledge)</li>
-      <li><strong>Physiological validation:</strong> DNA damage models (Process 4 knowledge)</li>
-    </ul>
-  </div>
-</div>
 
-<!-- Section 6: Learning Path -->
-<div class="bilingual-pair">
-  <div class="lang-zh-block">
-    <h2>学习路径建议</h2>
-    <h3>对于p53-组蛋白竞争研究:</h3>
-    
-    <h4>Phase 1: 基础知识(2-3周)</h4>
-    <ol>
-      <li><strong>Process 1</strong> - 理解染色质基本组织</li>
-      <li><a href="/resource/DNA-Protein/structural/histones/">Histones</a> - 核小体结构与动态</li>
-      <li><a href="/resource/DNA-Protein/regulatory/p53/">p53</a> - p53基本功能</li>
-    </ol>
-    
-    <h4>Phase 2: 机制深入(3-4周)</h4>
-    <ol start="4">
-      <li><strong>Process 2</strong> - 转录激活机制</li>
-      <li>染色质重塑复合体(SWI/SNF, INO80)</li>
-      <li>相分离与转录凝聚体</li>
-    </ol>
-    
-    <h4>Phase 3: 研究整合(ongoing)</h4>
-    <ol start="7">
-      <li><strong>Process 4</strong> - DNA损伤与修复</li>
-      <li>单分子技术(FRET, Nanofluidics)</li>
-      <li>文献阅读与实验设计</li>
-    </ol>
-  </div>
-  
-  <div class="lang-en-block">
-    <h2>Recommended Learning Path</h2>
-    <h3>For p53-Histone Competition Research:</h3>
-    
-    <h4>Phase 1: Foundation (2-3 weeks)</h4>
-    <ol>
-      <li><strong>Process 1</strong> - Understanding basic chromatin organization</li>
-      <li><a href="/resource/DNA-Protein/structural/histones/">Histones</a> - Nucleosome structure & dynamics</li>
-      <li><a href="/resource/DNA-Protein/regulatory/p53/">p53</a> - Basic p53 functions</li>
-    </ol>
-    
-    <h4>Phase 2: Mechanism Deep Dive (3-4 weeks)</h4>
-    <ol start="4">
-      <li><strong>Process 2</strong> - Transcriptional activation mechanisms</li>
-      <li>Chromatin remodeling complexes (SWI/SNF, INO80)</li>
-      <li>Phase separation & transcriptional condensates</li>
-    </ol>
-    
-    <h4>Phase 3: Research Integration (ongoing)</h4>
-    <ol start="7">
-      <li><strong>Process 4</strong> - DNA damage & repair</li>
-      <li>Single-molecule techniques (FRET, Nanofluidics)</li>
-      <li>Literature review & experimental design</li>
-    </ol>
-  </div>
-</div>
 
 <!-- Section 7: Methodologies -->
 <div class="bilingual-pair">
   <div class="lang-zh-block">
     <h2>技术方法整合</h2>
     <h3>跨过程的通用技术</h3>
-    
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -577,7 +415,6 @@ draft: true
   <div class="lang-en-block">
     <h2>Integrated Methodologies</h2>
     <h3>Universal Techniques Across Processes</h3>
-    
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -631,119 +468,6 @@ draft: true
   </div>
 </div>
 
-<!-- Section 8: Update Schedule -->
-<div class="bilingual-pair">
-  <div class="lang-zh-block">
-    <h2>更新计划</h2>
-    
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>过程</th>
-          <th>状态</th>
-          <th>预计完成</th>
-          <th>优先级</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Process 1</td>
-          <td><span class="badge badge-success">✅ 已完成</span></td>
-          <td>2025-01</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Process 2</td>
-          <td><span class="badge badge-info">⏳ 进行中</span></td>
-          <td>2025-02</td>
-          <td>高</td>
-        </tr>
-        <tr>
-          <td>Process 4</td>
-          <td><span class="badge badge-warning">📝 规划中</span></td>
-          <td>2025-03</td>
-          <td>高</td>
-        </tr>
-        <tr>
-          <td>Process 3</td>
-          <td><span class="badge badge-warning">📝 规划中</span></td>
-          <td>2025-04</td>
-          <td>中</td>
-        </tr>
-        <tr>
-          <td>Process 5</td>
-          <td><span class="badge badge-warning">📝 规划中</span></td>
-          <td>2025-05</td>
-          <td>中</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  
-  <div class="lang-en-block">
-    <h2>Update Schedule</h2>
-    
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>Process</th>
-          <th>Status</th>
-          <th>Expected Completion</th>
-          <th>Priority</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Process 1</td>
-          <td><span class="badge badge-success">✅ Completed</span></td>
-          <td>2025-01</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Process 2</td>
-          <td><span class="badge badge-info">⏳ In Progress</span></td>
-          <td>2025-02</td>
-          <td>High</td>
-        </tr>
-        <tr>
-          <td>Process 4</td>
-          <td><span class="badge badge-warning">📝 Planning</span></td>
-          <td>2025-03</td>
-          <td>High</td>
-        </tr>
-        <tr>
-          <td>Process 3</td>
-          <td><span class="badge badge-warning">📝 Planning</span></td>
-          <td>2025-04</td>
-          <td>Medium</td>
-        </tr>
-        <tr>
-          <td>Process 5</td>
-          <td><span class="badge badge-warning">📝 Planning</span></td>
-          <td>2025-05</td>
-          <td>Medium</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- Final Note -->
-<div class="bilingual-pair">
-  <div class="lang-zh-block">
-    <div class="alert alert-success">
-      <strong>🎯 目标:</strong> 通过系统整合生物过程,为p53-组蛋白竞争研究提供全面的知识框架和实验指导。
-    </div>
-  </div>
-  
-  <div class="lang-en-block">
-    <div class="alert alert-success">
-      <strong>🎯 Goal:</strong> Provide comprehensive knowledge framework and experimental guidance for p53-histone competition research through systematic integration of biological processes.
-    </div>
-  </div>
-</div>
-
-</div>
 
 <!-- Styles -->
 <style>

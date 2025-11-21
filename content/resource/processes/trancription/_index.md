@@ -1,7 +1,8 @@
 ---
 title: "p53 - 基因组守护者 | Guardian of the Genome"
 date: 2025-11-15
-draft: true  
+# draft: true  
+layout: coming-soon
 ---
 
 <!-- 语言切换按钮 -->

@@ -15,6 +15,8 @@ image:
   caption: '从核小体到染色体的多级组装'
   focal_point: "Smart"
   preview_only: false
+
+layout: coming-soon
 ---
 
 {{< toc >}}

@@ -2,7 +2,8 @@
 title: "Enzymatic Proteins"
 subtitle: "酶类蛋白 - DNA代谢与修饰"
 summary: "催化DNA复制、修复、重组和化学修饰的酶类蛋白"
-date: 2025-01-15
+date: 2025-11-15
+layout: coming-soon
 ---
 
 {{< toc >}}

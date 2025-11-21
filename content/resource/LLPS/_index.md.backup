@@ -1,0 +1,1119 @@
+---
+title: "Liquid-Liquid Phase Separation (LLPS)"
+subtitle: "液-液相分离 - 生物分子凝聚体的形成与功能"
+summary: "LLPS是细胞通过多价相互作用组织生化反应的普遍机制，在转录调控、染色质组织和DNA修复中发挥关键作用"
+date: 2025-11-20
+authors: ["Yu-Ting Sun"]
+tags: ["LLPS", "Phase Separation", "Condensates", "Transcription", "Chromatin", "p53"]
+categories: ["Molecular Mechanisms", "Nuclear Biology"]
+type: page
+toc: true
+weight: 3
+featured: true
+
+image:
+  caption: 'Cellular biomolecular condensates formed by LLPS (Banani et al. 2017)'
+  focal_point: "Smart"
+  preview_only: false
+---
+
+{{< toc >}}
+
+<!-- 语言切换按钮 -->
+<div class="lang-toggle">
+  <button onclick="toggleLanguage('both')" class="active">中英并排 Both</button>
+  <button onclick="toggleLanguage('zh')">仅中文 Chinese Only</button>
+  <button onclick="toggleLanguage('en')">仅英文 English Only</button>
+</div>
+
+<div class="bilingual-section">
+
+<!-- ========== 概述部分 ========== -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+## 概述
+
+液-液相分离（Liquid-Liquid Phase Separation, LLPS）是细胞内生物大分子通过**多价相互作用**自发形成**无膜细胞器**（membraneless organelles）的物理化学过程。这些动态的生物分子凝聚体（biomolecular condensates）在时空上组织生化反应，实现快速、可逆的功能调控。
+
+在核生物学中，LLPS驱动形成：
+- **转录凝聚体**：浓缩转录因子和共激活因子，增强基因激活
+- **异染色质区域**：通过HP1α等蛋白相分离维持基因沉默
+- **DNA修复病灶**：招募修复蛋白，加速损伤响应
+
+**与本项目的关联**：p53通过其固有无序区（IDR）驱动相分离，形成转录凝聚体，在与组蛋白的竞争中局部增强浓度，克服核小体屏障。
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+## Overview
+
+Liquid-Liquid Phase Separation (LLPS) is a physicochemical process by which cellular biomacromolecules spontaneously form **membraneless organelles** through **multivalent interactions**. These dynamic biomolecular condensates spatiotemporally organize biochemical reactions, enabling rapid and reversible functional regulation.
+
+In nuclear biology, LLPS drives the formation of:
+- **Transcriptional condensates**: Concentrating transcription factors and coactivators to enhance gene activation
+- **Heterochromatin domains**: Maintaining gene silencing through phase separation of proteins like HP1α
+- **DNA repair foci**: Recruiting repair proteins to accelerate damage response
+
+**Connection to this project**: p53 drives phase separation through its intrinsically disordered regions (IDRs), forming transcriptional condensates that locally enhance its concentration to overcome nucleosome barriers in competition with histones.
+
+  </div>
+</div>
+
+<!-- 细胞内凝聚体全景图 -->
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/images/resource/llps-overview.png" alt="Cellular LLPS-driven condensates" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+    <strong>Figure:</strong> Major LLPS-driven biomolecular condensates in cells<br>
+    <em>Source: Banani et al. (2017) Nat Rev Mol Cell Biol 18:285-298</em>
+  </p>
+</div>
+
+---
+
+<!-- ========== Section 1: LLPS基础概念 ========== -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+## Section 1: LLPS基础概念
+
+### 1.1 定义与核心驱动力
+
+**什么是LLPS？**
+
+LLPS是指均一溶液在特定条件下（浓度、温度、离子强度）分离成两相：
+- **稀相（dilute phase）**：蛋白浓度低，类似体相
+- **致密相（dense phase）**：蛋白浓度高，形成液滴状凝聚体
+
+**核心驱动力**：
+1. **多价相互作用（Multivalent interactions）**
+   - 多个弱相互作用位点的协同效应
+   - 通过降低体系自由能驱动相分离 ([Flory-Huggins理论](https://doi.org/10.1038/nrm.2017.7))
+
+2. **固有无序区（IDRs）**
+   - 缺乏固定三维结构
+   - 富含带电、芳香族或极性氨基酸
+   - 提供多个可逆结合位点
+
+3. **特异性相互作用类型**：
+   - **π-π堆积**：芳香族残基（Phe, Tyr, Trp）
+   - **静电相互作用**：正负电荷吸引
+   - **疏水作用**：疏水残基聚集
+   - **氢键网络**：极性残基介导
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+## Section 1: LLPS Fundamentals
+
+### 1.1 Definition and Core Driving Forces
+
+**What is LLPS?**
+
+LLPS refers to the separation of a homogeneous solution into two phases under specific conditions (concentration, temperature, ionic strength):
+- **Dilute phase**: Low protein concentration, similar to bulk
+- **Dense phase**: High protein concentration, forming droplet-like condensates
+
+**Core Driving Forces**:
+1. **Multivalent interactions**
+   - Synergistic effects of multiple weak interaction sites
+   - Drive phase separation by reducing system free energy ([Flory-Huggins theory](https://doi.org/10.1038/nrm.2017.7))
+
+2. **Intrinsically Disordered Regions (IDRs)**
+   - Lack fixed 3D structure
+   - Enriched in charged, aromatic, or polar amino acids
+   - Provide multiple reversible binding sites
+
+3. **Specific Interaction Types**:
+   - **π-π stacking**: Aromatic residues (Phe, Tyr, Trp)
+   - **Electrostatic interactions**: Attraction between opposite charges
+   - **Hydrophobic effect**: Clustering of hydrophobic residues
+   - **Hydrogen bond networks**: Mediated by polar residues
+
+  </div>
+</div>
+
+<!-- 1.2 分子基础 -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+### 1.2 分子基础
+
+**IDR的特征**：
+- **序列组成**：
+  - 低复杂度序列（LCD）：重复的短氨基酸motif
+  - Prion-like domains（PrLDs）：类朊病毒结构域（Gln/Asn富集）
+  - RGG/FG重复：RNA结合蛋白常见
+
+- **结构特性**：
+  - 无固定二级/三级结构
+  - 构象高度灵活（ensemble of states）
+  - 响应环境快速变化
+
+**关键氨基酸类型**：
+
+| 类型 | 代表氨基酸 | 作用机制 |
+|------|-----------|---------|
+| **芳香族** | Phe, Tyr, Trp | π-π堆积，疏水作用 |
+| **带正电** | Arg, Lys | 静电相互作用，结合DNA/RNA |
+| **带负电** | Glu, Asp | 静电相互作用，调控相分离阈值 |
+| **极性** | Ser, Thr, Gln, Asn | 氢键网络，稳定液滴 |
+| **小分子** | Gly, Ala | 提供构象灵活性 |
+
+**实例**：
+- **p53的TAD（1-67）**：富含Phe/Trp（π-π）+ 酸性残基（静电）
+- **HP1α的Hinge**：带正电IDR，结合H3K9me3并驱动相分离
+- **FUS的LCD**：Gly/Ser/Gln/Tyr富集，形成水凝胶状液滴
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+### 1.2 Molecular Basis
+
+**IDR Characteristics**:
+- **Sequence Composition**:
+  - Low Complexity Domains (LCDs): Repetitive short amino acid motifs
+  - Prion-like Domains (PrLDs): Enriched in Gln/Asn
+  - RGG/FG repeats: Common in RNA-binding proteins
+
+- **Structural Properties**:
+  - No fixed secondary/tertiary structure
+  - Highly flexible conformation (ensemble of states)
+  - Rapid response to environmental changes
+
+**Key Amino Acid Types**:
+
+| Type | Representative AAs | Mechanism |
+|------|-------------------|-----------|
+| **Aromatic** | Phe, Tyr, Trp | π-π stacking, hydrophobic effect |
+| **Positively charged** | Arg, Lys | Electrostatic interactions, DNA/RNA binding |
+| **Negatively charged** | Glu, Asp | Electrostatic interactions, regulate phase separation threshold |
+| **Polar** | Ser, Thr, Gln, Asn | Hydrogen bond networks, stabilize droplets |
+| **Small** | Gly, Ala | Provide conformational flexibility |
+
+**Examples**:
+- **p53 TAD (1-67)**: Rich in Phe/Trp (π-π) + acidic residues (electrostatic)
+- **HP1α Hinge**: Positively charged IDR, binds H3K9me3 and drives phase separation
+- **FUS LCD**: Enriched in Gly/Ser/Gln/Tyr, forms hydrogel-like droplets
+
+  </div>
+</div>
+
+<!-- 1.3 物理特性 -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+### 1.3 关键物理特性
+
+**浓度阈值（Saturation concentration, Csat）**：
+- 超过此浓度时发生相分离
+- 受温度、盐浓度、pH、分子拥挤等影响
+- 细胞通过调控浓度控制凝聚体形成
+
+**动态流动性**：
+- 凝聚体内分子快速交换（秒-分钟级）
+- FRAP实验：荧光恢复半衰期 t₁/₂ ~ 10-100 s
+- 不同于固体聚集体（如淀粉样蛋白）
+
+**环境因素影响**：
+
+| 因素 | 效应 | 机制 |
+|------|------|------|
+| **温度↑** | 相分离减弱 | 增加熵，破坏弱相互作用 |
+| **盐浓度↑** | 双向调节 | 低盐促进（屏蔽同种电荷），高盐抑制（竞争结合） |
+| **分子拥挤** | 促进相分离 | 排除体积效应，降低Csat |
+| **翻译后修饰** | 精细调节 | 磷酸化通常抑制，甲基化/乙酰化促进 |
+
+**相图示例**：
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+### 1.3 Key Physical Properties
+
+**Saturation Concentration (Csat)**:
+- Phase separation occurs above this concentration
+- Influenced by temperature, salt, pH, molecular crowding
+- Cells control condensate formation by regulating concentration
+
+**Dynamic Fluidity**:
+- Rapid molecular exchange within condensates (seconds-minutes)
+- FRAP experiments: Fluorescence recovery half-time t₁/₂ ~ 10-100 s
+- Distinct from solid aggregates (e.g., amyloid)
+
+**Environmental Factors**:
+
+| Factor | Effect | Mechanism |
+|--------|--------|-----------|
+| **Temperature↑** | Weaken phase separation | Increase entropy, disrupt weak interactions |
+| **Salt↑** | Biphasic regulation | Low salt promotes (screen like charges), high salt inhibits (compete for binding) |
+| **Molecular crowding** | Promote phase separation | Excluded volume effect, lower Csat |
+| **Post-translational modifications** | Fine-tuning | Phosphorylation usually inhibits, methylation/acetylation promote |
+
+**Phase Diagram Example**:
+
+  </div>
+</div>
+
+<!-- 相图插图 -->
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/images/resource/llps-phase-diagram.png" alt="LLPS phase diagram" style="max-width: 80%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+    <strong>Figure:</strong> Phase diagram showing nucleation and spinodal decomposition mechanisms<br>
+    <em>Source: Alberti et al. (2019) Cell 176:419-434</em>
+  </p>
+</div>
+
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+**两种形成机制**：
+- **成核（Nucleation）**：浓度略超阈值时，小液滴逐渐长大
+- **旋节分解（Spinodal decomposition）**：浓度远超阈值时，快速形成网络状凝聚体
+
+*详细物理原理见 [Alberti et al. 2019](https://doi.org/10.1016/j.cell.2018.12.035)*
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+**Two Formation Mechanisms**:
+- **Nucleation**: Small droplets gradually grow when concentration slightly exceeds threshold
+- **Spinodal decomposition**: Rapid network formation when concentration far exceeds threshold
+
+*For detailed physical principles, see [Alberti et al. 2019](https://doi.org/10.1016/j.cell.2018.12.035)*
+
+  </div>
+</div>
+
+---
+
+<!-- ========== Section 2: LLPS在核生物学中的作用 ========== -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+## Section 2: LLPS在核生物学中的作用
+
+### 2.1 转录调控中的LLPS
+
+#### 转录凝聚体的形成
+
+转录激活需要转录因子（TFs）、共激活因子、Mediator复合体和RNA Pol II在特定基因位点的协同作用。LLPS提供了一种**时空浓缩机制**：
+
+**超级增强子（Super-enhancers）的相分离**：
+- 多个增强子簇集形成高浓度TF结合位点
+- Mediator的MED1亚基（含IDR）驱动相分离
+- 形成转录工厂（transcription factories）
+- 排除抑制因子，选择性富集激活因子
+
+**关键转录凝聚体**：
+
+| 凝聚体类型 | 核心蛋白 | 驱动区域 | 功能 |
+|-----------|---------|---------|------|
+| **p53凝聚体** ⭐ | p53 | TAD (1-67) | 应激响应，细胞周期阻滞 |
+| **MYC凝聚体** | MYC, MAX | N-terminal LCD | 生长调控，代谢重编程 |
+| **ER凝聚体** | ER, Mediator | IDR + AF2 | 雌激素响应 |
+| **GCN4凝聚体** | GCN4, Mediator | Acidic AD | 营养缺乏响应 |
+
+#### p53凝聚体与组蛋白竞争 ⭐⭐⭐
+
+**p53如何通过相分离克服核小体屏障**：
+
+1. **基础状态**（无应激）：
+   - p53浓度低（~10 nM）
+   - 组蛋白占据优势（~10 μM）
+   - 核小体紧密包装DNA，p53结合位点被遮蔽
+
+2. **应激激活**（DNA损伤）：
+   - ATM/ATR磷酸化 → p53稳定化
+   - p53浓度剧增（~1 μM）
+   - **TAD驱动相分离形成凝聚体**
+
+3. **局部浓度增强**：
+   - 凝聚体内p53浓度：**~100 μM**
+   - 远超体相浓度，改变竞争平衡
+   - 利用核小体呼吸窗口（50-250 ms）结合DNA
+
+4. **招募染色质重塑酶**：
+   - p53凝聚体招募p300/CBP（HAT活性）
+   - 组蛋白乙酰化 → 核小体不稳定
+   - SWI/SNF复合体移除核小体
+
+5. **维持开放染色质**：
+   - 相分离持续存在（分钟-小时）
+   - 防止核小体快速重新组装
+   - 持续转录激活
+
+**实验证据**：
+- Chong et al. (2018): 体外重构p53液滴
+- Guo et al. (2019): 活细胞成像观察p53病灶
+- 纳米流体实验（规划中）：模拟拥挤条件下的p53-组蛋白竞争
+
+**MYC-p53 Sequential Remodeling假说**：
+- 增殖期：MYC凝聚体主导 → 增殖基因激活
+- 复制压力：R-loop形成 → DNA损伤
+- 状态转换：MYC凝聚体解体，p53凝聚体形成
+- 修复状态：p53凝聚体主导 → 修复基因激活
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+## Section 2: LLPS Roles in Nuclear Biology
+
+### 2.1 LLPS in Transcriptional Regulation
+
+#### Formation of Transcriptional Condensates
+
+Transcriptional activation requires cooperative action of transcription factors (TFs), coactivators, Mediator complex, and RNA Pol II at specific gene loci. LLPS provides a **spatiotemporal concentration mechanism**:
+
+**Super-enhancer Phase Separation**:
+- Multiple enhancer clusters form high-density TF binding sites
+- Mediator's MED1 subunit (containing IDR) drives phase separation
+- Form transcription factories
+- Exclude repressors, selectively enrich activators
+
+**Key Transcriptional Condensates**:
+
+| Condensate Type | Core Proteins | Driving Region | Function |
+|----------------|---------------|----------------|----------|
+| **p53 condensate** ⭐ | p53 | TAD (1-67) | Stress response, cell cycle arrest |
+| **MYC condensate** | MYC, MAX | N-terminal LCD | Growth control, metabolic reprogramming |
+| **ER condensate** | ER, Mediator | IDR + AF2 | Estrogen response |
+| **GCN4 condensate** | GCN4, Mediator | Acidic AD | Nutrient starvation response |
+
+#### p53 Condensates and Histone Competition ⭐⭐⭐
+
+**How p53 Overcomes Nucleosome Barriers via Phase Separation**:
+
+1. **Basal State** (No Stress):
+   - Low p53 concentration (~10 nM)
+   - Histones dominate (~10 μM)
+   - Nucleosomes tightly package DNA, p53 binding sites occluded
+
+2. **Stress Activation** (DNA Damage):
+   - ATM/ATR phosphorylation → p53 stabilization
+   - p53 concentration surges (~1 μM)
+   - **TAD-driven phase separation forms condensates**
+
+3. **Local Concentration Enhancement**:
+   - p53 concentration inside condensates: **~100 μM**
+   - Far exceeds bulk concentration, shifts competitive equilibrium
+   - Exploit nucleosome breathing windows (50-250 ms) to bind DNA
+
+4. **Recruit Chromatin Remodelers**:
+   - p53 condensates recruit p300/CBP (HAT activity)
+   - Histone acetylation → nucleosome destabilization
+   - SWI/SNF complex removes nucleosomes
+
+5. **Maintain Open Chromatin**:
+   - Phase separation persists (minutes-hours)
+   - Prevent rapid nucleosome reassembly
+   - Sustain transcriptional activation
+
+**Experimental Evidence**:
+- Chong et al. (2018): In vitro reconstitution of p53 droplets
+- Guo et al. (2019): Live-cell imaging of p53 foci
+- Nanofluidics experiments (planned): Model p53-histone competition under crowding
+
+**MYC-p53 Sequential Remodeling Hypothesis**:
+- Proliferation phase: MYC condensate dominates → proliferation gene activation
+- Replication stress: R-loop formation → DNA damage
+- State transition: MYC condensate dissolves, p53 condensate forms
+- Repair state: p53 condensate dominates → repair gene activation
+
+  </div>
+</div>
+
+<!-- 2.2 染色质组织 -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+### 2.2 染色质组织中的LLPS
+
+#### HP1α驱动的异染色质形成
+
+**机制**：
+1. **识别**：HP1α的Chromodomain识别H3K9me3
+2. **二聚化**：HP1α同源二聚体形成
+3. **相分离**：Hinge区（IDR）介导多价相互作用
+4. **扩散**：HP1α液滴招募更多HP1α和HMT（如SUV39H）
+5. **正反馈**：新甲基化的H3K9me3进一步招募HP1α
+
+**特性**：
+- 液滴直径：0.2-2 μm
+- FRAP恢复时间：~30 s
+- 排除RNA Pol II和转录激活因子
+- 维持基因沉默状态
+
+#### Polycomb body形成
+
+**核心成分**：
+- PRC1/PRC2复合体
+- CBX蛋白（识别H3K27me3）
+- EZH2（催化H3K27me3）
+
+**功能**：
+- Polycomb靶基因共定位
+- 形成抑制性核区域
+- 发育基因的长程沉默
+
+#### 其他核凝聚体
+
+| 凝聚体 | 核心蛋白 | 功能 |
+|--------|---------|------|
+| **核仁** | Nucleolin, Fibrillarin | rRNA转录与加工 |
+| **核斑点** | SRSF2, SON | mRNA剪接因子储存 |
+| **PML body** | PML, SUMO | 应激响应，肿瘤抑制 |
+| **Cajal body** | Coilin | snRNA成熟 |
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+### 2.2 LLPS in Chromatin Organization
+
+#### HP1α-Driven Heterochromatin Formation
+
+**Mechanism**:
+1. **Recognition**: HP1α Chromodomain recognizes H3K9me3
+2. **Dimerization**: HP1α homodimer formation
+3. **Phase Separation**: Hinge region (IDR) mediates multivalent interactions
+4. **Spreading**: HP1α droplets recruit more HP1α and HMTs (e.g., SUV39H)
+5. **Positive Feedback**: Newly methylated H3K9me3 further recruits HP1α
+
+**Properties**:
+- Droplet diameter: 0.2-2 μm
+- FRAP recovery time: ~30 s
+- Exclude RNA Pol II and transcriptional activators
+- Maintain gene silencing state
+
+#### Polycomb Body Formation
+
+**Core Components**:
+- PRC1/PRC2 complexes
+- CBX proteins (recognize H3K27me3)
+- EZH2 (catalyzes H3K27me3)
+
+**Functions**:
+- Co-localization of Polycomb target genes
+- Form repressive nuclear domains
+- Long-range silencing of developmental genes
+
+#### Other Nuclear Condensates
+
+| Condensate | Core Proteins | Function |
+|-----------|--------------|----------|
+| **Nucleolus** | Nucleolin, Fibrillarin | rRNA transcription & processing |
+| **Nuclear speckles** | SRSF2, SON | mRNA splicing factor storage |
+| **PML body** | PML, SUMO | Stress response, tumor suppression |
+| **Cajal body** | Coilin | snRNA maturation |
+
+  </div>
+</div>
+
+<!-- 2.3 DNA损伤修复 -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+### 2.3 DNA损伤修复中的LLPS
+
+#### 修复病灶的液滴性质
+
+**双链断裂（DSB）响应**：
+1. **初始信号**：γH2AX标记损伤位点
+2. **53BP1招募**：
+   - 53BP1低复杂度区域驱动相分离
+   - 形成微米级病灶（修复工厂）
+   - 浓缩BRCA1, Rad51等修复蛋白
+
+3. **动态流动性**：
+   - FRAP实验证实液滴特性
+   - 允许修复蛋白快速交换
+   - 根据修复进程动态重组
+
+**功能优势**：
+- **浓缩效应**：提高局部酶浓度，加速修复
+- **选择性分配**：排除不相关蛋白，避免干扰
+- **可逆性**：修复完成后快速解散
+
+**病理意义**：
+- 过度稳定的液滴 → 修复延迟
+- 相分离缺陷 → 基因组不稳定性
+- 靶向液滴动态 → 潜在治疗策略
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+### 2.3 LLPS in DNA Damage Repair
+
+#### Liquid Droplet Properties of Repair Foci
+
+**Double-Strand Break (DSB) Response**:
+1. **Initial Signal**: γH2AX marks damage site
+2. **53BP1 Recruitment**:
+   - 53BP1 low-complexity region drives phase separation
+   - Forms micrometer-scale foci (repair factories)
+   - Concentrates BRCA1, Rad51, and other repair proteins
+
+3. **Dynamic Fluidity**:
+   - FRAP experiments confirm droplet properties
+   - Allow rapid exchange of repair proteins
+   - Dynamically reorganize according to repair progress
+
+**Functional Advantages**:
+- **Concentration Effect**: Increase local enzyme concentration, accelerate repair
+- **Selective Partitioning**: Exclude irrelevant proteins, avoid interference
+- **Reversibility**: Rapidly disassemble after repair completion
+
+**Pathological Significance**:
+- Overly stable droplets → repair delay
+- Phase separation defects → genomic instability
+- Targeting droplet dynamics → potential therapeutic strategies
+
+  </div>
+</div>
+
+---
+
+<!-- ========== Section 3: 关键LLPS驱动蛋白 ========== -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+## Section 3: 关键LLPS驱动蛋白
+
+下表列出了主要的LLPS驱动蛋白及其特征。⭐ 标记的蛋白与本项目研究重点相关。
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+## Section 3: Key LLPS-Driving Proteins
+
+The table lists major LLPS-driving proteins and their characteristics. ⭐ marks proteins related to project research focus.
+
+  </div>
+</div>
+
+<div style="overflow-x: auto; margin: 1.5rem 0;">
+<table class="table table-hover table-bordered">
+  <thead class="thead-light">
+    <tr>
+      <th width="12%">Category</th>
+      <th width="15%">Protein</th>
+      <th width="23%">LLPS-Driving Region</th>
+      <th width="30%">Function</th>
+      <th width="20%">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- 转录因子类 -->
+    <tr style="background: #e0f2fe;">
+      <td rowspan="4" style="vertical-align: middle; font-weight: 600; color: #0369a1;">
+        <strong>转录因子<br>Transcription<br>Factors</strong>
+      </td>
+      <td><strong>p53</strong> ⭐⭐⭐</td>
+      <td>TAD (aa 1-67)<br><small>Aromatic + Acidic</small></td>
+      <td>Stress response, cell cycle arrest, tumor suppression</td>
+      <td><a href="/resource/interactions/regulatory/p53/" class="btn btn-sm btn-outline-primary">View →</a></td>
+    </tr>
+    <tr style="background: #e0f2fe;">
+      <td><strong>MYC</strong></td>
+      <td>N-terminal LCD (aa 1-143)<br><small>Charged residues</small></td>
+      <td>Growth control, metabolic regulation</td>
+      <td><span class="badge badge-secondary">Planned</span></td>
+    </tr>
+    <tr style="background: #e0f2fe;">
+      <td><strong>NFAT5</strong></td>
+      <td>Auxiliary domain<br><small>IDR</small></td>
+      <td>Osmotic stress response</td>
+      <td>—</td>
+    </tr>
+    <tr style="background: #e0f2fe;">
+      <td><strong>GCN4</strong></td>
+      <td>Acidic activation domain</td>
+      <td>Amino acid starvation response</td>
+      <td>—</td>
+    </tr>
+    
+    <!-- 染色质蛋白类 -->
+    <tr style="background: #d1fae5;">
+      <td rowspan="4" style="vertical-align: middle; font-weight: 600; color: #065f46;">
+        <strong>染色质蛋白<br>Chromatin<br>Proteins</strong>
+      </td>
+      <td><strong>HP1α</strong> ⭐⭐</td>
+      <td>Hinge (aa 70-120)<br><small>Positively charged IDR</small></td>
+      <td>Heterochromatin formation, gene silencing</td>
+      <td><a href="/resource/interactions/structural/hp1/" class="btn btn-sm btn-outline-success">View →</a></td>
+    </tr>
+    <tr style="background: #d1fae5;">
+      <td><strong>PRC1 (CBX2)</strong></td>
+      <td>C-terminal IDR (aa 300-532)<br><small>Low complexity</small></td>
+      <td>Polycomb body formation</td>
+      <td>—</td>
+    </tr>
+    <tr style="background: #d1fae5;">
+      <td><strong>BRD4</strong></td>
+      <td>IDR<br><small>Intrinsically disordered</small></td>
+      <td>Super-enhancer assembly, transcription elongation</td>
+      <td>—</td>
+    </tr>
+    <tr style="background: #d1fae5;">
+      <td><strong>TIP5</strong></td>
+      <td>IDR + RNA-binding</td>
+      <td>Nucleolar silencing</td>
+      <td>—</td>
+    </tr>
+    
+    <!-- 共激活因子类 -->
+    <tr style="background: #fce7f3;">
+      <td rowspan="4" style="vertical-align: middle; font-weight: 600; color: #9f1239;">
+        <strong>共激活因子<br>Coactivators</strong>
+      </td>
+      <td><strong>Mediator (MED1)</strong> ⭐</td>
+      <td>IDR (aa 1-580)<br><small>Super-enhancer driver</small></td>
+      <td>Transcription factory formation</td>
+      <td>—</td>
+    </tr>
+    <tr style="background: #fce7f3;">
+      <td><strong>p300/CBP</strong></td>
+      <td>CH1-KIX-CH3 linkers<br><small>IDR</small></td>
+      <td>Histone acetylation, chromatin opening</td>
+      <td>—</td>
+    </tr>
+    <tr style="background: #fce7f3;">
+      <td><strong>YAP/TAZ</strong></td>
+      <td>C-terminal IDR</td>
+      <td>Hippo pathway, mechanotransduction</td>
+      <td>—</td>
+    </tr>
+    <tr style="background: #fce7f3;">
+      <td><strong>NELF</strong></td>
+      <td>RRM + IDR</td>
+      <td>Transcription pausing control</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<!-- IDR对比表格 -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+### 关键蛋白的IDR结构特征
+
+下表总结了主要LLPS驱动蛋白的IDR位置、序列特征和驱动机制：
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+### IDR Structural Features of Key Proteins
+
+The table summarizes the IDR positions, sequence features, and driving mechanisms of major LLPS-driving proteins:
+
+  </div>
+</div>
+
+<div style="overflow-x: auto; margin: 1.5rem 0;">
+<table class="table table-hover table-bordered">
+  <thead class="thead-light">
+    <tr>
+      <th>Protein</th>
+      <th>IDR Region (aa)</th>
+      <th>Key Residues</th>
+      <th>Driving Mechanism</th>
+      <th>Csat (approx.)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background: #fef3c7;">
+      <td><strong>p53</strong></td>
+      <td>TAD (1-67)<br>CTD (363-393)</td>
+      <td>Phe, Trp (π-π)<br>Glu, Asp (electrostatic)</td>
+      <td>Aromatic stacking + Electrostatic</td>
+      <td>~0.5 μM</td>
+    </tr>
+    <tr>
+      <td><strong>MYC</strong></td>
+      <td>N-term (1-143)</td>
+      <td>Charged residues (Arg, Glu)</td>
+      <td>Electrostatic interactions</td>
+      <td>~2 μM</td>
+    </tr>
+    <tr style="background: #d1fae5;">
+      <td><strong>HP1α</strong></td>
+      <td>Hinge (70-120)</td>
+      <td>Arg, Lys (positive)<br>RNA-binding</td>
+      <td>Electrostatic + RNA bridging</td>
+      <td>~1 μM</td>
+    </tr>
+    <tr>
+      <td><strong>CBX2</strong></td>
+      <td>C-term (300-532)</td>
+      <td>Low complexity</td>
+      <td>Weak multivalent interactions</td>
+      <td>~5 μM</td>
+    </tr>
+    <tr style="background: #fce7f3;">
+      <td><strong>MED1</strong></td>
+      <td>IDR (1-580)</td>
+      <td>Ser, Thr, Gln-rich</td>
+      <td>Polar interactions + TF binding</td>
+      <td>~0.1 μM</td>
+    </tr>
+    <tr>
+      <td><strong>FUS</strong></td>
+      <td>LCD (1-267)</td>
+      <td>Gly, Ser, Gln, Tyr</td>
+      <td>π-π + Hydrogen bonds</td>
+      <td>~0.05 μM</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+**表格说明**：
+- **Csat**：体外测定的相分离浓度阈值（实际细胞内受多种因素调控）
+- **高亮行**：与本项目研究重点相关（p53, HP1α, MED1）
+- **FUS**：RNA结合蛋白，作为经典LLPS模型蛋白列出
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+**Table Notes**:
+- **Csat**: In vitro measured phase separation concentration threshold (regulated by multiple factors in cells)
+- **Highlighted rows**: Related to project research focus (p53, HP1α, MED1)
+- **FUS**: RNA-binding protein, listed as a classical LLPS model protein
+
+  </div>
+</div>
+
+---
+
+<!-- ========== 推荐阅读区 ========== -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+## 推荐阅读 | Recommended Reading
+
+### 里程碑综述
+
+1. **Banani SF, Lee HO, Hyman AA, Rosen MK (2017)**
+   *Biomolecular condensates: organizers of cellular biochemistry*
+   **Nat Rev Mol Cell Biol** 18:285-298
+   [DOI: 10.1038/nrm.2017.7](https://doi.org/10.1038/nrm.2017.7)
+   - LLPS领域的全面综述，涵盖基本原理、生物学功能和疾病相关性
+
+2. **Sabari BR, Dall'Agnese A, Young RA (2020)**
+   *Biomolecular condensates in the nucleus*
+   **Trends Biochem Sci** 45:961-977
+   [DOI: 10.1016/j.tibs.2020.06.007](https://doi.org/10.1016/j.tibs.2020.06.007)
+   - 聚焦转录凝聚体的形成、功能和调控机制
+
+### p53相关原创研究
+
+3. **Chong S, Dugast-Darzacq C, Liu Z, et al. (2018)**
+   *Imaging dynamic and selective low-complexity domain interactions that control gene transcription*
+   **Science** 361:eaar2555
+   [DOI: 10.1126/science.aar2555](https://doi.org/10.1126/science.aar2555)
+   - 首次在活细胞中观察到p53等转录因子的液滴动态
+
+4. **Guo YE, Manteiga JC, Henninger JE, et al. (2019)**
+   *Pol II phosphorylation regulates a switch between transcriptional and splicing condensates*
+   **Nature** 572:543-548
+   [DOI: 10.1038/s41586-019-1464-0](https://doi.org/10.1038/s41586-019-1464-0)
+   - 揭示转录凝聚体与剪接凝聚体的动态转换
+
+### 异染色质相分离
+
+5. **Strom AR, Emelyanov AV, Mir M, et al. (2017)**
+   *Phase separation drives heterochromatin domain formation*
+   **Nature** 547:241-245
+   [DOI: 10.1038/nature22989](https://doi.org/10.1038/nature22989)
+   - 证明HP1α通过相分离驱动异染色质形成
+
+6. **Sanulli S, Trnka MJ, Dharmarajan V, et al. (2019)**
+   *HP1 reshapes nucleosome-containing chromatin*
+   **Nature** 575:390-394
+   [DOI: 10.1038/s41586-019-1669-2](https://doi.org/10.1038/s41586-019-1669-2)
+   - Fierz实验室揭示HP1α如何通过相分离重塑染色质结构
+
+### 物理机制与理论
+
+7. **Alberti S, Gladfelter A, Mittag T (2019)**
+   *Considerations and challenges in studying liquid-liquid phase separation and biomolecular condensates*
+   **Cell** 176:419-434
+   [DOI: 10.1016/j.cell.2018.12.035](https://doi.org/10.1016/j.cell.2018.12.035)
+   - 讨论LLPS研究的方法学挑战和注意事项
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+## Recommended Reading
+
+### Milestone Reviews
+
+1. **Banani SF, Lee HO, Hyman AA, Rosen MK (2017)**
+   *Biomolecular condensates: organizers of cellular biochemistry*
+   **Nat Rev Mol Cell Biol** 18:285-298
+   [DOI: 10.1038/nrm.2017.7](https://doi.org/10.1038/nrm.2017.7)
+   - Comprehensive review of LLPS, covering principles, biological functions, and disease relevance
+
+2. **Sabari BR, Dall'Agnese A, Young RA (2020)**
+   *Biomolecular condensates in the nucleus*
+   **Trends Biochem Sci** 45:961-977
+   [DOI: 10.1016/j.tibs.2020.06.007](https://doi.org/10.1016/j.tibs.2020.06.007)
+   - Focus on transcriptional condensate formation, function, and regulation
+
+### p53-Related Original Research
+
+3. **Chong S, Dugast-Darzacq C, Liu Z, et al. (2018)**
+   *Imaging dynamic and selective low-complexity domain interactions that control gene transcription*
+   **Science** 361:eaar2555
+   [DOI: 10.1126/science.aar2555](https://doi.org/10.1126/science.aar2555)
+   - First observation of p53 and other TF droplet dynamics in live cells
+
+4. **Guo YE, Manteiga JC, Henninger JE, et al. (2019)**
+   *Pol II phosphorylation regulates a switch between transcriptional and splicing condensates*
+   **Nature** 572:543-548
+   [DOI: 10.1038/s41586-019-1464-0](https://doi.org/10.1038/s41586-019-1464-0)
+   - Reveals dynamic transition between transcriptional and splicing condensates
+
+### Heterochromatin Phase Separation
+
+5. **Strom AR, Emelyanov AV, Mir M, et al. (2017)**
+   *Phase separation drives heterochromatin domain formation*
+   **Nature** 547:241-245
+   [DOI: 10.1038/nature22989](https://doi.org/10.1038/nature22989)
+   - Demonstrates HP1α-driven heterochromatin formation via phase separation
+
+6. **Sanulli S, Trnka MJ, Dharmarajan V, et al. (2019)**
+   *HP1 reshapes nucleosome-containing chromatin*
+   **Nature** 575:390-394
+   [DOI: 10.1038/s41586-019-1669-2](https://doi.org/10.1038/s41586-019-1669-2)
+   - Fierz lab reveals how HP1α reshapes chromatin structure via phase separation
+
+### Physical Mechanisms and Theory
+
+7. **Alberti S, Gladfelter A, Mittag T (2019)**
+   *Considerations and challenges in studying liquid-liquid phase separation and biomolecular condensates*
+   **Cell** 176:419-434
+   [DOI: 10.1016/j.cell.2018.12.035](https://doi.org/10.1016/j.cell.2018.12.035)
+   - Discusses methodological challenges and considerations in LLPS research
+
+  </div>
+</div>
+
+---
+
+<!-- 状态说明 -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+<div class="alert alert-success">
+  <strong>✅ 本页面状态：</strong>双语完整版 | LLPS mechanism resource | 完整内容 | Last updated: 2025-11-20
+</div>
+
+<div class="alert alert-info">
+  <strong>🔗 交叉引用：</strong>本机制涉及的蛋白详见 
+  <a href="/resource/interactions/structural/">Structural Proteins</a>、
+  <a href="/resource/interactions/regulatory/">Regulatory Proteins</a>
+</div>
+
+<div class="alert alert-warning">
+  <strong>🔬 研究亮点：</strong>本页面特别强调了p53通过相分离克服核小体屏障的机制，支撑"p53-组蛋白竞争"研究愿景。MYC-p53 sequential remodeling假说为未来研究方向。
+</div>
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+<div class="alert alert-success">
+  <strong>✅ Page Status:</strong>Bilingual Complete Version | LLPS mechanism resource | Full Content | Last updated: 2025-11-20
+</div>
+
+<div class="alert alert-info">
+  <strong>🔗 Cross-references:</strong>Proteins involved in this mechanism can be found in 
+  <a href="/resource/interactions/structural/">Structural Proteins</a>, 
+  <a href="/resource/interactions/regulatory/">Regulatory Proteins</a>
+</div>
+
+<div class="alert alert-warning">
+  <strong>🔬 Research Highlights:</strong>This page emphasizes the mechanism by which p53 overcomes nucleosome barriers through phase separation, supporting the "p53-histone competition" research vision. The MYC-p53 sequential remodeling hypothesis represents a future research direction.
+</div>
+
+  </div>
+</div>
+
+</div>
+
+<!-- JavaScript for language toggle -->
+<script>
+function toggleLanguage(lang) {
+  const section = document.querySelector('.bilingual-section');
+  const buttons = document.querySelectorAll('.lang-toggle button');
+  
+  buttons.forEach(btn => btn.classList.remove('active'));
+  
+  if (lang === 'zh') {
+    section.classList.add('hide-en');
+    section.classList.remove('hide-zh');
+    buttons[1].classList.add('active');
+  } else if (lang === 'en') {
+    section.classList.add('hide-zh');
+    section.classList.remove('hide-en');
+    buttons[2].classList.add('active');
+  } else {
+    section.classList.remove('hide-zh', 'hide-en');
+    buttons[0].classList.add('active');
+  }
+}
+</script>
+
+<style>
+/* Card hover effect */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15) !important;
+}
+
+/* Protein card styling - Fix overlapping issue */
+.protein-item {
+  display: block;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f5f9;
+  min-height: 80px;
+}
+
+.protein-item:last-child {
+  border-bottom: none;
+}
+
+.protein-name {
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.protein-details {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.protein-details small {
+  display: block;
+  margin-bottom: 0.25rem;
+  line-height: 1.5;
+}
+
+.priority-badge {
+  display: inline-block;
+  margin-left: 0.25rem;
+  font-size: 0.9em;
+  vertical-align: middle;
+}
+
+/* Ensure proper alignment in bilingual blocks */
+.lang-zh-block h3, .lang-en-block h3 {
+  color: #1e293b;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.lang-zh-block h4, .lang-en-block h4 {
+  color: #475569;
+  margin-top: 1.5rem;
+}
+
+/* Table styling enhancement */
+.table-hover tbody tr:hover {
+  background-color: #f0f9ff;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .protein-item {
+    border-bottom-color: #334155;
+  }
+  
+  .lang-zh-block h3, .lang-en-block h3 {
+    color: #e2e8f0;
+    border-bottom-color: #475569;
+  }
+  
+  .lang-zh-block h4, .lang-en-block h4 {
+    color: #cbd5e1;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #1e3a5f;
+  }
+  
+  .card {
+    background: #1e293b;
+    border-color: #334155;
+  }
+  
+  .alert-success {
+    background-color: #064e3b;
+    border-color: #065f46;
+    color: #d1fae5;
+  }
+  
+  .alert-info {
+    background-color: #1e3a8a;
+    border-color: #1e40af;
+    color: #dbeafe;
+  }
+  
+  .alert-warning {
+    background-color: #78350f;
+    border-color: #92400e;
+    color: #fef3c7;
+  }
+}
+</style>
