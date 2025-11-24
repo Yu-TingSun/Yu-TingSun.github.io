@@ -1,250 +1,269 @@
 ---
-title: "DNA-Protein Interaction"
-subtitle: "DNA-蛋白质相互作用分类体系"
-summary: "系统性总结DNA结合蛋白的结构、功能与研究方法"
-date: 2025-11-15
+title: "DNA-Protein Interactions"
+subtitle: "Systematic classification of DNA-binding proteins"
+summary: "Comprehensive overview of protein families that interact with DNA, organized by structure, enzymatic function, and regulatory roles"
+date: 2025-01-24
 type: widget_page
 headless: false
-# draft: true  
-layout: coming-soon
 ---
 
 {{< toc >}}
 
-## 概述 | Overview
+## Overview
 
-DNA-蛋白质相互作用是生命活动的核心过程，涉及基因组的复制、修复、重组和转录调控。本资源库系统性整理了参与DNA相互作用的主要蛋白质家族及其研究方法。
-
-DNA-protein interactions are central to life processes, involving genome replication, repair, recombination, and transcriptional regulation. This resource systematically organizes major protein families that interact with DNA and their research methods.
+DNA-protein interactions are fundamental to life processes, governing genome replication, repair, recombination, and transcriptional regulation. This resource systematically organizes major protein families that interact with DNA, providing a framework for understanding their coordinated roles in cellular functions.
 
 ---
 
-## 分类体系 | Classification System
+## Classification Framework
 
-{{< figure src="/images/resource/DNA-Protein.png" caption="DNA-interacting proteins 分类总览" width="100%" >}}
+This resource employs a **Structure-Enzyme-Regulation** framework that organizes DNA-binding proteins by their primary molecular roles:
 
-### 📊 三大类蛋白质概览
+<!-- - **Structural Proteins**: Establish and maintain the physical architecture of DNA/chromatin -->
+  <!-- - *Includes*: Classical histones + 3D genome organizers (Cohesin, CTCF, Condensin)
+  - *Rationale*: These proteins create physical structures, from nucleosomes to chromosomal loops -->
 
-<div class="table-responsive">
-<table class="table table-hover">
-  <thead class="thead-light">
-    <tr>
-      <th width="15%">中文名称</th>
-      <th width="20%">英文名称</th>
-      <th width="20%">核心功能</th>
-      <th width="25%">典型代表</th>
-      <th width="20%">主要亚类</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>1️⃣ 结构蛋白</strong></td>
-      <td><strong>Structural proteins</strong></td>
-      <td>维持DNA或染色质结构的完整性与组织</td>
-      <td>Histones, SMC family, CTCF</td>
-      <td>
-        • DNA-packaging<br>
-        • Chromosome architectural<br>
-        • Boundary proteins<br>
-        • Nuclear scaffold
-      </td>
-    </tr>
-    <tr>
-      <td><strong>2️⃣ 酶类蛋白</strong></td>
-      <td><strong>Enzymatic proteins</strong></td>
-      <td>执行化学反应：复制、修复、重组、拓扑变化、修饰</td>
-      <td>DNA Pol, Ligase, RecA/Rad51, Topoisomerase, DNMT</td>
-      <td>
-        • Replication enzymes<br>
-        • Repair enzymes<br>
-        • Recombination enzymes<br>
-        • Topoisomerases<br>
-        • Modification enzymes
-      </td>
-    </tr>
-    <tr>
-      <td><strong>3️⃣ 调控蛋白</strong></td>
-      <td><strong>Regulatory proteins</strong></td>
-      <td>控制基因表达或染色质状态</td>
-      <td>p53, MYC, SWI/SNF, HAT/HDAC, BRD4</td>
-      <td>
-        • Transcription factors<br>
-        • Chromatin remodelers<br>
-        • Histone modifiers<br>
-        • Epigenetic readers<br>
-        • Co-regulators
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<!-- - **Enzymatic Proteins**: Catalyze chemical reactions on DNA -->
+  <!-- - *Corresponds to*: Replication + Repair + Recombination factors in functional classifications
+  - *Rationale*: Distinguished by their catalytic activity (e.g., polymerase, ligase, nuclease) -->
 
-### 🌳 详细分类树状图
+<!-- - **Regulatory Proteins**: Modulate gene expression without forming stable structures -->
+  <!-- - *Includes*: Transcription factors + Chromatin modifiers + Epigenetic readers
+  - *Rationale*: Control chromatin accessibility and transcriptional output -->
 
-<div style="background: #f8f9fa; padding: 20px; border-radius: 8px; font-family: 'Monaco', 'Courier New', monospace; font-size: 0.9em; line-height: 1.8;">
-<strong>DNA-interacting proteins</strong><br>
-├── <span style="color: #4ECDC4;">I. Structural proteins</span><br>
-│   ├── DNA-packaging proteins → <a href="structural/histones/">Histones</a><br>
-│   ├── Chromosome architectural proteins → SMC1–6, Cohesin, Condensin<br>
-│   ├── Boundary proteins → <a href="structural/#ctcf">CTCF</a><br>
-│   └── Nuclear scaffold proteins → Lamin A/C<br>
-│<br>
-├── <span style="color: #FFD93D;">II. Enzymatic proteins</span><br>
-│   ├── DNA replication enzymes → Pol α/δ/ε, MCM<br>
-│   ├── DNA repair enzymes → Ligase, PARP, Rad50<br>
-│   ├── DNA recombination enzymes → <a href="enzymatic/reca-rad51/">RecA, Rad51, Dmc1</a><br>
-│   ├── DNA topoisomerases → Topo I/II<br>
-│   └── DNA modification enzymes → DNMT, TET<br>
-│<br>
-└── <span style="color: #FF6B9D;">III. Regulatory proteins</span><br>
-    ├── Transcription factors → <a href="regulatory/p53/">p53</a>, MYC, NF-κB<br>
-    ├── Chromatin remodelers → SWI/SNF, INO80<br>
-    ├── Histone modifiers → HAT, HDAC, HMT<br>
-    ├── Epigenetic readers → BRD4, HP1<br>
-    ├── Co-regulators → Mediator, p300/CBP<br>
-    └── 3D chromatin organizers → CTCF, Cohesin
-</div>
+<!-- ### 💡 Connection to p53-Histone Competition Research
 
+This classification directly supports the study of **transcription factor-nucleosome competition**:
+- **Histones** (Structural) provide a stable, high-affinity DNA-packaging platform
+- **p53** (Regulatory) must compete with histones for DNA access during stress responses
+- Understanding their distinct roles clarifies the biophysical basis of this competition -->
 ---
 
-## 蛋白质分类 | Protein Classification
+<!-- ## Classification System
 
-<div class="row">
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100 shadow-sm hover-card">
-      <div class="card-body text-center">
-        <div class="category-icon mb-3" style="font-size: 3rem; color: #4ECDC4;">
-          🏗️
-        </div>
-        <h3 class="card-title">
-          <a href="structural/" style="text-decoration: none; color: inherit;">
-            结构蛋白<br>Structural Proteins
-          </a>
-        </h3>
-        <p class="card-text text-muted">
-          维持染色体结构与高级组装<br>
-          <small>Maintain chromosome structure and higher-order organization</small>
-        </p>
-        <div class="mt-3">
-          <span class="badge badge-info">4 protein families</span>
-          <span class="badge badge-success">2 completed</span>
-        </div>
-        <ul class="list-unstyled text-left mt-3 small">
-          <li>✓ Histones</li>
-          <li>✓ H-NS</li>
-          <li>⏳ SMC family</li>
-          <li>⏳ CTCF</li>
-        </ul>
-        <a href="structural/" class="btn btn-outline-primary btn-sm mt-2">
-          查看详情 →
-        </a>
-      </div>
-    </div>
+{{< figure src="/images/resource/DNA-Protein.png" caption="Overview of DNA-interacting protein classification" width="100%" >}} -->
+
+
+
+<div class="taxonomy-container">
+
+<!-- ========== Structural Proteins ========== -->
+<div class="taxonomy-section structural">
+  <h4>I. Structural Proteins</h4>
+  <p class="category-description">Establish and maintain the physical architecture of DNA/chromatin.</p>
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">DNA packaging proteins</span>
+    <span class="taxonomy-proteins">
+      <a href="structural/histones/">Histones</a> (H2A, H2B, H3, H4), Linker histone H1
+    </span>
   </div>
-
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100 shadow-sm hover-card">
-      <div class="card-body text-center">
-        <div class="category-icon mb-3" style="font-size: 3rem; color: #FFD93D;">
-          ⚙️
-        </div>
-        <h3 class="card-title">
-          <a href="enzymatic/" style="text-decoration: none; color: inherit;">
-            酶类蛋白<br>Enzymatic Proteins
-          </a>
-        </h3>
-        <p class="card-text text-muted">
-          催化DNA代谢相关反应<br>
-          <small>Catalyze DNA metabolic reactions</small>
-        </p>
-        <div class="mt-3">
-          <span class="badge badge-info">5 protein families</span>
-          <span class="badge badge-success">1 completed</span>
-        </div>
-        <ul class="list-unstyled text-left mt-3 small">
-          <li>✓ RecA/Rad51/Dmc1</li>
-          <li>⏳ DNA Polymerase</li>
-          <li>⏳ DNA Ligase</li>
-          <li>⏳ Topoisomerase</li>
-          <li>⏳ DNMT</li>
-        </ul>
-        <a href="enzymatic/" class="btn btn-outline-warning btn-sm mt-2">
-          查看详情 →
-        </a>
-      </div>
-    </div>
+  
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">3D genome organization</span>
+    <span class="taxonomy-proteins">
+      <a href="structural/cohesin/">Cohesin</a> (loop formation), 
+      <a href="structural/ctcf/">CTCF</a> (boundary factor), 
+      Condensin (mitotic condensation), 
+      SMC5/6 (genome stability)
+    </span>
   </div>
-
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100 shadow-sm hover-card">
-      <div class="card-body text-center">
-        <div class="category-icon mb-3" style="font-size: 3rem; color: #FF6B9D;">
-          📊
-        </div>
-        <h3 class="card-title">
-          <a href="regulatory/" style="text-decoration: none; color: inherit;">
-            调控蛋白<br>Regulatory Proteins
-          </a>
-        </h3>
-        <p class="card-text text-muted">
-          调节基因表达与染色质状态<br>
-          <small>Regulate gene expression and chromatin states</small>
-        </p>
-        <div class="mt-3">
-          <span class="badge badge-info">6 protein families</span>
-          <span class="badge badge-success">1 completed</span>
-        </div>
-        <ul class="list-unstyled text-left mt-3 small">
-          <li>✓ p53</li>
-          <li>⏳ MYC</li>
-          <li>⏳ NF-κB</li>
-          <li>⏳ SWI/SNF</li>
-          <li>⏳ HAT/HDAC</li>
-          <li>⏳ BRD4</li>
-        </ul>
-        <a href="regulatory/" class="btn btn-outline-danger btn-sm mt-2">
-          查看详情 →
-        </a>
-      </div>
-    </div>
+  
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">Nuclear architecture</span>
+    <span class="taxonomy-proteins">
+      Lamin A/C, Nuclear matrix proteins (SAF-A)
+    </span>
+  </div>
+  
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">Architectural modulators</span>
+    <span class="taxonomy-proteins">
+      High-Mobility Group (HMG) proteins, DNA bending factors
+    </span>
   </div>
 </div>
 
+<!-- ========== Enzymatic Proteins ========== -->
+<div class="taxonomy-section enzymatic">
+  <h4>II. Enzymatic Proteins</h4>
+  <p class="category-description">Catalyze chemical reactions on DNA.</p>
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">DNA replication enzymes</span>
+    <span class="taxonomy-proteins">
+      DNA polymerases (α, δ, ε), MCM complex (helicase), Primase
+    </span>
+  </div>
+  
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">DNA repair enzymes</span>
+    <span class="taxonomy-proteins">
+      DNA Ligase (I, III, IV), PARP1, Nucleases (XPF, FEN1), Rad50
+    </span>
+  </div>
+  
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">DNA recombination enzymes</span>
+    <span class="taxonomy-proteins">
+      <a href="enzymatic/reca">RecA</a><wbr>/Rad51/Dmc1<wbr> (homologous recombination)
+    </span>
+  </div>
+  
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">DNA topoisomerases</span>
+    <span class="taxonomy-proteins">
+      Topoisomerase I, Topoisomerase II (relieve supercoiling)
+    </span>
+  </div>
+  
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">DNA modification enzymes</span>
+    <span class="taxonomy-proteins">
+      DNA methyltransferases (DNMT1/3A/3B), TET enzymes (demethylation)
+    </span>
+  </div>
+  
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">DNA helicases</span>
+    <span class="taxonomy-proteins">
+      RecQ family (BLM, WRN), UvrD, Pif1
+    </span>
+  </div>
+</div>
+
+<!-- ========== Regulatory Proteins ========== -->
+<div class="taxonomy-section regulatory">
+  <h4>III. Regulatory Proteins</h4>
+  <p class="category-description">Modulate gene expression without forming stable structures.</p>
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">Transcription factors</span>
+    <span class="taxonomy-proteins">
+      <a href="regulatory/p53/">p53</a> (tumor suppressor), 
+      MYC (growth regulator), 
+      NF-κB (inflammation master), 
+      Nuclear receptors (ER, GR)
+    </span>
+  </div>
+  
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">Chromatin remodelers</span>
+    <span class="taxonomy-proteins">
+      <a href="regulatory/swi-snf/">SWI/SNF</a> (BAF complex), 
+      INO80, ISWI, CHD family (ATP-dependent remodeling)
+    </span>
+  </div>
+  
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">Histone modifying enzymes</span>
+    <span class="taxonomy-proteins">
+      HATs (p300/CBP, GCN5), 
+      HDACs (Class I/II/III/IV), 
+      HMTs (EZH2, SUV39H1), 
+      HDMs (LSD1, JMJD2)
+    </span>
+  </div>
+  
+  <div class="taxonomy-item">
+    <span class="taxonomy-label"> Epigenetic readers</span>
+    <span class="taxonomy-proteins">
+      BRD4 (acetyl-lysine reader), 
+      HP1α/β/γ (methyl-lysine reader), 
+      CBX proteins (Polycomb readers)
+    </span>
+  </div>
+  
+  <div class="taxonomy-item">
+    <span class="taxonomy-label">Transcriptional co-regulators</span>
+    <span class="taxonomy-proteins">
+      Mediator complex (MED1/12/14), 
+      p300/CBP (co-activators), 
+      NCoR/SMRT (co-repressors)
+    </span>
+  </div>
+</div>
+
+</div>
+
 ---
+<!-- 
+## Research Methodologies
 
-## 研究方法 | Research Methods
+### Single-Molecule Techniques
+- **TIRF Microscopy**: Total Internal Reflection Fluorescence for visualizing protein-DNA dynamics
+- **FRET**: Förster Resonance Energy Transfer for measuring conformational changes
+- **CoSMoS**: Co-localization Single-Molecule Spectroscopy for complex assembly
+- **Optical Tweezers**: Force measurement for nucleosome unwrapping and protein binding
+- **AFM**: Atomic Force Microscopy for chromatin fiber imaging
 
-### 单分子技术 | Single-Molecule Techniques
-- **TIRF**: Total Internal Reflection Fluorescence
-- **FRET**: Förster Resonance Energy Transfer
-- **CoSMoS**: Co-localization Single-Molecule Spectroscopy
-- **AFM**: Atomic Force Microscopy
+### Biochemical Analysis
+- **EMSA**: Electrophoretic Mobility Shift Assay for DNA-binding affinity
+- **ChIP-seq**: Chromatin Immunoprecipitation Sequencing for genome-wide localization
+- **ATAC-seq**: Assay for Transposase-Accessible Chromatin for chromatin accessibility
+- **Pull-down Assays**: Protein-protein interaction mapping
+- **DNase I Footprinting**: DNA-binding site identification
 
-### 生化分析 | Biochemical Analysis
-- **EMSA**: Electrophoretic Mobility Shift Assay
-- **ChIP-seq**: Chromatin Immunoprecipitation Sequencing
-- **Pull-down Assay**
+### Structural Biology
+- **X-ray Crystallography**: High-resolution protein-DNA complex structures
+- **Cryo-EM**: Cryo-Electron Microscopy for large chromatin complexes
+- **NMR**: Nuclear Magnetic Resonance for dynamics and intrinsically disordered regions
+- **SAXS**: Small-Angle X-ray Scattering for solution structures
 
-### 结构生物学 | Structural Biology
-- **X-ray Crystallography**
-- **Cryo-EM**: Cryo-Electron Microscopy
-- **NMR**: Nuclear Magnetic Resonance
+### Computational Approaches
+- **Molecular Dynamics**: Simulation of protein-DNA interactions
+- **AlphaFold**: Structure prediction for uncharacterized proteins
+- **Motif Discovery**: Position Weight Matrices (PWMs) for binding site prediction
+- **Network Analysis**: Mapping transcriptional regulatory networks -->
 
 ---
-<style>
-.hover-card {
-  transition: all 0.3s ease;
-  border: none;
-}
-.hover-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
-}
-.category-icon {
-  animation: float 3s ease-in-out infinite;
-}
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-</style>
+<!-- 
+## Cross-References
+
+### Biological Processes
+For a process-oriented view of how these proteins coordinate in cellular contexts, see:
+- [Chromatin Architecture Establishment](/resource/processes/chromatin/)
+- [Transcriptional Activation](/resource/processes/transcription/) *(planned)*
+- [DNA Damage Repair](/resource/processes/repair/) *(planned)*
+- [DNA Replication](/resource/processes/replication/) *(planned)*
+
+### Featured Proteins
+Detailed mechanistic studies:
+- [Histones - Nucleosome Core](/resource/interactions/structural/histones/) ✅
+- [p53 - Guardian of the Genome](/resource/interactions/regulatory/p53/) ✅
+- [RecA/Rad51 - Homologous Recombination](/resource/interactions/enzymatic/reca-rad51/) ✅
+- [LLPS in Genome Regulation](/resource/llps/) ✅
+
+--- -->
+
+<!-- ## Key References -->
+
+### Classification Frameworks
+1. **Zheng Z, Wang Y (2011)** *Biomol Concepts* 2011 Aug 1;2(4):293-303. 
+   [DNA binding proteins: outline of functional classification](https://doi.org/10.1515/bmc.2011.023)
+
+2. **Luscombe NM et al. (2000)** *Genome Biology* 1:reviews001.
+   [An overview of the structures of protein-DNA complexes](https://doi.org/10.1186/gb-2000-1-1-reviews001)
+
+<!-- ### Chromatin Architecture
+3. **Dekker J, Mirny L (2016)** *Cell* 164:1110-1121  
+   [The 3D genome as moderator of chromosomal communication](https://doi.org/10.1016/j.cell.2016.02.007)
+
+4. **Rao SSP et al. (2014)** *Cell* 159:1665-1680  
+   [A 3D map of the human genome at kilobase resolution reveals cohesin loops](https://www.cell.com/fulltext/S0092-8674(14)01497-4)
+
+### Transcription Factor Mechanisms
+5. **Spitz F, Furlong EEM (2012)** *Nat Rev Genet* 13:613-626  
+   [Transcription factors: from enhancer binding to developmental control](https://doi.org/10.1038/nrg3207) -->
+
+---
+<!-- 
+## Database Resources
+
+- **UniProt**: Protein sequences and functional annotations
+- **PDB**: Protein Data Bank for 3D structures
+- **ENCODE**: Encyclopedia of DNA Elements (ChIP-seq, ATAC-seq data)
+- **JASPAR**: Transcription factor binding site profiles
+- **4DN**: 4D Nucleome project for chromatin organization
+
+--- -->
+
+**Last Updated**: 2025-11-24  
+**Status**: Active development | Feedback welcome at sun_yuting@icloud.com

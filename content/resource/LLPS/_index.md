@@ -10,6 +10,7 @@ type: page
 toc: true
 weight: 3
 featured: true
+layout: coming-soon
 
 image:
   caption: 'Cellular biomolecular condensates formed by LLPS (Banani et al. 2017)'

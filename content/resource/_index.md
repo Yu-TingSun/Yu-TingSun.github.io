@@ -21,12 +21,12 @@ type: page
 
 ## Current Content
 
-### Biological Processes
+<!-- ### Biological Processes
 - 🚧 Chromatin Architecture Establishment
 - 🚧 Transcription Activation
 - 🚧 Gene Silencing
 - 🚧 DNA Repair
-- 🚧 DNA Replication
+- 🚧 DNA Replication -->
 
 ### Protein Functions
 
@@ -37,7 +37,7 @@ type: page
 - 🚧 CTCF - Chromatin insulator -->
 
 **Enzymatic Proteins**
-- 🚧 [RecA/Rad51/Dmc1](/resource/interactions/enzymatic/reca-rad51/) - Homologous recombination
+- 🚧 [RecA](/resource/interactions/enzymatic/reca/) - Homologous recombination
 <!-- - 🚧 DNA Polymerase
 - 🚧 DNA Ligase
 - 🚧 Topoisomerase
@@ -46,13 +46,13 @@ type: page
 **Regulatory Proteins**
 - 🚧  [p53](/resource/interactions/regulatory/p53/) - Tumor suppressor and transcription factor
 <!-- - 🚧 MYC - Master growth regulator
-- 🚧 NF-κB - Inflammation master
-- 🚧 Chromatin remodelers (SWI/SNF, INO80)
-- 🚧 Histone modifiers (HAT, HDAC, HMT)
-- 🚧 Epigenetic readers (BRD4, HP1) -->
+<!-- - 🚧 NF-κB - Inflammation master -->
+<!-- - 🚧 Chromatin remodelers (SWI/SNF, INO80)
+- 🚧 Histone modifiers (HAT, HDAC, HMT) -->
+<!-- - 🚧 Epigenetic readers (BRD4, HP1) --> -->
 
 ### Research Topics
-- ✅ Liquid-Liquid Phase Separation (LLPS) in genome regulation
+- 🚧 Liquid-Liquid Phase Separation (LLPS) in genome regulation
 **Last Updated**: 2025-11-21
 
 ---

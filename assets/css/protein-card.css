@@ -1,0 +1,611 @@
+/* ========================================
+   Protein Knowledge Card Styles
+   Universal styles for DNA-Protein Interaction cards
+   ======================================== */
+
+/* ========================================
+   1. CARD CONTAINER
+   ======================================== */
+
+.protein-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.protein-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .protein-card {
+    background: #1e293b;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  }
+  
+  .protein-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* ========================================
+   2. STRUCTURE SECTION (Left/Top)
+   ======================================== */
+
+.structure-section {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+}
+
+.structure-image-container {
+  position: relative;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .structure-image-container {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border-color: #334155;
+  }
+}
+
+.structure-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.structure-caption {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: #f0f9ff;
+  border-left: 4px solid #3b82f6;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+@media (prefers-color-scheme: dark) {
+  .structure-caption {
+    background: #1e3a8a;
+    border-left-color: #60a5fa;
+    color: #dbeafe;
+  }
+}
+
+.structure-caption .pdb-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.structure-caption .pdb-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .structure-caption .pdb-link {
+    color: #60a5fa;
+  }
+  
+  .structure-caption .pdb-link:hover {
+    color: #93c5fd;
+  }
+}
+
+/* ========================================
+   3. INFORMATION SECTION (Right/Bottom)
+   ======================================== */
+
+.info-section {
+  overflow-y: auto;
+  max-height: 800px;
+  padding-right: 1rem;
+}
+
+/* Custom scrollbar */
+.info-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.info-section::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.info-section::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.info-section::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@media (prefers-color-scheme: dark) {
+  .info-section::-webkit-scrollbar-track {
+    background: #1e293b;
+  }
+  
+  .info-section::-webkit-scrollbar-thumb {
+    background: #475569;
+  }
+  
+  .info-section::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+  }
+}
+
+/* ========================================
+   4. QUICK FACTS TABLE
+   ======================================== */
+
+.quick-facts {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-radius: 12px;
+  border-left: 4px solid #f59e0b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .quick-facts {
+    background: linear-gradient(135deg, #78350f 0%, #92400e 100%);
+    border-left-color: #fbbf24;
+  }
+}
+
+.quick-facts h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #92400e;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .quick-facts h3 {
+    color: #fde68a;
+  }
+}
+
+.quick-facts h3::before {
+  content: "⚡";
+  font-size: 1.5rem;
+}
+
+.facts-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.facts-table tr {
+  border-bottom: 1px solid rgba(146, 64, 14, 0.2);
+}
+
+.facts-table tr:last-child {
+  border-bottom: none;
+}
+
+.facts-table td {
+  padding: 0.75rem 0;
+  font-size: 0.95rem;
+}
+
+.facts-table td:first-child {
+  font-weight: 600;
+  color: #92400e;
+  width: 35%;
+}
+
+.facts-table td:last-child {
+  color: #451a03;
+}
+
+@media (prefers-color-scheme: dark) {
+  .facts-table tr {
+    border-bottom-color: rgba(253, 230, 138, 0.2);
+  }
+  
+  .facts-table td:first-child {
+    color: #fde68a;
+  }
+  
+  .facts-table td:last-child {
+    color: #fef3c7;
+  }
+}
+
+/* ========================================
+   5. MECHANISM SECTION
+   ======================================== */
+
+.mechanism-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+  border-radius: 12px;
+  border-left: 4px solid #0ea5e9;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mechanism-section {
+    background: linear-gradient(135deg, #0c4a6e 0%, #075985 100%);
+    border-left-color: #38bdf8;
+  }
+}
+
+.mechanism-section h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #075985;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mechanism-section h3 {
+    color: #bae6fd;
+  }
+}
+
+.mechanism-section h3::before {
+  content: "⚙️";
+  font-size: 1.5rem;
+}
+
+.mechanism-box {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border: 1px solid #7dd3fc;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mechanism-box {
+    background: rgba(8, 47, 73, 0.5);
+    border-color: #0e7490;
+  }
+}
+
+.mechanism-box h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+  color: #0c4a6e;
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mechanism-box h4 {
+    color: #7dd3fc;
+  }
+}
+
+.mechanism-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mechanism-list li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #0c4a6e;
+  line-height: 1.6;
+}
+
+.mechanism-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #0ea5e9;
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mechanism-list li {
+    color: #e0f2fe;
+  }
+  
+  .mechanism-list li::before {
+    color: #38bdf8;
+  }
+}
+
+/* ========================================
+   6. BIOLOGICAL ROLES SECTION
+   ======================================== */
+
+.roles-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  border-radius: 12px;
+  border-left: 4px solid #10b981;
+}
+
+@media (prefers-color-scheme: dark) {
+  .roles-section {
+    background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+    border-left-color: #34d399;
+  }
+}
+
+.roles-section h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #065f46;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .roles-section h3 {
+    color: #a7f3d0;
+  }
+}
+
+.roles-section h3::before {
+  content: "🧬";
+  font-size: 1.5rem;
+}
+
+.roles-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.roles-list li {
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  color: #064e3b;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.roles-list li:last-child {
+  border-bottom: none;
+}
+
+.roles-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0.5rem;
+  color: #10b981;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.roles-list li strong {
+  color: #047857;
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+  .roles-list li {
+    color: #d1fae5;
+    border-bottom-color: rgba(52, 211, 153, 0.2);
+  }
+  
+  .roles-list li::before {
+    color: #34d399;
+  }
+  
+  .roles-list li strong {
+    color: #6ee7b7;
+  }
+}
+
+/* ========================================
+   7. EXPERIMENTAL CONDITIONS
+   ======================================== */
+
+.experimental-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+  border-radius: 12px;
+  border-left: 4px solid #ec4899;
+}
+
+@media (prefers-color-scheme: dark) {
+  .experimental-section {
+    background: linear-gradient(135deg, #831843 0%, #9f1239 100%);
+    border-left-color: #f472b6;
+  }
+}
+
+.experimental-section h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #9f1239;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .experimental-section h3 {
+    color: #fbcfe8;
+  }
+}
+
+.experimental-section h3::before {
+  content: "🔬";
+  font-size: 1.5rem;
+}
+
+.conditions-box {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  color: #831843;
+  line-height: 1.8;
+}
+
+@media (prefers-color-scheme: dark) {
+  .conditions-box {
+    background: rgba(131, 24, 67, 0.3);
+    color: #fce7f3;
+  }
+}
+
+.conditions-box code {
+  background: #fce7f3;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #be185d;
+}
+
+@media (prefers-color-scheme: dark) {
+  .conditions-box code {
+    background: #9f1239;
+    color: #fbcfe8;
+  }
+}
+
+/* ========================================
+   8. RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 1024px) {
+  .protein-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .structure-section {
+    position: relative;
+    top: auto;
+  }
+  
+  .info-section {
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+
+@media (max-width: 768px) {
+  .protein-card {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .quick-facts,
+  .mechanism-section,
+  .roles-section,
+  .experimental-section {
+    padding: 1rem;
+  }
+  
+  .structure-image-container {
+    padding: 1rem;
+  }
+  
+  .facts-table td:first-child {
+    width: 40%;
+  }
+}
+
+/* ========================================
+   9. UTILITY CLASSES
+   ======================================== */
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge-info {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.badge-warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge-success {
+    background: #065f46;
+    color: #d1fae5;
+  }
+  
+  .badge-info {
+    background: #1e40af;
+    color: #dbeafe;
+  }
+  
+  .badge-warning {
+    background: #92400e;
+    color: #fef3c7;
+  }
+}
+
+/* ========================================
+   10. PRINT STYLES
+   ======================================== */
+
+@media print {
+  .protein-card {
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+    page-break-inside: avoid;
+  }
+  
+  .structure-section {
+    position: relative;
+    page-break-after: avoid;
+  }
+  
+  .info-section {
+    overflow: visible;
+    max-height: none;
+  }
+  
+  .quick-facts,
+  .mechanism-section,
+  .roles-section,
+  .experimental-section {
+    page-break-inside: avoid;
+  }
+}

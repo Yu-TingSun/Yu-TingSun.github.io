@@ -1,0 +1,867 @@
+---
+title: "RecA - The Bacterial Recombinase"
+subtitle: "RecA - 細菌同源重組酶 | Mediator of Homologous Recombination"
+summary: "RecA是細菌DNA修復和同源重組的核心蛋白，通過催化DNA鏈交換維持基因組穩定性"
+date: 2025-11-15
+authors: ["Yu-Ting Sun"]
+tags: ["Enzymatic", "Recombination", "DNA Repair", "Single-Molecule", "Filament"]
+categories: ["DNA-Protein Interaction", "Enzymatic Proteins"]
+featured: true
+
+
+image:
+  caption: 'RecA-mediated strand exchange mechanism'
+  focal_point: "Smart"
+  preview_only: false
+---
+
+{{< toc >}}
+
+<!-- Language Toggle Buttons -->
+<div class="lang-toggle">
+  <button onclick="toggleLanguage('both')" class="active">雙語並排 Both</button>
+  <button onclick="toggleLanguage('zh')">僅中文 Chinese Only</button>
+  <button onclick="toggleLanguage('en')">僅英文 English Only</button>
+</div>
+
+<div class="bilingual-section">
+
+<!-- ========== Section 1: Introduction ========== -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+## Section 1: RecA與細菌基因組維護
+
+### 1.1 基本信息
+
+**蛋白質信息：**
+- **基因**：*recA* (大腸桿菌染色體 58 min位置)
+- **蛋白質**：352個氨基酸，~38 kDa
+- **功能形式**：核蛋白絲狀體（nucleoprotein filament）
+- **發現**：1965年首次基因鑒定，1980年蛋白純化
+
+**進化保守性：**
+- 存在於幾乎所有細菌和古菌
+- 真核生物同源蛋白：Rad51 (體細胞)、Dmc1 (減數分裂)
+- RadA在古菌中發揮類似功能
+
+### 1.2 生物學功能
+
+**DNA修復中的角色：**
+- **雙鏈斷裂修復**：通過同源重組修復DSB
+- **複製叉救援**：修復停滯或崩潰的複製叉
+- **SOS反應**：DNA損傷後誘導~40個SOS基因表達
+
+**臨床與應用意義：**
+- 抗生素抗性發展的關鍵（水平基因轉移）
+- 細菌進化與適應的驅動力
+- 合成生物學中的基因組編輯工具
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+## Section 1: RecA and Bacterial Genome Maintenance
+
+### 1.1 Basic Information
+
+**Protein Information:**
+- **Gene**: *recA* (E. coli chromosome, 58 min position)
+- **Protein**: 352 amino acids, ~38 kDa
+- **Functional Form**: Nucleoprotein filament
+- **Discovery**: First genetic identification in 1965, protein purification in 1980
+
+**Evolutionary Conservation:**
+- Present in nearly all bacteria and archaea
+- Eukaryotic homologs: Rad51 (somatic cells), Dmc1 (meiosis)
+- RadA performs similar functions in archaea
+
+### 1.2 Biological Functions
+
+**Role in DNA Repair:**
+- **Double-Strand Break Repair**: Repairs DSBs through homologous recombination
+- **Replication Fork Rescue**: Repairs stalled or collapsed replication forks
+- **SOS Response**: Induces expression of ~40 SOS genes after DNA damage
+
+**Clinical & Applied Significance:**
+- Key player in antibiotic resistance development (horizontal gene transfer)
+- Driver of bacterial evolution and adaptation
+- Tool for genome editing in synthetic biology
+
+  </div>
+</div>
+
+---
+
+<!-- ========== Section 2: Classical Mechanism ========== -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+## Section 2: RecA介導的鏈交換經典機制
+
+RecA介導的同源重組是一個高度有序的多步驟過程，可分為三個主要階段。
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+## Section 2: Classical Mechanism of RecA-Mediated Strand Exchange
+
+RecA-mediated homologous recombination is a highly ordered multi-step process that can be divided into three main stages.
+
+  </div>
+</div>
+
+<!-- Figure 1: Schematic -->
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/images/resource/reca-mechanism-scheme.png" alt="RecA strand exchange mechanism" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+    <strong>Figure 1:</strong> Schematic overview and molecular detail RecA-mediated strand exchange mechanism<br>
+    <em>Source: Kowalczykowski Nature 453, pages463–465 (2008) </em>
+  </p>
+</div>
+
+### 2.1 三步催化循環
+
+#### Step 1: 核蛋白絲狀體形成
+
+**分子事件：**
+- RecA在ATP存在下結合單鏈DNA（ssDNA）
+- 形成右手螺旋的絲狀體（螺距：95 Å）
+- DNA被延伸（~1.5倍B-form長度）並解旋
+
+**關鍵參數：**
+- 結合化學計量：3 nt / RecA單體
+- 解離常數（Kd）：~0.1-0.2 μM（單分子測量）
+- 絲狀體生長速率：~50 RecA/秒（在飽和濃度下）
+
+**ATP的作用：**
+- 促進RecA-ssDNA絲狀體組裝
+- 穩定活性構象
+- ATP水解率：~30 min⁻¹（在ssDNA上）
+
+#### Step 2: 同源性搜索
+
+**機制：**
+- RecA-ssDNA絲狀體通過瞬時三鏈中間體採樣dsDNA基質
+- 同源性檢測需要**8-15 bp**的連續配對
+- 非同源序列被快速拒絕（<1秒）
+
+**搜索動力學：**
+- 三維擴散 + 一維滑動
+- 每次試探接觸的持續時間：~10-100 ms
+- 成功識別同源序列後形成穩定複合物
+
+#### Step 3: 鏈交換
+
+**入侵與配對：**
+- 入侵鏈與同源鏈配對
+- 形成異源雙鏈DNA（D-loop結構）
+- 置換鏈被釋放為單鏈DNA
+
+**鏈交換速率：**
+- 極性：5' → 3'（相對於入侵鏈）
+- 速率：~3-6 bp/秒
+- 可處理長達數千鹼基對的DNA
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+### 2.1 Three-Step Catalytic Cycle
+
+#### Step 1: Nucleoprotein Filament Formation
+
+**Molecular Events:**
+- RecA binds single-stranded DNA (ssDNA) in the presence of ATP
+- Forms a right-handed helical filament (pitch: 95 Å)
+- DNA is stretched (~1.5x B-form length) and underwound
+
+**Key Parameters:**
+- Binding stoichiometry: 3 nt / RecA monomer
+- Dissociation constant (Kd): ~0.1-0.2 μM (single-molecule measurements)
+- Filament growth rate: ~50 RecA/s (at saturating concentration)
+
+**Role of ATP:**
+- Promotes RecA-ssDNA filament assembly
+- Stabilizes active conformation
+- ATP hydrolysis rate: ~30 min⁻¹ (on ssDNA)
+
+#### Step 2: Homology Search
+
+**Mechanism:**
+- RecA-ssDNA filament samples dsDNA substrates through transient three-strand intermediates
+- Homology detection requires **8-15 bp** of continuous pairing
+- Non-homologous sequences are rapidly rejected (<1 s)
+
+**Search Kinetics:**
+- 3D diffusion + 1D sliding
+- Duration per trial contact: ~10-100 ms
+- Stable complex formation after successful homology recognition
+
+#### Step 3: Strand Exchange
+
+**Invasion & Pairing:**
+- Invading strand pairs with homologous strand
+- Forms heteroduplex DNA (D-loop structure)
+- Displaced strand released as ssDNA
+
+**Strand Exchange Rate:**
+- Polarity: 5' → 3' (relative to invading strand)
+- Rate: ~3-6 bp/s
+- Can process DNA up to thousands of base pairs
+
+  </div>
+</div>
+
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+### 2.2 輔助蛋白與調控
+
+RecA的活性受到多個輔助蛋白的精細調控：
+
+**RecBCD複合體：**
+- 在雙鏈斷裂處加工DNA末端
+- 識別Chi序列（5'-GCTGGTGG-3'）
+- 將RecA裝載到適當的DNA鏈上
+
+**SSB (Single-Strand DNA-Binding Protein):**
+- 保護ssDNA免受降解
+- RecA可以置換SSB結合ssDNA
+- SSB-RecA協同作用促進絲狀體組裝
+
+**RecF, RecO, RecR:**
+- RecFOR途徑：替代RecBCD的另一條途徑
+- 在停滯的複製叉處裝載RecA
+- 促進RecA在SSB包被的ssDNA上成核
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  The classical three-step mechanism of RecA-mediated strand exchange provides the foundation for understanding how bacteria maintain genome stability through homologous recombination.
+
+  <div class="lang-en-block">
+
+### 2.2 Accessory Proteins & Regulation
+
+RecA activity is finely regulated by multiple accessory proteins:
+
+**RecBCD Complex:**
+- Processes DNA ends at double-strand breaks
+- Recognizes Chi sequence (5'-GCTGGTGG-3')
+- Loads RecA onto the appropriate DNA strand
+
+**SSB (Single-Strand DNA-Binding Protein):**
+- Protects ssDNA from degradation
+- RecA can displace SSB to bind ssDNA
+- SSB-RecA synergy promotes filament assembly
+
+**RecF, RecO, RecR:**
+- RecFOR pathway: Alternative to RecBCD
+- Loads RecA at stalled replication forks
+- Promotes RecA nucleation on SSB-coated ssDNA
+
+  </div>
+</div>
+
+---
+
+<!-- ========== Section 3: Structural Insights ========== -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+## Section 3: 結構洞察：突觸複合體
+
+近年來高解析度冷凍電鏡（Cryo-EM）結構揭示了RecA介導鏈交換的分子細節，為理解這一精密的生物化學過程提供了前所未有的視角。
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+## Section 3: Structural Insights: The Synaptic Complex
+
+Recent high-resolution cryo-electron microscopy (Cryo-EM) structures have revealed molecular details of RecA-mediated strand exchange, providing unprecedented insights into this sophisticated biochemical process.
+
+  </div>
+</div>
+
+<!-- Figure 2: CryoEM Structure -->
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/images/resource/reca-cryoem-structure.png" alt="Cryo-EM structure of RecA synaptic complex" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+    <strong>Figure 2:</strong> Cryo-EM structure of RecA-DNA synaptic complex<br>
+    <em>Source:  Yang et al., Nature 586,801–806 (2020)</em>
+  </p>
+</div>
+
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+### 3.1 RecA結構域組成
+
+RecA蛋白包含三個主要結構域：
+
+**核心ATPase結構域（Core Domain, 1-269 aa）：**
+- Walker A和Walker B motifs
+- ATP結合和水解的催化中心
+- 維持絲狀體結構的核心
+
+**DNA結合結構域（DNA-Binding Domain）：**
+- L1和L2環負責DNA結合
+- L2環（aa 195-209）在鏈分離中起關鍵作用
+- 識別DNA主溝
+
+**C端結構域（CTD, 270-352 aa）：**
+- 介導雙鏈DNA識別
+- 在同源性搜索中至關重要
+- 與相鄰RecA單體相互作用
+
+### 3.2 三鏈複合體的幾何排列
+
+**DNA組織：**
+- ssDNA延伸至B-form的~1.5倍長度
+- 每3個核苷酸與1個RecA單體相互作用
+- DNA呈右手螺旋排列（螺距：95 Å）
+
+**三鏈中間體：**
+- 同時容納三條DNA鏈
+- 入侵鏈（incoming strand）
+- 同源鏈（homologous strand）
+- 置換鏈（displaced strand）
+
+**構象變化：**
+- ATP結合誘導活性構象
+- 促進DNA延伸和解旋
+- 穩定三鏈中間體
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+### 3.1 RecA Domain Architecture
+
+RecA protein contains three major domains:
+
+**Core ATPase Domain (1-269 aa):**
+- Walker A and Walker B motifs
+- Catalytic center for ATP binding and hydrolysis
+- Core for maintaining filament structure
+
+**DNA-Binding Domain:**
+- L1 and L2 loops responsible for DNA binding
+- L2 loop (aa 195-209) plays key role in strand separation
+- Recognizes DNA major groove
+
+**C-Terminal Domain (CTD, 270-352 aa):**
+- Mediates duplex DNA recognition
+- Critical for homology search
+- Interacts with adjacent RecA monomers
+
+### 3.2 Geometric Arrangement of Three-Strand Complex
+
+**DNA Organization:**
+- ssDNA stretched to ~1.5x B-form length
+- Every 3 nucleotides interact with 1 RecA monomer
+- DNA arranged in right-handed helix (pitch: 95 Å)
+
+**Three-Strand Intermediate:**
+- Simultaneously accommodates three DNA strands
+- Incoming strand
+- Homologous strand
+- Displaced strand
+
+**Conformational Changes:**
+- ATP binding induces active conformation
+- Promotes DNA extension and unwinding
+- Stabilizes three-strand intermediate
+
+  </div>
+</div>
+
+---
+
+<!-- ========== Section 4: Beyond DNA ========== -->
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+## Section 4: 超越DNA：核酸多樣性的挑戰
+
+### 4.1 細胞環境的複雜性
+
+RecA與DNA基質的相互作用已被廣泛表徵超過四十年。然而，**體內環境**呈現出遠比純DNA系統複雜的核酸景觀：
+
+**RNA-containing結構的普遍存在：**
+- **R-loops（DNA-RNA雜合體** 在轉錄過程中廣泛存在
+- **複製-轉錄衝突**產生含RNA的結構
+- **RNA引物**在DNA複製中啟動岡崎片段合成
+
+**中心問題：** RecA作為一個為DNA重組優化的蛋白，如何與這些含RNA的基質相互作用？
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+## Section 4: Beyond DNA: The Unexplored World of RNA-DNA Hybrids
+
+### 4.1 The Cellular Reality Check
+
+RecA's interaction with DNA substrates has been extensively studied for over four decades. However, the **in vivo environment** presents a far more complex nucleic acid landscape than pure DNA systems:
+
+**Prevalence of RNA-Containing Structures:**
+- **R-loops (DNA-RNA hybrids)** are widespread during transcription
+- **Replication-transcription conflicts** generate RNA-containing structures
+- **RNA primers** initiate Okazaki fragment synthesis in DNA replication
+
+**The Central Question:** How does RecA, optimized for DNA recombination, interact with these RNA-containing substrates?
+
+  </div>
+</div>
+
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+### 4.2 結構挑戰：DNA與RNA的差異
+
+DNA與RNA的結構差異為RecA的識別和處理帶來獨特挑戰：
+
+**螺旋構象：**
+- **A-form RNA** vs **B-form DNA**：不同的螺旋幾何結構
+- **DNA-RNA雜合體**：介於兩種形式之間的中間結構
+- RecA將ssDNA組織成延伸的B-type構象
+
+**化學差異：**
+- **2'-OH基團**：改變主溝/次溝結構
+- **鹼基配對穩定性**：rU-dA vs dT-dA的差異
+- **骨架柔性**：RNA更剛性
+
+**已知觀察：**
+- RecA與ssRNA的結合親和力遠低於ssDNA（~7倍差異）
+- 但RecA是否完全排除RNA參與，還是具有位置依賴性選擇？
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+### 4.2 Structural Challenges: DNA vs RNA Differences
+
+DNA vs RNA structural differences pose unique challenges for RecA recognition and processing:
+
+**Helix Conformation:**
+- **A-form RNA** vs **B-form DNA**: Different helix geometry
+- **DNA-RNA hybrids**: Intermediate structure between two forms
+- RecA organizes ssDNA into extended B-type conformation
+
+**Chemical Differences:**
+- **2'-OH group**: Alters major/minor groove structure
+- **Base pair stability**: rU-dA vs dT-dA differences
+- **Backbone flexibility**: RNA is more rigid
+
+**Known Observations:**
+- RecA binds ssRNA with much lower affinity than ssDNA (~7-fold difference)
+- But does RecA completely exclude RNA participation, or show position-dependent selectivity?
+
+  </div>
+</div>
+
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+### 4.3 未被充分探索的問題
+
+儘管R-loops在基因組維護中具有生物學重要性，但關於RecA如何處理含RNA基質的系統性研究一直缺乏。
+
+**開放性問題：**
+
+1. **位置依賴性選擇？**
+   - RecA是否對RNA在鏈交換反應中不同位置的替代表現出選擇性？
+   - RNA作為入侵鏈、互補鏈或離開鏈時，RecA的活性有何不同？
+
+2. **動力學與機制後果：**
+   - RNA在每個位置的摻入對鏈交換的動力學有何影響？
+   - 哪些步驟是限速的？
+
+3. **生物學意義：**
+   - RecA對RNA-DNA雜合體的處理是否參與R-loop代謝？
+   - 這種活性是否在細菌基因組維護中發揮作用？
+
+4. **進化保守性：**
+   - RecA/Rad51家族蛋白在不同物種中的特異性和功能分化如何？
+   - Rad51在真核生物中是否表現出類似的位置特異性？
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+### 4.3 Uncharted Territory
+
+Despite the biological importance of R-loops in genome maintenance, systematic investigation of how RecA processes RNA-containing substrates has been lacking.
+
+**Open Questions:**
+
+1. **Position-Dependent Selectivity?**
+   - Does RecA exhibit selectivity when RNA substitutes for DNA at different positions in strand exchange?
+   - How does RecA activity differ when RNA serves as invading, complementary, or leaving strand?
+
+2. **Kinetic & Mechanistic Consequences:**
+   - What are the kinetic impacts of RNA incorporation at each position?
+   - Which steps become rate-limiting?
+
+3. **Biological Significance:**
+   - Does RecA's processing of RNA-DNA hybrids participate in R-loop metabolism?
+   - Does this activity play a role in bacterial genome maintenance?
+
+4. **Evolutionary Conservation:**
+   - How do RecA/Rad51 family proteins differ in specificity and function across species?
+   - Does Rad51 in eukaryotes show similar position-specific behavior?
+
+  </div>
+</div>
+
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+### 4.4 為什麼這個問題重要
+
+理解RecA的底物選擇性（或混雜性）對RNA-DNA雜合體具有多重意義：
+
+**機制洞察：**
+- 揭示RecA識別和處理核酸基質的結構要求
+- 闡明ATP水解在底物選擇中的作用
+- 為理解RecA/Rad51家族的進化提供線索
+
+**生物學意義：**
+- R-loops在轉錄-複製衝突中的雙重角色（有害與有益）
+- RecA可能在細胞如何防止異常重組方面發揮作用
+- 為理解細菌基因組穩定性機制提供新視角
+
+**方法學優勢：**
+- 單分子方法特別適合研究底物選擇性
+- 可以檢測瞬時相互作用並測量結合動力學
+- 這些是整體方法可能錯過的細節
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+### 4.4 Why This Matters
+
+Understanding RecA's selectivity (or promiscuity) toward RNA-DNA hybrids has multiple implications:
+
+**Mechanistic Insights:**
+- Reveal structural requirements for RecA recognition and processing of nucleic acid substrates
+- Elucidate the role of ATP hydrolysis in substrate selection
+- Provide clues for understanding RecA/Rad51 family evolution
+
+**Biological Significance:**
+- Dual role of R-loops in transcription-replication conflicts (harmful vs beneficial)
+- RecA may play a role in how cells prevent aberrant recombination
+- Provide new perspectives on bacterial genome stability mechanisms
+
+**Methodological Advantages:**
+- Single-molecule approaches are particularly powerful for studying substrate selectivity
+- Can detect transient interactions and measure binding kinetics
+- These are details that ensemble methods might miss
+
+  </div>
+</div>
+
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+### 4.5 研究方向
+
+**體外生化研究：**
+- 鏈交換分析：RNA在不同位置替代DNA
+- 單分子FRET：實時監測RecA-RNA相互作用動力學
+- 納米流體：模擬生理擁擠條件下的競爭
+
+**結構生物學：**
+- Cryo-EM可視化RecA與RNA-containing三聯體的中間體
+- 揭示幾何約束如何決定底物特異性
+
+**生物學驗證：**
+- 體內R-loop代謝研究
+- RecA與RNA-DNA雜合體在細胞中的共定位
+- 突變體研究揭示關鍵殘基
+
+**展望：**
+這些研究將幫助我們理解RecA如何在複雜的細胞核酸環境中發揮作用，並可能揭示以前未被認識到的細菌基因組維護機制。
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+### 4.5 Research Directions
+
+**In Vitro Biochemical Studies:**
+- Strand exchange assays: RNA substitution at different positions
+- Single-molecule FRET: Real-time monitoring of RecA-RNA interaction kinetics
+- Nanofluidics: Competition under physiological crowding conditions
+
+**Structural Biology:**
+- Cryo-EM visualization of RecA with RNA-containing triplex intermediates
+- Reveal how geometric constraints determine substrate specificity
+
+**Biological Validation:**
+- In vivo R-loop metabolism studies
+- RecA co-localization with RNA-DNA hybrids in cells
+- Mutant studies to reveal critical residues
+
+**Outlook:**
+These studies will help us understand how RecA functions in the complex cellular nucleic acid environment and may reveal previously unrecognized bacterial genome maintenance mechanisms.
+
+  </div>
+</div>
+
+</div>
+
+---
+
+
+<!-- ========== Related Proteins ========== -->
+<div class="bilingual-section">
+
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+## 相關蛋白
+RecA屬於高度保守的重組酶家族，在不同生物中發揮類似功能。
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+## Related Proteins
+
+RecA belongs to a highly conserved recombinase family that performs similar functions across different organisms.
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">真核同源物 | Eukaryotic Homologs</h5>
+        <ul class="small">
+          <li><strong>Rad51：</strong>體細胞同源重組 | Somatic HR</li>
+          <li><strong>Dmc1：</strong>減數分裂特異性 | Meiosis-specific</li>
+          <li>結構和功能高度保守 | Highly conserved structure & function</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">輔助蛋白 | Accessory Proteins</h5>
+        <ul class="small">
+          <li><strong>RecBCD：</strong>DNA末端處理 | DNA end processing</li>
+          <li><strong>SSB：</strong>ssDNA保護 | ssDNA protection</li>
+          <li><strong>RecFOR：</strong>替代裝載途徑 | Alternative loading</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">競爭蛋白 | Competing Proteins</h5>
+        <ul class="small">
+          <li><a href="../../structural/histones/">Histones</a> （真核）| (Eukaryotes)</li>
+          <li><a href="../../regulatory/p53/">p53</a> （DNA損傷）| (DNA damage)</li>
+          <li>染色質重塑因子 | Chromatin remodelers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+---
+
+<!-- ========== Key References ========== -->
+<div class="bilingual-section">
+
+<div class="bilingual-pair">
+  <div class="lang-zh-block">
+
+## 參考文獻 | Key References
+
+### 里程碑綜述
+
+1. **Kowalczykowski SC (2015)**
+   *An Overview of the Molecular Mechanisms of Recombinational DNA Repair*
+   **Cold Spring Harb Perspect Biol** 7:a016410
+   [DOI: 10.1101/cshperspect.a016410](https://doi.org/10.1101/cshperspect.a016410)
+   - RecA機制的全面綜述 | Comprehensive RecA mechanism review
+
+2. **Cox MM (2007)**
+   *Regulation of bacterial RecA protein function*
+   **Crit Rev Biochem Mol Biol** 42:41-63
+   [DOI: 10.1080/10409230701260258](https://doi.org/10.1080/10409230701260258)
+   - RecA調控的經典綜述 | Classic review on RecA regulation
+
+### 結構研究
+
+3. **Yang H, Zhou C, Dhar A, Pavletich NP (2020)**
+   *Mechanism of strand exchange from RecA-DNA synaptic and D-loop structures*
+   **Nature** 586:801-806
+   [DOI: 10.1038/s41586-020-2820-9](https://doi.org/10.1038/s41586-020-2820-9)
+   - 高解析度Cryo-EM結構 | High-resolution Cryo-EM structure
+
+4. **Story RM, Weber IT, Steitz TA (1992)**
+   *The structure of the E. coli recA protein monomer and polymer*
+   **Nature** 355:318-325
+   [DOI: 10.1038/355318a0](https://doi.org/10.1038/355318a0)
+   - 首個RecA晶體結構 | First RecA crystal structure
+
+### 單分子研究
+
+5. **Joo C, et al. (2006)**
+   *Real-time observation of RecA filament dynamics with single monomer resolution*
+   **Cell** 126:515-527
+   [DOI: 10.1016/j.cell.2006.06.042](https://doi.org/10.1016/j.cell.2006.06.042)
+   - RecA絲狀體組裝的單分子成像 | Single-molecule imaging of RecA filament
+
+6. **Lee JY, et al. (2013)**
+   *DNA recombination. Base triplet stepping by the Rad51/RecA family of recombinases*
+   **Science** 349:977-981
+   [DOI: 10.1126/science.aab2666](https://doi.org/10.1126/science.aab2666)
+   - RecA同源性搜索機制 | RecA homology search mechanism
+
+### RNA相關研究
+
+7. **Kasahara M, et al. (2000)**
+   *RecA protein-dependent R-loop formation in vitro*
+   **Genes Dev** 14:360-365
+   - RecA與R-loop形成 | RecA and R-loop formation
+
+8. **Zaitsev EN, Kowalczykowski SC (1999)**
+   *Binding of double-stranded DNA by Escherichia coli RecA protein monitored by a fluorescent dye displacement assay*
+   **Nucleic Acids Res** 27:1625-1635
+   [DOI: 10.1093/nar/27.7.1625](https://doi.org/10.1093/nar/27.7.1625)
+   - RecA-dsRNA相互作用 | RecA-dsRNA interaction
+
+  </div>
+
+  <div class="bilingual-divider"></div>
+
+  <div class="lang-en-block">
+
+## References
+
+### Milestone Reviews
+
+1. **Kowalczykowski SC (2015)**
+   *An Overview of the Molecular Mechanisms of Recombinational DNA Repair*
+   **Cold Spring Harb Perspect Biol** 7:a016410
+   [DOI: 10.1101/cshperspect.a016410](https://doi.org/10.1101/cshperspect.a016410)
+   - Comprehensive RecA mechanism review
+
+2. **Cox MM (2007)**
+   *Regulation of bacterial RecA protein function*
+   **Crit Rev Biochem Mol Biol** 42:41-63
+   [DOI: 10.1080/10409230701260258](https://doi.org/10.1080/10409230701260258)
+   - Classic review on RecA regulation
+
+### Structural Studies
+
+3. **Yang H, Zhou C, Dhar A, Pavletich NP (2020)**
+   *Mechanism of strand exchange from RecA-DNA synaptic and D-loop structures*
+   **Nature** 586:801-806
+   [DOI: 10.1038/s41586-020-2820-9](https://doi.org/10.1038/s41586-020-2820-9)
+   - High-resolution Cryo-EM structure
+
+4. **Story RM, Weber IT, Steitz TA (1992)**
+   *The structure of the E. coli recA protein monomer and polymer*
+   **Nature** 355:318-325
+   [DOI: 10.1038/355318a0](https://doi.org/10.1038/355318a0)
+   - First RecA crystal structure
+
+### Single-Molecule Studies
+
+5. **Joo C, et al. (2006)**
+   *Real-time observation of RecA filament dynamics with single monomer resolution*
+   **Cell** 126:515-527
+   [DOI: 10.1016/j.cell.2006.06.042](https://doi.org/10.1016/j.cell.2006.06.042)
+   - Single-molecule imaging of RecA filament assembly
+
+6. **Lee JY, et al. (2013)**
+   *DNA recombination. Base triplet stepping by the Rad51/RecA family of recombinases*
+   **Science** 349:977-981
+   [DOI: 10.1126/science.aab2666](https://doi.org/10.1126/science.aab2666)
+   - RecA homology search mechanism
+
+### RNA-Related Studies
+
+7. **Kasahara M, et al. (2000)**
+   *RecA protein-dependent R-loop formation in vitro*
+   **Genes Dev** 14:360-365
+   - RecA and R-loop formation
+
+8. **Zaitsev EN, Kowalczykowski SC (1999)**
+   *Binding of double-stranded DNA by Escherichia coli RecA protein monitored by a fluorescent dye displacement assay*
+   **Nucleic Acids Res** 27:1625-1635
+   [DOI: 10.1093/nar/27.7.1625](https://doi.org/10.1093/nar/27.7.1625)
+   - RecA-dsRNA interaction
+
+  </div>
+</div>
+
+</div>
+
+---
+
+<!-- ========== Status & Updates ========== -->
+<div class="alert alert-success">
+  <strong>🔄 持續更新 | Continuous Updates：</strong> RecA-RNA interaction studies
+</div>
+
+<!-- JavaScript for Language Toggle -->
+<script>
+function toggleLanguage(lang) {
+  const section = document.querySelector('.bilingual-section');
+  const buttons = document.querySelectorAll('.lang-toggle button');
+  
+  buttons.forEach(btn => btn.classList.remove('active'));
+  
+  if (lang === 'zh') {
+    section.classList.add('hide-en');
+    section.classList.remove('hide-zh');
+    buttons[1].classList.add('active');
+  } else if (lang === 'en') {
+    section.classList.add('hide-zh');
+    section.classList.remove('hide-en');
+    buttons[2].classList.add('active');
+  } else {
+    section.classList.remove('hide-zh', 'hide-en');
+    buttons[0].classList.add('active');
+  }
+}
+</script>

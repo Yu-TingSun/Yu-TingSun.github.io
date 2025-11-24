@@ -45,36 +45,36 @@ main:
     url: '/resource/'
     weight: 40.1  # 排在最前面
 
-  - name: 'Biological Processes'
-    parent: 'Resource'
-    url: '/resource/processes/'
-    weight: 41
-    hasChildren: true
+  # - name: 'Biological Processes'
+  #   parent: 'Resource'
+  #   url: '/resource/processes/'
+  #   weight: 41
+  #   hasChildren: true
   
-  - name: 'Chromatin Architecturel'
-    parent: 'Biological Processes'
-    url: '/resource/processes/chromatin'
-    weight: 42
+  # - name: 'Chromatin Architecturel'
+  #   parent: 'Biological Processes'
+  #   url: '/resource/processes/chromatin'
+  #   weight: 42
 
-  - name: 'Transcription Activation'
-    parent: 'Biological Processes'
-    url: '/resource/processes/transcription'
-    weight: 43
+  # - name: 'Transcription Activation'
+  #   parent: 'Biological Processes'
+  #   url: '/resource/processes/transcription'
+  #   weight: 43
 
-  - name: 'Gene Silencing'
-    parent: 'Biological Processes'
-    url: '/resource/processes/silencing'
-    weight: 44
+  # - name: 'Gene Silencing'
+  #   parent: 'Biological Processes'
+  #   url: '/resource/processes/silencing'
+  #   weight: 44
 
-  - name: 'Dna Repair'
-    parent: 'Biological Processes'
-    url: '/resource/processes/repair'
-    weight: 45
+  # - name: 'Dna Repair'
+  #   parent: 'Biological Processes'
+  #   url: '/resource/processes/repair'
+  #   weight: 45
 
-  - name: 'Dna Replication'
-    parent: 'Biological Processes'
-    url: '/resource/processes/replication'
-    weight: 45
+  # - name: 'Dna Replication'
+  #   parent: 'Biological Processes'
+  #   url: '/resource/processes/replication'
+  #   weight: 46
 
 
   - name: 'DNA-Protein-Interactions'
@@ -103,7 +103,7 @@ main:
 
   - name: 'RecA'
     parent: 'Enzymatic'
-    url: '/enzymatic/histones'
+    url: '/enzymatic/reca'
     weight: 61
   
 

@@ -1,3 +1,5 @@
+@import 'protein-card.css';
+
 /* ========================================
    Research Trajectory Styles
    ======================================== */
@@ -722,3 +724,197 @@
   }
 }
 
+/* ========================================
+   DNA-Protein Taxonomy Tree Styles
+   ======================================== */
+
+/* Container for entire taxonomy */
+.taxonomy-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.95em;
+  line-height: 1.8;
+}
+/* Category description */
+.category-description {
+  font-size: 0.95rem;
+  color: #64748b;
+  font-style: italic;
+  margin: 0.5rem 0 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid rgba(59, 130, 246, 0.3);
+}
+/* Section for each major category */
+.taxonomy-section {
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  border-left: 4px solid;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.taxonomy-section:hover {
+  transform: translateX(3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Category headers */
+.taxonomy-section h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Color schemes for three categories */
+.taxonomy-section.structural {
+  border-color: #4ECDC4;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+.taxonomy-section.structural h4 {
+  color: #0e7490;
+}
+
+.taxonomy-section.enzymatic {
+  border-color: #FFD93D;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.taxonomy-section.enzymatic h4 {
+  color: #92400e;
+}
+
+.taxonomy-section.regulatory {
+  border-color: #FF6B9D;
+  background: linear-gradient(135deg, #fce7f3 0%, #fbbf24 100%);
+}
+
+.taxonomy-section.regulatory h4 {
+  color: #9f1239;
+}
+
+/* Subcategory items */
+.taxonomy-item {
+  margin: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.taxonomy-item::before {
+  content: "▸";
+  position: absolute;
+  left: 0.5rem;
+  color: #64748b;
+  font-size: 0.9em;
+}
+
+.taxonomy-label {
+  font-weight: 600;
+  color: #334155;
+  margin-right: 0.5rem;
+}
+
+.taxonomy-proteins {
+  color: #475569;
+}
+
+.taxonomy-proteins a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.taxonomy-proteins a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.taxonomy-proteins a::after {
+  content: " ↗";
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .taxonomy-section.structural {
+    background: rgba(78, 205, 196, 0.1);
+    border-color: #06b6d4;
+  }
+  .category-description {
+    color: #94a3b8;
+  }
+  .taxonomy-section.structural h4 {
+    color: #22d3ee;
+  }
+  
+  .taxonomy-section.enzymatic {
+    background: rgba(255, 217, 61, 0.1);
+    border-color: #fbbf24;
+  }
+  
+  .taxonomy-section.enzymatic h4 {
+    color: #fde047;
+  }
+  
+  .taxonomy-section.regulatory {
+    background: rgba(255, 107, 157, 0.1);
+    border-color: #f472b6;
+  }
+  
+  .taxonomy-section.regulatory h4 {
+    color: #fb7185;
+  }
+  
+  .taxonomy-label {
+    color: #e2e8f0;
+  }
+  
+  .taxonomy-proteins {
+    color: #cbd5e1;
+  }
+  
+  .taxonomy-proteins a {
+    color: #60a5fa;
+  }
+  
+  .taxonomy-proteins a:hover {
+    color: #93c5fd;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .taxonomy-container {
+    padding: 0 1rem;
+  }
+  
+  .taxonomy-section {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .taxonomy-item {
+    padding-left: 1.5rem;
+    font-size: 0.9em;
+  }
+}
+
+/* Print styles */
+@media print {
+  .taxonomy-section {
+    page-break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .taxonomy-section.structural,
+  .taxonomy-section.enzymatic,
+  .taxonomy-section.regulatory {
+    background: white;
+  }
+}
